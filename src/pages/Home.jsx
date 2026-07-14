@@ -65,13 +65,7 @@ export default function Home() {
     { title: "Annual Maintenance", desc: "Annual Maintenance Contracts (AMC) designed to guarantee maximum lifecycle cost savings." }
   ];
 
-  const counters = [
-    { value: "50,000+", label: "Products Manufactured" },
-    { value: "15+", label: "Industries Served" },
-    { value: "25+", label: "Years of Engineering Experience" },
-    { value: "1,200+", label: "Satisfied Corporate Clients" },
-    { value: "3,500+", label: "Projects Completed" }
-  ];
+
 
   const processSteps = [
     { step: "01", name: "Requirement", desc: "We review your operational environment, flow rates, head, chemical composition, and operating temperature." },
@@ -514,25 +508,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. WHY CUSTOMERS TRUST US (Counters) */}
-      <section className="bg-brand-navy text-white py-12 md:py-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
-            {counters.map((count, index) => (
-              <div key={index} className="space-y-1">
-                <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-orange block">
-                  {count.value}
-                </span>
-                <span className="text-xs font-semibold text-slate-300 block uppercase tracking-wider">
-                  {count.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 10. PROCESS SECTION (4 steps horizontal) */}
       <section className="py-16 md:py-24 bg-white border-b border-slate-200">
