@@ -1,0 +1,1311 @@
+{
+  "products": [
+    {
+      "id": "centrifugal-process-pump",
+      "name": "Centrifugal Process Pump",
+      "model": "CCPP",
+      "category": "Centrifugal Process Pumps",
+      "shortDescription": "Single Stage Horizontal, End-suction, Back-pullout Pump.",
+      "description": "We manufacture the Centrifugal Pump that includes the end-suction and back-pull out type centrifugal pump. Our heavy-duty pump is capable to handle a wide spectrum of corrosive chemicals, starting from strongly oxidizing solutions to strongly reducing ones, at different temperatures and concentration, which can be used in different process plants.",
+      "images": [
+        "https://res.cloudinary.com/dsddldquo/image/upload/v1784010411/j0ndjwnc7ywdgz1grdyg.png"
+      ],
+      "specifications": {
+        "Design Standard": "ISO 2858 Dimensions",
+        "Type": "Single Stage Horizontal, End-suction, Back-pullout",
+        "Impeller Type": "Single Stage Closed & Semi Open Impeller",
+        "Sealing Options": "Single & Double Mechanical Seal",
+        "Bearings": "One Cylindrical Roller Bearing on Pump end, Two Angular Contact Ball Bearing with Oil Lubricated",
+        "Drive Options": "Suitable with V-belt Drive or Direct Coupled with a Motor"
+      },
+      "operatingRange": {
+        "Capacity": "up to 2200 m³/hr",
+        "Head": "up to 150 mtr",
+        "Pressure": "up to 15 kg/cm²",
+        "Size Range": "25 mm to 300 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 350°C"
+      },
+      "features": [
+        "As per ISO 2858 Dimensions.",
+        "Back Pull-Out Design.",
+        "Highly Efficient Performance.",
+        "Durable Shaft, Sleeve & Bearings.",
+        "Designed for Low NPSH.",
+        "Noise & Maintenance Free.",
+        "Single & Double Mechanical Seal.",
+        "Single Stage Closed & Semi Open Impeller.",
+        "Steady Head & Capacity.",
+        "One Cylindrical Roller Bearing on Pump end, Two Angular Contact Ball Bearing with Oil Lubricated.",
+        "Suitable with V-belt Drive or Direct Coupled with a Motor."
+      ],
+      "applications": [
+        "Hot and Cold-Water Circulation",
+        "Effluent Treatment Plants",
+        "Cooling Tower Installation",
+        "Paper and Pulp Industries",
+        "Thermic Fluid Boiler",
+        "Heat Exchanger",
+        "Chemical & Petrochemical Industries",
+        "Sugar Plants",
+        "Textile & Ceramic Industries",
+        "Solvent Transfer",
+        "Food industries",
+        "Laminate Industries",
+        "Marine / Ports",
+        "Seawater"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Graded Grey Cast Iron",
+        "CE3MN (SS 2507)",
+        "Alloy Steel",
+        "Carbon Steel (WCB)",
+        "SS 316 (CF8M)",
+        "SS 304 (CF8)",
+        "SS 316L",
+        "Bronze",
+        "CD4MCu (Duplex Steel)",
+        "CN7M (Alloy 20)",
+        "Ni-Resist",
+        "SS 904L",
+        "CF3 (SS 304L)",
+        "Nickel & Ni-Alloys",
+        "CD3MM (SS 2205)",
+        "2-1 Ni",
+        "Hastelloy- B&C"
+      ]
+    },
+    {
+      "id": "air-cooled-hot-oil-pump",
+      "name": "Air Cooled Hot Oil Pump",
+      "model": "Air Cooled Hot Oil Pump",
+      "category": "Air Cooled Hot Oil Pumps",
+      "shortDescription": "High-temperature air-cooled thermic fluid and hot oil transfer pump.",
+      "description": "Chem-X Pumps & Equipment has manufactured heavy-duty Thermic Fluid Hot Oil Pump, Edible Oil Pump. Its cost-effective with specially designed fins for natural convection. To drop the pressure on the sealing and to balance axial thrust, the impellers have back radial blades. There is a thermal resistant soft packing seal behind the impeller. It slows down the leakage and prevents the pumping to be stopped if there is a mechanical seal damage. Air cooled pump designed by Chem-X Pumps & Equipment represent the highest quality and most effective air cooled industrial pump in the market.",
+      "images": [
+        "/images/products/hotoil-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Single-stage, end suction, centrifugal volute pump",
+        "Design Standard": "DIN 24256 (ISO 2858)",
+        "Impeller Type": "Single entry, closed impeller, hydraulically thrust compensated and dynamically balanced",
+        "Sealing Options": "Thermal resistant soft packing seal and mechanical seal",
+        "Cooling": "Natural convection air-cooling fins (no external cooling required)",
+        "Bearings": "Two roller bearings in bearing housing",
+        "Shaft Design": "Minimum heat transfer criteria"
+      },
+      "operatingRange": {
+        "Capacity": "up to 360 m³/hr",
+        "Head": "up to 150 mtr",
+        "Pressure": "up to 15 kg/cm²",
+        "Size Range": "25 mm to 125 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to +350°C"
+      },
+      "features": [
+        "Single-stage, end suction, centrifugal volute pump.",
+        "Main dimensions according to DIN 24256 (ISO 2858).",
+        "Single entry, closed impeller is hydraulically thrust compensated and dynamically balanced.",
+        "Pump & motor are separate components, connected to each other via a flexible coupling & mounted on a common base plate.",
+        "Maintenance is very much easier, the impeller shaft & other rotating parts being removable with no need to disconnect the suction and delivery pipes.",
+        "Maximum interchangeability of components, identical parts can be used with various sizes of a pump, which greatly simplifies and reduces stock of spare parts.",
+        "No need to cool the pump externally. Thanks to mechanical design, the temperature drops from casing to the bearing rapidly with the help of natural convection.",
+        "The shaft is designed according to the minimum heat transfer criteria.",
+        "On the bearing housing, there are fins for natural convection. There are two roller bearings & mechanical seal in the bearing housing.",
+        "The mechanical seal stands between two roller bearings and close to the roller bearing on the coupling side. This gives the mechanical seal longer working life since it is on a lower temperature region."
+      ],
+      "applications": [
+        "Thermic Fluid Handling",
+        "Hot Oil Transfer",
+        "Edible Oil Industries",
+        "Food & Drug Industry",
+        "Plastic & Synthetic Fibre Industry",
+        "Baking & Heating Application",
+        "Vulcanizing & Heating Industry",
+        "Leather Industries",
+        "Wood & Ply Board Industries",
+        "Various Chemical Industries",
+        "Chemical & Refinery Plants",
+        "Paper & Sugar Industry",
+        "Textile Industry"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "A 216 Carbon Steel (WCB)",
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "Graded Grey Cast Iron"
+      ]
+    },
+    {
+      "id": "centrifugal-monoblock-pump",
+      "name": "Centrifugal Mono Block Pump",
+      "model": "Industrial Process Series",
+      "category": "Centrifugal Mono Block Pumps",
+      "shortDescription": "Compact direct-coupled centrifugal monoblock pump for continuous duty.",
+      "description": "Engineered for demanding industrial applications, this robust centrifugal mono block pump delivers reliable fluid transfer with high efficiency and long service life. Backed by the engineering excellence of Chem-X Pumps & Equipment.",
+      "images": [
+        "/images/products/monoblock-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Direct-coupled centrifugal monoblock pump",
+        "Design": "Mono block design simplifies inspection and replacement",
+        "Sealing Options": "High-performance mechanical seal for leak-free operations",
+        "Insulation": "Class F insulation",
+        "Enclosure": "TEFC motor IP55"
+      },
+      "operatingRange": {
+        "Flow Rate": "Up to 120 m³/h",
+        "Head": "Up to 45 Meters",
+        "Temperature": "-10°C to +110°C",
+        "Working Pressure": "Up to 10 Bar",
+        "Speed": "2900 RPM (50 Hz), 3500 RPM (60 Hz)"
+      },
+      "features": [
+        "High Efficiency Motor Option for maximum efficiency and reduced power consumption.",
+        "Rugged Construction: Precision-cast components with corrosion resistant materials for extended service life in harsh environments.",
+        "Reliable Sealing: High-performance mechanical seal for leak-free operations.",
+        "Easy Maintenance: Compact mono block design simplifies inspection and replacement, reducing downtime and service costs.",
+        "Consistent Performance under varying operating conditions.",
+        "Low Noise and Vibration for smoother operation.",
+        "Energy Efficient design reduces operational costs.",
+        "Compliant with international quality and safety standards."
+      ],
+      "applications": [
+        "Water Supply & Distribution",
+        "Chemical Processing",
+        "HVAC & Cooling Systems",
+        "Boiler Feed & Circulation",
+        "Food & Beverage Industry",
+        "General Industrial Applications"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Precision-cast components with corrosion resistant materials"
+      ]
+    },
+    {
+      "id": "pp-monoblock-pump",
+      "name": "PP Mono Block Pump",
+      "model": "CMPP",
+      "category": "PP Mono Block Pumps",
+      "shortDescription": "Corrosion resistant polypropylene industrial process pump.",
+      "description": "Chem-X Pumps & Equipment manufactures high-performance PP Mono Block Pumps designed for corrosive chemical handling and industrial fluid transfer applications. The pump features a corrosion-resistant polypropylene casing combined with a compact mono block motor construction for efficient and reliable operation. Engineered for smooth performance and long service life, the Chem-X PP Mono Block Pump is suitable for handling acids, alkalis, chemicals, and aggressive industrial liquids across multiple process industries.",
+      "images": [
+        "/images/products/ppmono-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Direct-coupled centrifugal PP monoblock pump",
+        "Casing": "Corrosion resistant polypropylene construction",
+        "Sealing Options": "Leak-proof mechanical seal arrangement",
+        "Structure": "Lightweight and durable body structure"
+      },
+      "operatingRange": {
+        "Capacity": "Up to 50 m³/hr",
+        "Head": "Up to 45 meters",
+        "Temperature": "Up to 80°C",
+        "Speed": "Up to 2900 RPM",
+        "Connection Size": "25 mm to 80 mm",
+        "Pressure": "Up to 7 kg/cm²"
+      },
+      "features": [
+        "Corrosion resistant polypropylene construction.",
+        "Compact mono block pump design.",
+        "Leak-proof mechanical seal arrangement.",
+        "Efficient chemical transfer performance.",
+        "Lightweight and durable body structure.",
+        "Low maintenance operation.",
+        "Smooth and vibration-free running.",
+        "High resistance against acids and alkalis.",
+        "Energy efficient motor design.",
+        "Reliable continuous-duty operation.",
+        "Industrial-grade performance.",
+        "Easy installation and servicing.",
+        "Excellent chemical resistance.",
+        "Compact and space-saving design.",
+        "Long operational life.",
+        "Lightweight construction.",
+        "Low power consumption.",
+        "Cost-effective pumping solution."
+      ],
+      "applications": [
+        "Chemical Processing Plants",
+        "Acid Transfer Applications",
+        "Alkali Handling Systems",
+        "Electroplating Industry",
+        "Water Treatment Plants",
+        "Pharmaceutical Industry",
+        "Textile Industry",
+        "Fertilizer Plants",
+        "Dye & Pigment Industry",
+        "Chemical Circulation Systems",
+        "Industrial Fluid Transfer",
+        "Process Industries"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Polypropylene",
+        "PVDF"
+      ]
+    },
+    {
+      "id": "chemical-process-pump-cpp",
+      "name": "PP Chemical Process Pump",
+      "model": "CPP",
+      "category": "PP Chemical Process Pumps",
+      "shortDescription": "Horizontal corrosion resistant polypropylene chemical process pump.",
+      "description": "Chem-X Pumps & Equipment manufactures high-performance PP Chemical Process Pumps specially engineered for handling corrosive chemicals, acids, alkalis, and industrial process liquids. The pump is designed with corrosion-resistant polypropylene wetted components combined with a rugged industrial base structure for reliable long-term operation. The heavy-duty design ensures smooth fluid transfer, excellent hydraulic efficiency, and stable performance in demanding chemical processing applications.",
+      "images": [
+        "/images/products/cpp-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal centrifugal pump",
+        "Casing": "Corrosion resistant polypropylene wetted components",
+        "Structure": "Rugged industrial base housing / bearing frame",
+        "Sealing Options": "Leak-resistant mechanical seal arrangement"
+      },
+      "operatingRange": {
+        "Capacity": "Up to 120 m³/hr",
+        "Head": "Up to 70 meters",
+        "Temperature": "Up to 90°C",
+        "Pressure": "Up to 10 kg/cm²",
+        "Speed": "Up to 2900 RPM",
+        "Connection Size": "25 mm to 100 mm"
+      },
+      "features": [
+        "Corrosion resistant polypropylene construction.",
+        "Horizontal centrifugal pump design.",
+        "Heavy-duty industrial base mounting.",
+        "Chemical resistant wetted components.",
+        "Smooth and vibration-free operation.",
+        "Energy efficient hydraulic performance.",
+        "Leak-resistant mechanical seal arrangement.",
+        "Compact and rugged construction.",
+        "Low maintenance operation.",
+        "Reliable continuous-duty performance.",
+        "Industrial-grade durability.",
+        "Easy installation and servicing.",
+        "Excellent corrosion resistance.",
+        "Reliable chemical handling performance.",
+        "Long operational service life.",
+        "Low maintenance cost.",
+        "Smooth fluid transfer operation.",
+        "Compact industrial design.",
+        "High process reliability.",
+        "Efficient energy consumption.",
+        "Rugged industrial construction.",
+        "Easy maintenance accessibility."
+      ],
+      "applications": [
+        "Chemical Processing Plants",
+        "Acid Transfer Systems",
+        "Alkali Handling Applications",
+        "Electroplating Industry",
+        "Water Treatment Plants",
+        "Pharmaceutical Industry",
+        "Fertilizer Plants",
+        "Textile & Dye Industries",
+        "Chemical Circulation Systems",
+        "Industrial Fluid Transfer",
+        "Process Industries",
+        "Corrosive Liquid Handling"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Polypropylene",
+        "PVDF"
+      ]
+    },
+    {
+      "id": "filter-press-pump",
+      "name": "Filter Press Pump",
+      "model": "CFP",
+      "category": "Filter Press Pumps",
+      "shortDescription": "Side suction centrifugal pump with semi-open impeller for filter press feeding.",
+      "description": "Chem-X Pumps & Equipment has specially developed the finest quality of Filter Press Pump, famous with CFP Series in the market. Filter Press Pump is a centrifugal type with semi-open, non-clogging impeller pump with single row deep grooved heavy-duty ball bearing with oil lubrication.",
+      "images": [
+        "/images/products/filterpress-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Side suction centrifugal pump",
+        "Impeller Type": "Semi-open, non-clogging impeller",
+        "Sealing Options": "Stuffing box gland packing / mechanical seal",
+        "Bearings": "Single row deep grooved heavy-duty ball bearing with oil lubrication"
+      },
+      "operatingRange": {
+        "Capacity": "up to 200 m³/hr",
+        "Head": "up to 100 mtr",
+        "Pressure": "up to 10 kg/cm²",
+        "Size Range": "40 mm to 100 mm",
+        "Speed": "up to 2900 rpm",
+        "Temperature": "up to 300°C"
+      },
+      "features": [
+        "Easy Maintenance with Replaceable Parts.",
+        "Specially Designed for Positive Suction Head.",
+        "Long Life Due to Replaceable Wearing Parts.",
+        "Robust Design."
+      ],
+      "applications": [
+        "Filter Press Feeding",
+        "Effluent Treatment Plant",
+        "Sewage Treatment Plant",
+        "Dyes & Intermediates",
+        "Steel Rolling Mills",
+        "Ceramic",
+        "Paper & Pulp",
+        "Sugar & Food",
+        "Evaporator",
+        "Scrubber Application",
+        "Slurry Transfer"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Cast Steel",
+        "SS 304",
+        "SS 316",
+        "SS 304L",
+        "SS 316L",
+        "Alloy 20",
+        "Hastelloy"
+      ]
+    },
+    {
+      "id": "chemical-process-pump-ccp-series",
+      "name": "CCP Series Chemical Process Pump",
+      "model": "CCP Series",
+      "category": "Chemical Process Pumps",
+      "shortDescription": "Centrifugal process pump for aggressive and corrosive liquids.",
+      "description": "Chem-X Pumps & Equipment is a leading manufacturer of CCP Series known as Centrifugal Process Pump. Our chemical pumps are specially manufactured to assure that they are able to handle aggressive & corrosive liquids. Mainly chemical pumps are used to transfer liquids from one container to another container. We have a large range of chemical pumps as per the chemical properties with different functional principles. We are well known for manufacturing a variety of chemical pumps for improving the operation and efficiency of process systems.",
+      "images": [
+        "/images/products/cpp-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal centrifugal pump",
+        "Construction": "Robust Construction",
+        "Efficiency": "High Efficiency",
+        "Maintenance": "Low Maintenance"
+      },
+      "operatingRange": {
+        "Capacity": "up to 148 m³/hr",
+        "Head": "up to 60 mtr",
+        "Pressure": "up to 6 kg/cm²",
+        "Size Range": "25 mm to 65 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 135°C"
+      },
+      "features": [
+        "Develop Higher Pressure.",
+        "Robust Construction.",
+        "High Efficiency.",
+        "Low Maintenance.",
+        "Able to Run at Lower speed."
+      ],
+      "applications": [
+        "Hot & Cold Water Transferring",
+        "Cooling Tower",
+        "Heat Exchanger",
+        "DM Water",
+        "Steel Industries",
+        "Ceramic Industries",
+        "Chemical Plants",
+        "Pharmaceutical Industries",
+        "Dyes & Pigment Industries",
+        "Petroleum Industries",
+        "Purpose of Liquid Transfer",
+        "Slurry Transfer",
+        "Acid Transfer",
+        "Salt Industries"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Cast Steel",
+        "SS 304",
+        "SS 316",
+        "SS 304L",
+        "SS 316L",
+        "Alloy 20",
+        "Hastelloy B or C",
+        "CD4MCu"
+      ]
+    },
+    {
+      "id": "paper-mill-pump",
+      "name": "Pulp & Paper Mill Pump",
+      "model": "CPOP",
+      "category": "Paper Mill Pumps",
+      "shortDescription": "Open & semi-open type stock and process pump for pulp & paper mill applications.",
+      "description": "Designed with an open & semi-open type impeller for continuous process in pulp & paper industries. Features a 3-bearing design resulting in good continuous process with high productivity.",
+      "images": [
+        "/images/products/papermill-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal end suction process pump",
+        "Impeller Type": "Open & Semi Open Type",
+        "Bearings": "3 bearing design resulting in good continues process",
+        "Design": "Back-pull-out design"
+      },
+      "operatingRange": {
+        "Capacity": "up to 640 m³/hr",
+        "Head": "up to 55 mtr",
+        "Size Range": "32 mm to 200 mm",
+        "Consistency": "up to 7%",
+        "Temperature": "up to 250°C",
+        "Pressure": "up to 10 kg/cm²"
+      },
+      "features": [
+        "3 bearing design resulting in good continues process with high productivity.",
+        "Back-pull-out design.",
+        "Closed impeller insures high efficiency."
+      ],
+      "applications": [
+        "Stock Pump",
+        "Refiners Pump",
+        "Fan Pump",
+        "Centrifugal Cleaner Pump",
+        "Back Water Pump",
+        "Chest Pump",
+        "Couch Pit Pump",
+        "Turbo Feed Pump",
+        "ETP, STP & Waste Water Treatment Plant",
+        "Fertilizers, Cement & Steel Industries",
+        "For Pumping Chemicals with Solids in Suspension",
+        "Polluted Liquids Widely Used for Public & Civil Engineering"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Cast Steel",
+        "SS 304",
+        "SS 304L",
+        "SS 316",
+        "SS 316L",
+        "Bronze",
+        "Alloy 20",
+        "CD4MCu",
+        "Hastelloy B & C"
+      ]
+    },
+    {
+      "id": "vertical-polypropylene-pump-cvpp",
+      "name": "Vertical Polypropylene Sealless Glandless Pump",
+      "model": "CVPP",
+      "category": "Vertical Sump Pumps",
+      "shortDescription": "Vertical polypropylene sealless glandless chemical pump for deep acid tanks.",
+      "description": "Designed to suit extremely corrosive duties in the process & chemical industries. It is the No.1 Choice for Effluent Treatment Plants since there are no mechanical seals or glands, and it can run dry due to the absence of shaft seals.",
+      "images": [
+        "/images/products/vertical-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Vertical sealless glandless centrifugal pump",
+        "Casing": "PP, PCP, UHMWPE wetted components",
+        "Sealing": "No mechanical seals / glands (can run dry)"
+      },
+      "operatingRange": {
+        "Capacity": "up to 50 m³/hr",
+        "Head": "up to 45 mtr",
+        "Pressure": "up to 4.5 kg/cm²",
+        "Size Range": "25 mm to 50 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 70°C"
+      },
+      "features": [
+        "Designed To Suit Extremely Corrosive Duties in The Process & Chemical Industries.",
+        "No.1 Choice for Effluent Treatment Plants Since There are No Mechanical Seals / Glands.",
+        "Can Run Dry Due to Absence of Shaft Seals.",
+        "Few Parts Facilitates Maintenance.",
+        "Shaft and Sleeve of Different Material Depending on the Compatibility of the Liquid to be Handled."
+      ],
+      "applications": [
+        "Electro Plating, Pickling & Steel Rolling Mills",
+        "Water Treatment Plant, Effluent Treatment Plant",
+        "Excellent for Transfer & Loading-unloading like HCL, Sulphuric Acid, Alkali, Caustic Liquid",
+        "Scrubbing of Corrosive Gases like NH3, CO2, SO3, SO2, I2, F2, Br2, Cl2, etc.",
+        "For Handling Liquids in Various Industries like Textile, Paper, Cellulose, Sugar, Steel, Food",
+        "Ideal for Circulation of Chemical in Metal Finishing Industry",
+        "Natural Choice for Pickling Line & Scrubber in Steel Plants",
+        "Filter Press for Dyes & Chemicals, Descaling, Oil & Other Fuels"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Polypropylene",
+        "PCP",
+        "UHMWPE"
+      ]
+    },
+    {
+      "id": "polypropylene-pumps-cpp-cppl",
+      "name": "Polypropylene Pumps",
+      "model": "CPP & CPPL Series",
+      "category": "PP Chemical Process Pumps",
+      "shortDescription": "Corrosion resistant polypropylene pumps for highly corrosive chemicals.",
+      "description": "Chem-X Pumps & Equipment is a leading manufacturer of CPP and CPPL Series known as Polypropylene Pumps. Our polypropylene pumps are designed especially for high corrosive chemicals where metal are not recommended or its cost is high.",
+      "images": [
+        "/images/products/cpp-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal centrifugal PP pump",
+        "Sleeve Option": "High Alumina Ceramic Sleeve is Used to Protect Shaft from Corrosion & Abrasion",
+        "Sealing Options": "Mechanical Seal Prohibits Leakage",
+        "Bearing Housing": "Cast-iron Heavy-duty Oil Lubricated Bearing Housing for Maximum Strength"
+      },
+      "operatingRange": {
+        "Capacity": "CPP: up to 50 m³/hr | CPPL: up to 300 m³/hr",
+        "Head": "CPP: up to 45 mtr | CPPL: up to 65 mtr",
+        "Pressure": "CPP: up to 4.5 kg/cm² | CPPL: up to 6.5 kg/cm²",
+        "Size Range": "CPP: 25 mm to 50 mm | CPPL: 50 mm to 150 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 75°C"
+      },
+      "features": [
+        "High Alumina Ceramic Sleeve is Used to Protect Shaft from any type of Corrosion & Abrasion.",
+        "Mechanical Seal Prohibits the Leakage from the Pumps.",
+        "Best Cast-iron Heavy-duty Oil Lubricated Bearing Housing Helps for Achieving Maximum Strength of Pumps."
+      ],
+      "applications": [
+        "Excellent for transfer and Loading - Unloading like HCL, Sulphuric Acid/Alkali and Caustic Liquid.",
+        "Water Treatment Plant, Effluent Treatment Plant, Electro Plating and Pickling and Steel Rolling Mills.",
+        "Scrubbing of Corrosive Gases Like NH3, CO2, SO3, SO2, I2, F2, Br2, Cl2, etc.",
+        "For Handling Liquids in Various Industries Like Textile, Paper, Cellulose, Sugar, Steel, Food, Having Temperature Range, Materials etc.",
+        "Ideal for Circulation of Chemical in Metal Finishing Industry.",
+        "Natural Choice for Pickling Line & Scrubber in Steel Plants.",
+        "High Capacity Transfer Pump, Filter Press for Dyes & Chemicals, Descaling, Oil & other Fuels."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Polypropylene",
+        "PVDF"
+      ]
+    },
+    {
+      "id": "mud-pump",
+      "name": "Self Priming Non Clog Mud Pump",
+      "model": "CMSP",
+      "category": "Heavy Duty Mud Pumps",
+      "shortDescription": "Self-priming non-clog mud pump with semi-open impeller.",
+      "description": "Self Priming Non Clog Mud Pump designed for high efficiency. Heavy duty built-in volute having self-priming features & integrally cast with base from closed grained C.I. castings. Perfect sealing is assured by high quality mechanical seal which cannot run dry because of internal oil reservoirs.",
+      "images": [
+        "/images/products/mudpump-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Self Priming Centrifugal Mud Pump",
+        "Impeller Type": "Semi Open Impeller",
+        "Sealing Options": "Mechanical Seal with Internal Oil Reservoirs (cannot run dry)",
+        "Bearings": "Greased for Life"
+      },
+      "operatingRange": {
+        "Capacity": "up to 75 m³/hr",
+        "Head": "up to 58 mtr",
+        "Suction Head": "up to 7 mtr",
+        "Pressure": "up to 5.8 kg/cm²",
+        "Discharge Size": "32 mm to 80 mm",
+        "Solid Size": "up to 25 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 110°C"
+      },
+      "features": [
+        "Non-clogging Designed for High Efficiency. Semi Open Impeller.",
+        "Heavy Duty Built in Volute Having Self Priming Features & Integrally Cast with Base from Closed Grained C.I. Castings.",
+        "Quick Automatic Self Priming Action.",
+        "No Foot Valve Required. No Priming of Suction Pipe Line.",
+        "Perfect Sealing Assured by High Quality Mechanical Seal which cannot Run Dry Because of Internal Oil Reservoirs.",
+        "Graded Casting & SS Shaft, Increase Service Life.",
+        "Bearings Greased for Life, Save External Lubrication.",
+        "Minimum Need for Inspection & Maintenance.",
+        "Drive Options of Electric Motor, Coupled or Belt-drive."
+      ],
+      "applications": [
+        "Effluent & Sewage Treatment Plant",
+        "Pits",
+        "Petroleum Product Handling",
+        "Thermal Plant",
+        "Agriculture & De-watering Purpose",
+        "Marine",
+        "Swimming Pools",
+        "Hotel",
+        "Loading and Transfer of Oil",
+        "Spirits",
+        "Re-rolling Mills",
+        "Filter Press",
+        "Rain & Storm Water",
+        "Trenches",
+        "Steel Plant",
+        "Construction Sites",
+        "Slurry Material Handling",
+        "Chemicals"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Cast Steel",
+        "SS 304",
+        "SS 304L",
+        "SS 316",
+        "SS 316L",
+        "Bronze",
+        "Alloy 20",
+        "CD4MCu",
+        "Hastelloy B&C"
+      ]
+    },
+    {
+      "id": "mud-pump-cmp",
+      "name": "Single Stage Horizontal Centrifugal Self Priming Mud Pump",
+      "model": "CMP",
+      "category": "Heavy Duty Mud Pumps",
+      "shortDescription": "Single stage horizontal self-priming centrifugal mud pump.",
+      "description": "Single Stage Horizontal Centrifugal Self Priming Mud Pump with non-clogging semi-open impeller hand finished for perfect smooth flow. Easy inspection and maintenance without disturbing pipe connections.",
+      "images": [
+        "/images/products/mudpump-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Single Stage Horizontal Centrifugal Self Priming Mud Pump",
+        "Impeller Type": "Semi open type, hand finished",
+        "Sealing Options": "Deep gland box used with graphite packing, lubricated by lantern ring",
+        "Drive Options": "Suitable for motor/engine, portable when fitted on trolley/trailer"
+      },
+      "operatingRange": {
+        "Capacity": "up to 650 m³/hr",
+        "Head": "up to 50 mtr",
+        "Pressure": "up to 5 kg/cm²",
+        "Size Range": "40 mm to 300 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 80°C"
+      },
+      "features": [
+        "Non-clogging designed for high efficiency. Semi open type are hand finished for perfect smooth flow.",
+        "Heavy duty built in volute having self priming features & integrally cast with base from closed grained C.I. castings.",
+        "Companion flanges are supplied along with pumps.",
+        "Long life due to replaceable wearing parts.",
+        "Quick automatic self priming action.",
+        "Repairs possible without disturbing the pipe connection.",
+        "Suitable for motor/engine, portable when fitted on trolley/trailer.",
+        "No foot valve required. No priming of suction pipe line.",
+        "Deep gland box used with graphite packing are lubricated by lantern ring with grease."
+      ],
+      "applications": [
+        "Pier, Excavations, Pits, Pot-holes etc., Grampanchayat, Municipalities, Public Health Departments, Large Housing Colonies, industries like Chemical, Pharmaceuticals, Food, Paper, Pulp, Sugar, Salt, Steel & Other for Liquid Cargo from Freighter, Barges.",
+        "Mobile machinery, Cooling water for Marine Engines, Shovels.",
+        "Civil construction de-watering foundations, Trenches & Pits, Filter Press Feeding, ETP, STP, Waste Water treatment plant.",
+        "De-watering, Mud, Marine, Effluent, Hotel, Loading & Transfer of Oils, Spirits, Swimming Pools, Gas, Oils, Engine cooling.",
+        "Vessels, Industrial-pumping Petroleum products.",
+        "Public utilities-sewage pumping."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "SS 304L",
+        "Duplex Stainless Steel",
+        "Super Duplex Stainless Steel",
+        "Cast Bronze",
+        "Cast Steel",
+        "Cast Iron",
+        "Hastelloy B & C",
+        "Alloy 20"
+      ]
+    },
+    {
+      "id": "slurry-pump",
+      "name": "Heavy Horizontal Slurry Transfer Pump",
+      "model": "CSTP",
+      "category": "Industrial Slurry Pumps",
+      "shortDescription": "Severe duty slurry transfer pump with replaceable wear parts for abrasive mining.",
+      "description": "Built to withstand the most punishing abrasive mining operations and tailings transport. With a two-part casing, it is possible to replace the worn front cover without changing the complete casing, making field maintenance quick and easy.",
+      "images": [
+        "/images/products/slurry-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Heavy Horizontal Slurry Pump",
+        "Casing Type": "Two parts casing (worn front cover replaceable without changing complete casing)"
+      },
+      "operatingRange": {
+        "Capacity": "up to 2275 m³/hr",
+        "Head": "up to 68 mtr (225 ft)",
+        "Pressure": "up to 10.3 bar (150 psi / 1,035 kPa)",
+        "Size Range": "75 mm to 300 mm"
+      },
+      "features": [
+        "Makes maintenance quick and easy.",
+        "Replacement of wearing parts can be done in the field.",
+        "With the two parts casing, it is possible to replace the worn front cover without changing the complete casing."
+      ],
+      "applications": [
+        "Slurry pumps are used widely throughout the beneficiation section of the mining industry where most plants use wet separation systems. These systems usually move large volumes of slurry through the process.",
+        "Slurry pumps are also widely used for the disposal of ash from fossil fuel power plants.",
+        "Other areas where slurry pumps are used include the manufacture of fertilizers, land reclamation, mining by dredges, and the long distance transportation of coal and minerals."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Carbon Steel / Hi-Chrom",
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "SS 410",
+        "Grey Cast Iron"
+      ]
+    },
+    {
+      "id": "vertical-sump-pump",
+      "name": "Vertical Long Shaft Sump Pump",
+      "model": "CVSP",
+      "category": "Vertical Sump Pumps",
+      "shortDescription": "Vertical sump pump with line shaft bearings and column length up to 4 meters.",
+      "description": "Chem-X Pumps & Equipment is a leading manufacturer of CVSP Series known as Vertical Sump Pump or Long Shaft Pump. Compact design using less floor space, robust design, and highly durable shaft, sleeve & bearings.",
+      "images": [
+        "/images/products/vertical-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Vertical Sump Pump / Long Shaft Pump",
+        "Design": "Compact standardized design using less floor space",
+        "Impeller Type": "Close & Semi Open Impeller"
+      },
+      "operatingRange": {
+        "Capacity": "up to 350 m³/hr",
+        "Head": "up to 60 mtr",
+        "Pressure": "up to 6 kg/cm²",
+        "Size Range": "25 mm to 150 mm",
+        "Speed": "up to 2900 rpm",
+        "Length": "up to 4 mtr"
+      },
+      "features": [
+        "Standardized Design.",
+        "Compact Design Using Less Floor Space.",
+        "Available in Close & Semi Open Impeller.",
+        "Easy Maintenance.",
+        "Robust Design.",
+        "Highly Durable Shaft, Sleeve & Bearings."
+      ],
+      "applications": [
+        "Water, Cooling Water, Effluent, Cleaning product",
+        "Zinc & Copper Plant",
+        "Pharmaceutical Industries",
+        "ETP, STP & Waste Water Treatment Plant",
+        "EVA-Operator, Scrubber Application",
+        "Slurry transfer",
+        "Dyes & Intermediates, Steel Rolling Mills",
+        "Pulp & Paper, Sugar, Salt, Starch Industries",
+        "Solvent Transfer",
+        "Light Slurries, Organic Chemical Processing",
+        "Ceramic, General Industrial Services, etc."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "A216 Carbon Steel (WCB)",
+        "Hi-Chrome",
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "Graded Grey Cast Iron"
+      ]
+    },
+    {
+      "id": "gear-pump",
+      "name": "Rotary Gear Pump",
+      "model": "CGP",
+      "category": "Gear Pumps",
+      "shortDescription": "Single & double helical multi-purpose rotary gear pump for viscous fluids.",
+      "description": "Single & Double Helical (Multi Purpose) Rotary Gear Pump designed to deliver a variety of light & viscous liquids. Features built-in pressure relief valve, bush bearing with a heavy shaft, and double helical gears to reduce axial thrust.",
+      "images": [
+        "/images/products/gear-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Rotary Gear Pump (Single & Double Helical)",
+        "Relief Valve": "An Inbuilt Pressure Relief Valve",
+        "Bearings": "Bush Bearing with a Heavy Shaft",
+        "Gears": "Double Helical Gears to Reduce Axial Thrust"
+      },
+      "operatingRange": {
+        "Capacity": "up to 195 m³/hr",
+        "Head": "up to 100 mtr",
+        "Pressure": "up to 10 kg/cm²",
+        "Size Range": "12 mm to 200 mm",
+        "Speed": "up to 1500 rpm",
+        "Temperature": "up to 200°C"
+      },
+      "features": [
+        "Self Priming Pumps with Five Mtr. Suction Lifts.",
+        "Compact in Size, Low Noise, High Efficiency.",
+        "Easy Maintenance, Longer Life, Economical.",
+        "An Inbuilt Pressure Relief Valve.",
+        "Bush Bearing with a Heavy Shaft.",
+        "Double Helical Gears to Reduce Axial Thrust.",
+        "Continuous Duty.",
+        "Handle Multiple Liquids.",
+        "Unique Design."
+      ],
+      "applications": [
+        "To Deliver a Variety of Light & Viscous Liquids Such as Oil, Fats, Coal, Tar, Paint and Molasses.",
+        "Highly Viscous or Semi Viscous Liquids Like Ammonia, Bleaches, Coal, Tar, Dyes, Fruits Juice, Gasoline, Glycerin, Glue & Grease.",
+        "Paints, Soap Solution, etc."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "SS 304L",
+        "Duplex Stainless Steel",
+        "Super Duplex Stainless Steel",
+        "Cast Bronze",
+        "Cast Steel",
+        "Cast Iron",
+        "Hastelloy B & C",
+        "Alloy 20"
+      ]
+    },
+    {
+      "id": "progressive-cavity-pump-ccsp",
+      "name": "Progressive Cavity Pump",
+      "model": "CCSP",
+      "category": "Progressive Cavity Pumps",
+      "shortDescription": "Positive displacement progressive cavity pump for uniform, metered flow.",
+      "description": "Inherently self-priming progressive cavity pump designed to handle solids in suspension, medium containing high percentages of solids, and shear-sensitive media with minimum degradation. Reversible rotation capabilities allow equal efficiency in either direction.",
+      "images": [
+        "/images/products/gear-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Progressive Cavity Pump",
+        "Operating Principle": "Single rotating element, progressing cavities which deliver a uniform, metered & non-pulsating flow",
+        "Priming": "Inherently self-priming (no foot valve required)",
+        "Stator Design": "Rotors turn inside a resilient stator"
+      },
+      "operatingRange": {
+        "Capacity": "up to 145 m³/hr",
+        "Head": "up to 250 mtr",
+        "Pressure": "up to 25 kg/cm²",
+        "Size Range": "25 mm to 150 mm",
+        "Speed": "up to 800 rpm",
+        "Temperature": "up to 120°C"
+      },
+      "features": [
+        "Single rotating element, progressing cavities are generated which deliver a uniform, metered & non-pulsating flow.",
+        "Head developed is independent of the rotational speed, whereas the capacity is proportionate to the speed.",
+        "Inherently self-priming, the pumps can work on snore & do not require a foot valve.",
+        "Can Handle solids in suspension or medium containing a high percentage of solids.",
+        "Suction lift capabilities of up to 9.5 mtr. and effective even in high vacuum conditions.",
+        "Minimum degradation of shear-sensitive media & can also Handle highly viscous materials having pseudo-plastic characteristics.",
+        "Due to the reversible rotation capabilities, progressive cavity pumps can perform with equal efficiency in either direction.",
+        "Rotors turn inside a resilient stator & thus generate little noise."
+      ],
+      "applications": [
+        "Sewage Effluent & Water Treatment Plant",
+        "Sugar, Starch, Cement, Pulp & Paper industries",
+        "Chemical Processing Plants",
+        "Paint, Varnish, Petrochemicals, Vegetable Oils, Mining, Steel, Construction, Manmade fibers, Fisheries, Oil exploration",
+        "Pharmaceuticals, Cattle feed, Brewery & Distillery, Power",
+        "Dairies, Winery, Food & Beverages, Abattoir & Meat processing",
+        "Plantations, Fruit processing, Dye stuff, Textiles"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "SS 316",
+        "SS 316L",
+        "SS 304",
+        "SS 304L",
+        "Duplex Stainless Steel",
+        "Super Duplex Stainless Steel",
+        "Cast Bronze",
+        "Cast Steel",
+        "Cast Iron",
+        "Hastelloy B & C",
+        "Alloy 20"
+      ]
+    },
+    {
+      "id": "air-operated-diaphragm-pump",
+      "name": "Air Operated Diaphragm Pump",
+      "model": "CAOP",
+      "category": "Air Operated Diaphragm Pumps",
+      "shortDescription": "Pneumatic double diaphragm pump for abrasive, viscous and flammable media.",
+      "description": "Pneumatic air-operated double diaphragm pump designed to handle a variety of solvents, acids, caustics, and highly viscous or abrasive media. Intrinsically safe and capable of self-priming, running dry, and handling hazardous liquids.",
+      "images": [
+        "/images/products/aodd-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Air Operated Double Diaphragm Pump",
+        "Exhaust size": "1\" BSP",
+        "Power Source": "Compressed Air",
+        "Seals": "Seals-free construction prevents leaks"
+      },
+      "operatingRange": {
+        "Flow Rate": "Up to 55 m³/hr",
+        "Head": "up to 70 mtr",
+        "Pressure": "up to 7 kg/cm²",
+        "Temperature": "Max. 120°C",
+        "Solid Size": "Max. 12mm",
+        "Discharge Size": "12 mm to 80 mm",
+        "Air inlet Size": "1/4\" to 3/4\"",
+        "Suction Lift": "Rubber (Dry: 4.5 m, Wet: 7.5 m) | Teflon (Dry: 3 m, Wet: 6 m)"
+      },
+      "features": [
+        "Self-priming and dry-running capabilities.",
+        "Seals-free construction prevents hazardous leaks.",
+        "Intrinsically safe design - no electrical hookups required (explosion proof).",
+        "Air exhaust size 1\" BSP."
+      ],
+      "applications": [
+        "Solvents",
+        "Acids",
+        "Caustics",
+        "High Viscous Liquids",
+        "Abrasive Media",
+        "Hazardous & Flammable Liquids",
+        "Barrel Loading Unloading",
+        "Filter Press & Transfer",
+        "Slurry Transfer"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "SS 316",
+        "SS 304",
+        "PP",
+        "PVDF",
+        "Aluminium"
+      ]
+    },
+    {
+      "id": "centrifugal-monoblock-pump-ccmp",
+      "name": "Centrifugal Monoblock Pump",
+      "model": "CCMP",
+      "category": "Centrifugal Mono Block Pumps",
+      "shortDescription": "Heavy-duty centrifugal monoblock pump with wide operating voltage range.",
+      "description": "Chem-X Pumps & Equipment is a leading manufacturer of CCMP Series, known as Centrifugal Monoblock Pump. Combining pump and motor to form a single unit, it features non-overloading power characteristics and saves mounting space by eliminating base plates, couplings, and coupling guards.",
+      "images": [
+        "/images/products/monoblock-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal Centrifugal Monoblock Pump",
+        "Impeller Type": "Single stage closed Impeller in Volute Casing",
+        "Suction & Delivery": "Axial end suction and vertical centerline delivery",
+        "Motor Protection": "Non-overloading power characteristics & wide operating voltage range"
+      },
+      "operatingRange": {
+        "Capacity": "up to 4000 m³/hr",
+        "Head": "up to 88 mtr",
+        "Pressure": "up to 6 kg/cm²",
+        "Size Range": "25 mm to 150 mm",
+        "Speed": "up to 2900 rpm",
+        "Temperature": "up to 70°C"
+      },
+      "features": [
+        "Horizontal, Centrifugal, Monoblock (pump & motor have been combined to form a single unit) type pump fitted with single stage closed Impeller in Volute Casing having axial end suction and vertical centerline delivery.",
+        "No fear of motor burning due to wide operating voltage range & Non-overloading power characteristics at any operating point.",
+        "Advantage of mounting space saving due to elimination of base plate, coupling and coupling guard."
+      ],
+      "applications": [
+        "Industrial usage such as Cooling, Heating, Circulating, Boosting, Air Conditioning, Refrigeration & Cold Storage systems.",
+        "Agriculture usage such as General Irrigation, Sprinkler Irrigation & De-watering systems.",
+        "Civil usage such as water supply schemes for Buildings, Hotels & Commercial Complexes.",
+        "To handle clean as well as moderately aggressive liquids."
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Grey Cast Iron",
+        "Bronze",
+        "Stainless Steel 316/304"
+      ]
+    },
+    {
+      "id": "side-suction-pump-cfpp",
+      "name": "Horizontal Single Stage Side Suction Pump",
+      "model": "CFPP Series",
+      "category": "Filter Press Pumps",
+      "shortDescription": "Horizontal single stage side suction pump for filter press and effluent plants.",
+      "description": "Chem-X Pumps & Equipment manufactures high-performance CFPP Series Horizontal Single Stage Side Suction Pumps engineered for industrial fluid transfer and process applications. These pumps are designed for reliable continuous-duty operation with robust hydraulic efficiency, durable construction, and smooth performance. The compact yet heavy-duty design ensures stable operation in demanding industrial environments.",
+      "images": [
+        "/images/products/filterpress-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontal single-stage side suction pump",
+        "Design": "Heavy-duty industrial design",
+        "Efficiency": "Efficient hydraulic performance",
+        "Bearings": "Rugged bearing arrangement"
+      },
+      "operatingRange": {
+        "Capacity": "Up to 200 m³/hr",
+        "Head": "Up to 100 meters",
+        "Discharge Size": "40 mm to 100 mm",
+        "Temperature": "Up to 130°C",
+        "Speed": "Up to 3500 RPM",
+        "Pressure": "Up to 10 kg/cm²"
+      },
+      "features": [
+        "Horizontal single-stage construction.",
+        "Easy maintenance structure.",
+        "Heavy-duty industrial design.",
+        "Rugged bearing arrangement.",
+        "Efficient hydraulic performance.",
+        "Industrial-grade reliability.",
+        "Smooth and vibration-free operation.",
+        "Energy efficient performance.",
+        "Corrosion resistant material options.",
+        "Long operational service life."
+      ],
+      "applications": [
+        "Filter Press Feeding",
+        "ETP & STP Plants",
+        "Effluent Treatment Plants",
+        "Paper & Pulp Industries",
+        "Dyes & Intermediate Industries",
+        "Sugar & Food Industries",
+        "Steel Rolling Mills",
+        "Evaporator Systems"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Carbon Steel",
+        "SS 304",
+        "SS 316",
+        "SS 304L",
+        "SS 316L",
+        "Bronze",
+        "Alloy-20",
+        "Hastelloy B & C",
+        "CD4MCU"
+      ]
+    },
+    {
+      "id": "mud-sewage-pump-cmp-series",
+      "name": "Single Stage Horizontal Non-Clog Self Priming Mud / Sewage Pump",
+      "model": "CMP Series",
+      "category": "Heavy Duty Mud Pumps",
+      "shortDescription": "Horizontal self-priming non-clog mud and sewage pump.",
+      "description": "Chem-X Pumps & Equipment manufactures high-performance CMP Series Self Priming Mud and Sewage Pumps designed for handling wastewater, sludge, mud, slurry, sewage, and contaminated industrial fluids. Engineered with non-clog hydraulic construction for reliable solids handling and continuous-duty industrial performance without the need for external priming systems.",
+      "images": [
+        "/images/products/mudpump-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Single Stage Horizontal Non-Clog Self Priming Mud / Sewage Pump",
+        "Design": "Non-clog hydraulic construction",
+        "Priming": "Self priming pump construction (no external priming systems required)",
+        "Operation": "Continuous-duty industrial performance"
+      },
+      "operatingRange": {
+        "Capacity": "Up to 640 m³/hr",
+        "Head": "Up to 56 meters",
+        "Suction Head": "Up to 5 meters",
+        "Discharge Size": "40 mm to 200 mm",
+        "Solid Size Handling": "Up to 50 mm",
+        "Temperature": "Up to 110°C",
+        "Speed": "Up to 3600 RPM",
+        "Pressure": "Up to 5.5 kg/cm²"
+      },
+      "features": [
+        "Self priming pump construction.",
+        "Fast self priming operation.",
+        "Efficient solids handling capability.",
+        "Reduced maintenance downtime.",
+        "Heavy-duty industrial construction.",
+        "Handles mud and solids efficiently.",
+        "Smooth continuous-duty performance.",
+        "Long operational service life.",
+        "Energy efficient fluid transfer.",
+        "Easy maintenance structure.",
+        "Corrosion resistant material options.",
+        "Reliable sewage and slurry transfer.",
+        "Industrial-grade operational reliability.",
+        "Easy installation and servicing."
+      ],
+      "applications": [
+        "Dewatering Sumps",
+        "Mud Transfer Applications",
+        "Marine & Effluent Systems",
+        "Wastewater Treatment Plants",
+        "ETP & STP Plants",
+        "Public Utility Sewage Pumping",
+        "Industrial Wastewater Handling",
+        "Petroleum Product Transfer",
+        "Chemical Industries",
+        "Construction Site Dewatering",
+        "Excavation Pit Drainage",
+        "Municipal Sewage Systems",
+        "Cooling Water Circulation",
+        "Food & Pharmaceutical Industries",
+        "Cement, Paper & Sugar Industries"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Carbon Steel",
+        "SS 304",
+        "SS 316",
+        "SS 304L",
+        "SS 316L",
+        "Bronze",
+        "Alloy-20",
+        "Hastelloy B & C",
+        "CD4MCU"
+      ]
+    },
+    {
+      "id": "coupled-process-pump-ccp-series",
+      "name": "End Suction Horizontal Centrifugal Coupled Pump with Semi Open Impeller",
+      "model": "CCP Series (Coupled)",
+      "category": "Centrifugal Process Pumps",
+      "shortDescription": "End suction coupled centrifugal pump with semi-open impeller.",
+      "description": "Chem-X Pumps & Equipment manufactures high-performance CCP Series coupled pumps, engineered for organic and inorganic chemicals, volatile liquids, and slurry applications in harsh refinery conditions.",
+      "images": [
+        "/images/products/cpp-1.jpg"
+      ],
+      "specifications": {
+        "Type": "End Suction Horizontal Centrifugal Coupled Pump",
+        "Impeller Type": "Semi Open Impeller",
+        "Design": "Heavy-duty industrial design",
+        "Maintenance": "Easy maintenance and long service life"
+      },
+      "operatingRange": {
+        "Head": "Up to 48 Mtr",
+        "Capacity": "Up to 148 m³/hr",
+        "Discharge Size": "25 mm to 50 mm",
+        "Temperature": "Up to 250°C",
+        "Speed": "Up to 3500 rpm",
+        "Pressure": "Up to 4.8 kg/cm²"
+      },
+      "features": [
+        "Semi-open impeller design.",
+        "Heavy-duty industrial design.",
+        "High efficiency.",
+        "High head capabilities.",
+        "Suitable for chemical handling.",
+        "Easy maintenance.",
+        "Long service life."
+      ],
+      "applications": [
+        "Organic & inorganic chemicals",
+        "Volatile liquids",
+        "Corrosive chemicals",
+        "Textile industries",
+        "Kerosene and diesel transfer",
+        "ETP&STP plants",
+        "Waste water treatment",
+        "Filter press systems",
+        "Slurry applications",
+        "Cement industries",
+        "Steel industries",
+        "Paper & Pulp industries"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Carbon Steel",
+        "SS-304",
+        "SS-304L",
+        "SS-316",
+        "SS-316L",
+        "Bronze",
+        "Alloy-20",
+        "CD4MCU",
+        "Hastelloy B & C"
+      ]
+    },
+    {
+      "id": "split-casing-pump-cscp-series",
+      "name": "Horizontally Axially Split Casing Pump",
+      "model": "CSCP Series",
+      "category": "Centrifugal Process Pumps",
+      "shortDescription": "Horizontally axially split casing pump for high flow industrial water transfer.",
+      "description": "Horizontally axially split casing pumps engineered for high flow and reliable continuous operation across wide industrial, municipal, and commercial water supply utilities.",
+      "images": [
+        "/images/products/slurry-1.jpg"
+      ],
+      "specifications": {
+        "Type": "Horizontally Axially Split Casing Pump",
+        "Design": "Axially split casing for easy inspection and maintenance",
+        "Operation": "Reliable continuous operation & rugged industrial performance",
+        "Efficiency": "Energy-efficient hydraulic design"
+      },
+      "operatingRange": {
+        "Capacity": "Up to 5000 m³/hr",
+        "Head": "Up to 140 Mtr",
+        "Discharge Size": "50 mm to 500 mm",
+        "Temperature": "Up to 100°C",
+        "Pressure": "Up to 14 kg/cm²",
+        "Speed": "Up to 3500 rpm"
+      },
+      "features": [
+        "Horizontally split casing design.",
+        "Easy inspection and maintenance.",
+        "High flow handling capability.",
+        "Reliable continuous operation.",
+        "Rugged industrial performance.",
+        "Energy-efficient hydraulic design."
+      ],
+      "applications": [
+        "HVAC Applications",
+        "Fire Fighting",
+        "High Pressure Boosting",
+        "Water Supply",
+        "Industrial Utility Water",
+        "Desalination Plants",
+        "Air Conditioning & Refrigeration Systems"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Carbon Steel",
+        "SS-304",
+        "SS-304L",
+        "SS-316",
+        "SS-316L",
+        "Bronze",
+        "Alloy-20",
+        "CD4MCU",
+        "Hastelloy B & C"
+      ]
+    },
+    {
+      "id": "pump-spares-and-components",
+      "name": "Pump Spares",
+      "model": "Genuine Pump Spares",
+      "category": "Pump Spares",
+      "shortDescription": "OEM pump impellers, shafts, sleeves, and mechanical seals.",
+      "description": "Sustain the operating efficiency of your Chem-X pumps with original manufacturer components. Machined to exact engineering tolerances matching the original pump blueprints.",
+      "images": [
+        "/images/products/spares-1.jpg"
+      ],
+      "specifications": {
+        "Type": "OEM Pump Spares & Accessories",
+        "Quality Standard": "ISO 9001:2015 certified production",
+        "Dimensional Tolerance": "Within +/- 0.05 mm",
+        "Impeller Balance": "ISO 1940 G2.5 precision grade"
+      },
+      "operatingRange": {
+        "Quality Standard": "ISO 9001:2015 certified production",
+        "Dimensional Tolerance": "Within +/- 0.05 mm",
+        "Impeller Balance": "ISO 1940 G2.5 precision grade"
+      },
+      "features": [
+        "OEM Pump Impellers, Shafts, Sleeves, and Mechanical Seals.",
+        "Precision dynamically balanced impellers to eliminate bearing wear.",
+        "Shafts hardened and ground to fine micro-finishes at seal lands.",
+        "Cartridge mechanical seals pre-aligned for plug-and-play fitment.",
+        "Genuine Teflon and Viton elastomer gaskets for leak-free seal joints."
+      ],
+      "applications": [
+        "Chem-X Pump Maintenance",
+        "Emergency Plant Maintenance Spares",
+        "Performance Upgrades"
+      ],
+      "brochurePdf": "",
+      "materials": [
+        "Cast Iron",
+        "Carbon Steel",
+        "SS 304",
+        "SS 304L",
+        "SS 316",
+        "SS 316L",
+        "Bronze",
+        "Alloy 20",
+        "CD4MCu",
+        "Hastelloy B & C"
+      ]
+    }
+  ]
+}
