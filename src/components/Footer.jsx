@@ -82,37 +82,27 @@ export default function Footer() {
           {/* Product Categories (Highlights) */}
           <div>
             <h4 className="text-white font-bold text-base border-l-2 border-brand-orange pl-3 mb-6 uppercase tracking-wider">
-              Key Categories
+              Featured Products
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/products?category=Centrifugal Process Pumps" className="hover:text-white transition-colors">
-                  Centrifugal Process Pumps
+                <Link to="/product/centrifugal-process-pump" className="hover:text-white transition-colors">
+                  Centrifugal Process Pump (CCPP)
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=PP Mono Block Pumps" className="hover:text-white transition-colors">
-                  PP Mono Block Pumps
+                <Link to="/product/air-cooled-hot-oil-pump" className="hover:text-white transition-colors">
+                  Air Cooled Hot Oil Pump
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=Chemical Process Pumps" className="hover:text-white transition-colors">
-                  Chemical Process Pumps
+                <Link to="/product/centrifugal-mono-block-pump" className="hover:text-white transition-colors">
+                  Centrifugal Mono Block Pump (CMBP)
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=Monoblock Pumps" className="hover:text-white transition-colors">
-                  Monoblock Pumps
-                </Link>
-              </li>
-              <li>
-                <Link to="/products?category=Filter Press Pumps" className="hover:text-white transition-colors">
-                  Filter Press Pumps
-                </Link>
-              </li>
-              <li>
-                <Link to="/products?category=Pump Spares" className="hover:text-white transition-colors">
-                  Industrial Pump Spares
+                <Link to="/product/pp-mono-block-pump" className="hover:text-white transition-colors">
+                  PP Mono Block Pump (CMPP)
                 </Link>
               </li>
             </ul>

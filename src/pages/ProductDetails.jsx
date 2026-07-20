@@ -169,6 +169,23 @@ export default function ProductDetails() {
               </ul>
             </div>
 
+            {/* Advantages */}
+            {product.advantages && product.advantages.length > 0 && (
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-brand-navy border-b-2 border-slate-200 pb-2 uppercase tracking-wide">
+                  Key Advantages
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-700">
+                  {product.advantages.map((adv, idx) => (
+                    <div key={idx} className="flex items-center gap-2 font-medium">
+                      <FaCheckCircle className="text-brand-orange shrink-0" size={14} />
+                      <span>{adv}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* MOC (Material of Construction) */}
             {product.materials && product.materials.length > 0 && (
               <div className="space-y-4">
@@ -202,6 +219,25 @@ export default function ProductDetails() {
                 ))}
               </div>
             </div>
+
+            {/* Target Industries */}
+            {product.targetIndustries && product.targetIndustries.length > 0 && (
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-brand-navy border-b-2 border-slate-200 pb-2 uppercase tracking-wide">
+                  Target Industries
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {product.targetIndustries.map((ind, idx) => (
+                    <span 
+                      key={idx} 
+                      className="bg-brand-navy text-white font-bold text-[10px] px-3 py-1 uppercase tracking-wider rounded-xs"
+                    >
+                      {ind}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar Form */}

@@ -371,23 +371,25 @@ export default function Home() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-2">
                     <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
                       <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Flow Rate</span>
-                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange.Capacity || "Custom"}</span>
+                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange?.Capacity || product.operatingRange?.['Flow Rate'] || "Custom"}</span>
                     </div>
                     <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
                       <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Max Head</span>
-                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange.Head || "Custom"}</span>
+                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange?.Head || "Custom"}</span>
                     </div>
                     <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
                       <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Materials</span>
                       <span className="text-xs font-bold text-brand-navy line-clamp-1">
-                        {product.materials.slice(0, 3).join(', ')}...
+                        {product.materials && product.materials.length > 0
+                          ? product.materials.slice(0, 3).join(', ')
+                          : (product.operatingRange?.MOC || "Standard Industrial MOC")}
                       </span>
                     </div>
                   </div>
 
                   <div className="pt-2 flex items-center justify-between">
                     <div className="flex flex-wrap gap-2">
-                      {product.applications.slice(0, 2).map((app, i) => (
+                      {(product.applications || []).slice(0, 2).map((app, i) => (
                         <span key={i} className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-sm">
                           {app}
                         </span>
