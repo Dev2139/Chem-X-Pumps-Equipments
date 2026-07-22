@@ -97,7 +97,7 @@ export default function Services() {
                   Request Service
                 </button>
                 <a 
-                  href="tel:+919328946682" 
+                  href="tel:+919879884153" 
                   className="btn-outline py-2 px-4 text-xs font-bold uppercase w-full flex items-center justify-center gap-1"
                 >
                   <FaPhoneAlt size={10} /> Call Support

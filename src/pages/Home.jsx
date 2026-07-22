@@ -495,7 +495,7 @@ export default function Home() {
                   We deploy engineers to assist with pump alignment, foundation check, dynamic vibration testing, and seal calibrations.
                 </p>
                 <div className="flex gap-4">
-                  <a href="tel:+919328946682" className="btn-primary py-2 px-4 text-xs font-bold flex items-center gap-2">
+                  <a href="tel:+919879884153" className="btn-primary py-2 px-4 text-xs font-bold flex items-center gap-2">
                     <FaPhoneAlt size={10} /> Call Service Center
                   </a>
                   <Link to="/services" className="text-xs font-bold text-white hover:text-brand-orange flex items-center gap-1">

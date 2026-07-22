@@ -39,7 +39,7 @@ export default function Navbar() {
     { name: 'Products', path: '/products' },
     { name: 'Industries', path: '/industries' },
     { name: 'Services', path: '/services' },
-    { name: 'Why Us', path: '/#why-us' },
+    { name: 'Why Us', path: '/why-us' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
   ];
@@ -103,7 +103,10 @@ export default function Navbar() {
               <span className="bg-slate-100 p-2 rounded-full text-brand-blue group-hover:bg-brand-orange/10">
                 <FaPhoneAlt size={12} />
               </span>
-              <span>+91 98798 84153</span>
+              <div className="flex flex-col text-left">
+                <span>+91 98798 84153</span>
+                <span className="text-[10px] text-slate-500 font-medium">+91 93289 46682</span>
+              </div>
             </a>
             <button 
               onClick={() => openQuoteModal()}
@@ -192,10 +195,13 @@ export default function Navbar() {
           <div className="border-t border-slate-100 pt-6 space-y-4">
             <a 
               href="tel:+919879884153" 
-              className="flex items-center gap-3 text-brand-navy font-bold text-sm justify-center py-2 bg-slate-50 rounded-sm"
+              className="flex flex-col items-center gap-1 text-brand-navy font-bold text-sm justify-center py-2 bg-slate-50 rounded-sm"
             >
-              <FaPhoneAlt size={12} className="text-brand-blue" />
-              <span>+91 98798 84153</span>
+              <div className="flex items-center gap-2">
+                <FaPhoneAlt size={12} className="text-brand-blue" />
+                <span>+91 98798 84153</span>
+              </div>
+              <span className="text-xs font-normal text-slate-500">+91 93289 46682</span>
             </a>
             <button 
               onClick={() => { setIsOpen(false); openQuoteModal(); }}
