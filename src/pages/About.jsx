@@ -54,7 +54,7 @@ export default function About() {
 
           <div className="border-4 border-slate-200 p-2 bg-slate-50">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+              src="/images/pump_2.png" 
               alt="Engineering Work" 
               className="w-full aspect-video object-cover"
             />

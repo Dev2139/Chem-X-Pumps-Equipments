@@ -8,18 +8,18 @@ export default function Gallery() {
   const categories = ['All', 'Workshop', 'Pump Units', 'Spare Parts', 'Foundry'];
 
   const galleryItems = [
-    { title: "Induction Melting Foundry", category: "Foundry", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" },
-    { title: "Casing Casting Preparation", category: "Foundry", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" },
+    { title: "Induction Melting Foundry", category: "Foundry", image: "/images/pump_5.png" },
+    { title: "Casing Casting Preparation", category: "Foundry", image: "/images/pump_6.png" },
     
-    { title: "CNC Impeller Profile Machining", category: "Workshop", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" },
-    { title: "Dynamic Rotor Assembly balancing", category: "Workshop", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" },
+    { title: "CNC Impeller Profile Machining", category: "Workshop", image: "/images/pump_7.png" },
+    { title: "Dynamic Rotor Assembly balancing", category: "Workshop", image: "/images/pump_4.png" },
     
-    { title: "Finished CCPP Centrifugal Pump Unit", category: "Pump Units", image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=800&q=80" },
-    { title: "Solid PP Monoblock CMPP Assembly", category: "Pump Units", image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80" },
+    { title: "Finished CCPP Centrifugal Pump Unit", category: "Pump Units", image: "/images/pump_8.png" },
+    { title: "Solid PP Monoblock CMPP Assembly", category: "Pump Units", image: "/images/pump_3.png" },
     
-    { title: "High Consistency SS316 Impellers", category: "Spare Parts", image: "https://images.unsplash.com/photo-1530124560072-aae8d56b0adec?auto=format&fit=crop&w=800&q=80" },
-    { title: "Precision Ground Shaft Sleeves", category: "Spare Parts", image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" },
-    { title: "Cartridge Mechanical Seal Stock", category: "Spare Parts", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" }
+    { title: "High Consistency SS316 Impellers", category: "Spare Parts", image: "/images/pump_1.png" },
+    { title: "Precision Ground Shaft Sleeves", category: "Spare Parts", image: "/images/pump_2.png" },
+    { title: "Cartridge Mechanical Seal Stock", category: "Spare Parts", image: "/images/pump_5.png" }
   ];
 
   const filteredItems = activeTab === 'All' 

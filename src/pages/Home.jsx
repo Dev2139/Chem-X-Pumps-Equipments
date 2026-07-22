@@ -88,12 +88,12 @@ export default function Home() {
   ];
 
   const galleryItems = [
-    { title: "CNC Machining Center", category: "Manufacturing", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" },
-    { title: "Solid PP Pump Casing", category: "Workshop", image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" },
-    { title: "Pump Test Bed Inspection", category: "Testing", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" },
-    { title: "Impeller Casting Stocks", category: "Spare Parts", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" },
-    { title: "Finished Centrifugal CCPP", category: "Pump Units", image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=600&q=80" },
-    { title: "Precision Shaft Grinding", category: "Manufacturing", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" }
+    { title: "CNC Machining Center", category: "Manufacturing", image: "/images/pump_6.png" },
+    { title: "Solid PP Pump Casing", category: "Workshop", image: "/images/pump_7.png" },
+    { title: "Pump Test Bed Inspection", category: "Testing", image: "/images/pump_4.png" },
+    { title: "Impeller Casting Stocks", category: "Spare Parts", image: "/images/pump_8.png" },
+    { title: "Finished Centrifugal CCPP", category: "Pump Units", image: "/images/pump_3.png" },
+    { title: "Precision Shaft Grinding", category: "Manufacturing", image: "/images/pump_1.png" }
   ];
 
   return (
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="w-full max-w-lg aspect-square bg-slate-800/40 border border-slate-700/50 p-4 rounded-sm flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80" 
+                  src="/images/pump_2.png" 
                   alt="Chem-X Heavy Duty Pump" 
                   className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500"
                 />
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="relative group">
               <div className="border-4 border-brand-navy p-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" 
+                  src="/images/pump_5.png" 
                   alt="Chem-X Manufacturing Factory" 
                   className="w-full object-cover aspect-4/3 hover:scale-102 transition-transform duration-300"
                 />
@@ -484,7 +484,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-6">
               <div className="border-4 border-white shadow-md p-2 bg-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+                  src="/images/pump_6.png" 
                   alt="On site testing bed" 
                   className="w-full aspect-video object-cover" 
                 />

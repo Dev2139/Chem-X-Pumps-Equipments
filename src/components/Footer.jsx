@@ -11,13 +11,13 @@ export default function Footer() {
       {/* Upper Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          
+
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="inline-block bg-white p-2.5 rounded hover:bg-slate-50 transition-colors duration-200">
-              <img 
-                src={logo} 
-                alt="Chem-X Pumps & Equipment" 
+              <img
+                src={logo}
+                alt="Chem-X Pumps & Equipment"
                 className="h-10 w-auto object-contain"
               />
             </Link>
@@ -97,12 +97,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/product/centrifugal-mono-block-pump" className="hover:text-white transition-colors">
-                  Centrifugal Mono Block Pump (CMBP)
+                  Centrifugal Mono Block Pump (CCMBP)
                 </Link>
               </li>
               <li>
-                <Link to="/product/pp-mono-block-pump" className="hover:text-white transition-colors">
-                  PP Mono Block Pump (CMPP)
+                <Link to="/products" className="hover:text-white transition-colors">
+                  ISO 2858 & DIN 24256 Pumps
                 </Link>
               </li>
             </ul>
