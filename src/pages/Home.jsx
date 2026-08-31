@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   FaCog, FaTools, FaWrench, FaDraftingCompass, FaShieldAlt, FaAward, FaCogs,
-  FaCheckCircle, FaChevronDown, FaPhoneAlt, FaEnvelope, FaChevronRight, 
+  FaCheckCircle, FaChevronDown, FaPhoneAlt, FaEnvelope, FaChevronRight, FaChevronLeft,
   FaArrowRight, FaIndustry, FaWater, FaFlask, FaPills, FaUtensils, 
-  FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate
+  FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate,
+  FaPause, FaPlay, FaLayerGroup
 } from 'react-icons/fa';
 import { useQuoteModal } from '../context/QuoteModalContext';
 import { useProducts } from '../context/ProductsContext';
@@ -16,6 +17,50 @@ export default function Home() {
 
   // Extract products
   const { products } = useProducts();
+
+  // Carousel States
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [activeFeaturedIndex, setActiveFeaturedIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      setSlideIndex(0);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Group products into pages (3 items per page for desktop, 1 item per page for mobile)
+  const pageSize = isMobile ? 1 : 3;
+  const pages = [];
+  if (products && products.length > 0) {
+    for (let i = 0; i < products.length; i += pageSize) {
+      pages.push(products.slice(i, i + pageSize));
+    }
+  }
+  const maxSlides = pages.length || 1;
+
+  // Auto-advancing slider timer every 10 seconds (10000ms)
+  useEffect(() => {
+    if (pages.length === 0) return;
+
+    const timer = setInterval(() => {
+      setSlideIndex((prev) => (prev + 1) % maxSlides);
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, [pages.length, maxSlides]);
+
+  const handlePrevSlide = () => {
+    setSlideIndex((prev) => (prev - 1 + maxSlides) % maxSlides);
+  };
+
+  const handleNextSlide = () => {
+    setSlideIndex((prev) => (prev + 1) % maxSlides);
+  };
 
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);
@@ -262,148 +307,262 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. PRODUCT CATEGORIES */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* 5. AUTO HORIZONTAL CAROUSEL (10s AUTO SCROLL, 1 ON MOBILE / 3 ON DESKTOP) */}
+      <section className="py-16 md:py-24 bg-white overflow-hidden border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <span className="text-xs font-bold text-brand-orange uppercase tracking-widest">Product Categories</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
-              Industrial Pumps & Spares Catalog
-            </h2>
-            <p className="text-slate-600 text-sm md:text-base">
-              Find standard and custom engineered pumps mapped to chemical processing, wastewater, mining, and general manufacturing.
-            </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 text-left">
+            <div className="space-y-3 max-w-2xl">
+              <span className="text-xs font-bold text-brand-orange uppercase tracking-widest block">
+                Auto Product Slider
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
+                Industrial Process Pumps Lineup
+              </h2>
+            </div>
+
+            {/* Top Bar CTA */}
+            <div className="flex items-center gap-3 shrink-0">
+              <Link to="/products" className="btn-primary py-2.5 px-5 text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+                All Products ({products.length}) <FaArrowRight size={11} />
+              </Link>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((product) => (
-              <div key={product.id} className="border border-slate-200 bg-white flex flex-col justify-between hover:shadow-md transition-all duration-300 rounded-sm overflow-hidden group">
-                <div className="relative bg-slate-50 p-4 aspect-4/3 flex items-center justify-center overflow-hidden border-b border-slate-100">
-                  <img 
-                    src={product.images[0]} 
-                    alt={product.name} 
-                    className="object-contain max-h-full max-w-full transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-2 left-2 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider rounded-xs">
-                    {product.model}
+          {/* CAROUSEL CONTAINER WITH LEFT & RIGHT SIDE NAVIGATION BUTTONS */}
+          <div className="relative px-3 sm:px-12 py-4">
+            
+            {/* LEFT SIDE NAVIGATION BUTTON */}
+            <button
+              onClick={handlePrevSlide}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-brand-navy hover:bg-brand-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 border border-white/20 cursor-pointer flex items-center justify-center"
+              aria-label="Previous Product"
+              title="Previous Product"
+            >
+              <FaChevronLeft size={16} />
+            </button>
+
+            {/* RIGHT SIDE NAVIGATION BUTTON */}
+            <button
+              onClick={handleNextSlide}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-brand-navy hover:bg-brand-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 border border-white/20 cursor-pointer flex items-center justify-center"
+              aria-label="Next Product"
+              title="Next Product"
+            >
+              <FaChevronRight size={16} />
+            </button>
+
+            {/* OVERFLOW VIEWPORT */}
+            <div className="overflow-hidden w-full">
+              {/* HARDWARE ACCELERATED SLIDING TRACK */}
+              <div 
+                className="flex transition-transform duration-700 cubic-bezier(0.25, 1, 0.5, 1)"
+                style={{ 
+                  transform: `translate3d(-${slideIndex * 100}%, 0, 0)`,
+                  transition: 'transform 700ms cubic-bezier(0.25, 1, 0.5, 1)'
+                }}
+              >
+                {pages.map((pageProducts, pageIdx) => (
+                  <div 
+                    key={pageIdx} 
+                    className="w-full shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 px-1 text-left"
+                  >
+                    {pageProducts.map((product, idx) => (
+                      <div
+                        key={product.id}
+                        className="bg-white border border-slate-200 hover:border-brand-orange/60 p-5 rounded-sm shadow-xs hover:shadow-xl transition-all duration-300 group flex flex-col justify-between h-full"
+                      >
+                        <div>
+                          {/* Image container */}
+                          <div className="relative bg-slate-50 p-4 aspect-4/3 flex items-center justify-center rounded-sm overflow-hidden border border-slate-100 mb-4">
+                            <img 
+                              src={product.images[0]} 
+                              alt={product.name} 
+                              className="object-contain max-h-full max-w-full transition-transform duration-500 group-hover:scale-108"
+                            />
+                            <div className="absolute top-2 left-2 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider rounded-xs shadow-xs">
+                              {product.model}
+                            </div>
+                            <div className="absolute top-2 right-2 bg-brand-orange/10 text-brand-orange text-[9px] font-bold px-2 py-0.5 rounded-xs">
+                              Product #{pageIdx * pageSize + idx + 1}
+                            </div>
+                          </div>
+
+                          <span className="text-[10px] font-bold text-brand-blue uppercase tracking-wider block mb-1">
+                            {product.category}
+                          </span>
+                          <h3 className="text-base font-bold text-brand-navy leading-snug group-hover:text-brand-orange transition-colors line-clamp-1 mb-2">
+                            {product.name}
+                          </h3>
+                          <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed mb-4">
+                            {product.shortDescription}
+                          </p>
+
+                          {/* Spec pills */}
+                          <div className="grid grid-cols-2 gap-2 mb-4 text-[11px] bg-slate-50 p-2.5 rounded-xs border border-slate-100">
+                            <div>
+                              <span className="text-[9px] font-bold text-slate-400 uppercase block">Capacity</span>
+                              <span className="font-bold text-brand-navy truncate block">
+                                {product.operatingRange?.Capacity || product.operatingRange?.['Flow Rate'] || "Custom"}
+                              </span>
+                            </div>
+                            <div>
+                              <span className="text-[9px] font-bold text-slate-400 uppercase block">Head</span>
+                              <span className="font-bold text-brand-navy truncate block">
+                                {product.operatingRange?.Head || "Custom"}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="pt-3 border-t border-slate-100 flex items-center justify-between mt-auto">
+                          <Link 
+                            to={`/product/${product.id}`} 
+                            className="text-xs font-bold text-brand-navy hover:text-brand-orange flex items-center gap-1 group/btn"
+                          >
+                            View Specs <FaChevronRight size={10} className="transition-transform group-hover/btn:translate-x-0.5" />
+                          </Link>
+                          <button 
+                            onClick={() => openQuoteModal(`${product.name} (${product.model})`)}
+                            className="text-xs font-bold bg-brand-orange/10 hover:bg-brand-orange text-brand-orange hover:text-white px-3 py-1.5 rounded-xs transition-colors cursor-pointer"
+                          >
+                            Get Quote
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                
-                <div className="p-5 text-left flex-1 flex flex-col justify-between">
-                  <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-brand-blue uppercase tracking-wider block">{product.category}</span>
-                    <h3 className="text-base font-bold text-brand-navy leading-snug group-hover:text-brand-orange transition-colors">
-                      {product.name}
-                    </h3>
-                    <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
-                      {product.shortDescription}
-                    </p>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <Link 
-                      to={`/product/${product.id}`} 
-                      className="text-xs font-bold text-brand-navy hover:text-brand-orange flex items-center gap-1 group/btn"
-                    >
-                      View Details <FaChevronRight size={10} className="transition-transform group-hover/btn:translate-x-0.5" />
-                    </Link>
-                    <button 
-                      onClick={() => openQuoteModal(`${product.name} (${product.model})`)}
-                      className="text-xs font-bold text-brand-orange hover:text-brand-orange/80 cursor-pointer"
-                    >
-                      Get Quote
-                    </button>
-                  </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* DOT INDICATORS */}
+            <div className="flex justify-center gap-1.5 mt-6 flex-wrap">
+              {Array.from({ length: maxSlides }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setSlideIndex(idx)}
+                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    slideIndex === idx 
+                      ? 'w-6 bg-brand-orange' 
+                      : 'w-2 bg-slate-300 hover:bg-slate-400'
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+
           </div>
 
         </div>
       </section>
 
-      {/* 6. FEATURED PRODUCTS */}
+      {/* 6. FEATURED EQUIPMENT SHOWCASE (INTERACTIVE TABBED SWITCHER) */}
       <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div className="text-center max-w-3xl mx-auto space-y-4 mb-10">
             <span className="text-xs font-bold text-brand-orange uppercase tracking-widest">Featured Equipment</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
               Premium Performance Showcases
             </h2>
             <p className="text-slate-600 text-sm md:text-base">
-              A closer look at our primary chemical transfer and thermal oil process lines.
+              Interactive highlights of our heavy-duty process pump series. Select a model below to inspect technical specifications.
             </p>
           </div>
 
-          <div className="space-y-8">
-            {products.slice(0, 3).map((product, idx) => (
-              <div key={product.id} className="bg-white border border-slate-200 p-6 md:p-8 rounded-sm shadow-xs flex flex-col lg:flex-row gap-8 items-center hover:shadow-md transition-shadow">
-                
-                {/* Image panel */}
-                <div className="w-full lg:w-1/3 aspect-square bg-slate-50 p-4 border border-slate-100 flex items-center justify-center rounded-sm overflow-hidden">
-                  <img 
-                    src={product.images[0]} 
-                    alt={product.name} 
-                    className="object-contain max-h-48 max-w-full hover:scale-105 transition-transform" 
-                  />
-                </div>
-
-                {/* Specs list */}
-                <div className="w-full lg:w-2/3 text-left space-y-4">
-                  <div className="flex justify-between items-start gap-4">
-                    <div>
-                      <span className="text-[10px] font-bold text-brand-orange uppercase tracking-wider block">{product.model}</span>
-                      <h3 className="text-2xl font-bold text-brand-navy">{product.name}</h3>
-                    </div>
-                    <button 
-                      onClick={() => openQuoteModal(`${product.name} (${product.model})`)}
-                      className="btn-primary py-2 px-4 text-xs uppercase font-bold cursor-pointer"
-                    >
-                      Inquire Model
-                    </button>
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {product.description}
-                  </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-2">
-                    <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
-                      <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Flow Rate</span>
-                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange?.Capacity || product.operatingRange?.['Flow Rate'] || "Custom"}</span>
-                    </div>
-                    <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
-                      <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Max Head</span>
-                      <span className="text-sm font-bold text-brand-navy">{product.operatingRange?.Head || "Custom"}</span>
-                    </div>
-                    <div className="bg-slate-50 p-3 border border-slate-100 rounded-xs">
-                      <span className="text-[10px] font-semibold text-slate-500 uppercase block mb-1">Materials</span>
-                      <span className="text-xs font-bold text-brand-navy line-clamp-1">
-                        {product.materials && product.materials.length > 0
-                          ? product.materials.slice(0, 3).join(', ')
-                          : (product.operatingRange?.MOC || "Standard Industrial MOC")}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="pt-2 flex items-center justify-between">
-                    <div className="flex flex-wrap gap-2">
-                      {(product.applications || []).slice(0, 2).map((app, i) => (
-                        <span key={i} className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-sm">
-                          {app}
-                        </span>
-                      ))}
-                    </div>
-                    <Link to={`/product/${product.id}`} className="text-xs font-bold text-brand-blue hover:text-brand-orange flex items-center gap-1">
-                      View Technical Sheet <FaChevronRight size={10} />
-                    </Link>
-                  </div>
-                </div>
-
-              </div>
+          {/* Model Selector Tabs */}
+          <div className="flex justify-center gap-2 flex-wrap mb-8">
+            {products.slice(0, 4).map((product, idx) => (
+              <button
+                key={product.id}
+                onClick={() => setActiveFeaturedIndex(idx)}
+                className={`px-4 py-2 text-xs font-bold rounded-sm border transition-all cursor-pointer ${
+                  activeFeaturedIndex === idx
+                    ? 'bg-brand-navy border-brand-navy text-white shadow-sm'
+                    : 'bg-white border-slate-200 text-slate-700 hover:border-brand-navy hover:text-brand-navy'
+                }`}
+              >
+                {product.name} ({product.model})
+              </button>
             ))}
           </div>
+
+          {/* Active Featured Product Highlight */}
+          {products[activeFeaturedIndex] && (
+            <div className="bg-white border border-slate-200 p-6 md:p-8 rounded-sm shadow-md flex flex-col lg:flex-row gap-8 items-center text-left animate-fade-in">
+              
+              {/* Image panel */}
+              <div className="w-full lg:w-2/5 aspect-square max-h-[360px] bg-slate-50 p-6 border border-slate-100 flex items-center justify-center rounded-sm overflow-hidden shrink-0">
+                <img 
+                  src={products[activeFeaturedIndex].images[0]} 
+                  alt={products[activeFeaturedIndex].name} 
+                  className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500" 
+                />
+              </div>
+
+              {/* Specs list */}
+              <div className="w-full lg:w-3/5 space-y-5">
+                <div className="flex flex-wrap justify-between items-start gap-4">
+                  <div>
+                    <span className="text-xs font-bold text-brand-orange uppercase tracking-wider block mb-1">
+                      Model: {products[activeFeaturedIndex].model}
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-extrabold text-brand-navy">
+                      {products[activeFeaturedIndex].name}
+                    </h3>
+                  </div>
+                  <button 
+                    onClick={() => openQuoteModal(`${products[activeFeaturedIndex].name} (${products[activeFeaturedIndex].model})`)}
+                    className="btn-primary py-2.5 px-5 text-xs uppercase font-bold cursor-pointer"
+                  >
+                    Inquire Model
+                  </button>
+                </div>
+
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {products[activeFeaturedIndex].description}
+                </p>
+
+                {/* Technical specs grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                  <div className="bg-slate-50 p-3 border border-slate-200/60 rounded-xs">
+                    <span className="text-[10px] font-semibold text-slate-400 uppercase block mb-1">Flow Capacity</span>
+                    <span className="text-xs sm:text-sm font-bold text-brand-navy">
+                      {products[activeFeaturedIndex].operatingRange?.Capacity || "Custom"}
+                    </span>
+                  </div>
+                  <div className="bg-slate-50 p-3 border border-slate-200/60 rounded-xs">
+                    <span className="text-[10px] font-semibold text-slate-400 uppercase block mb-1">Max Head</span>
+                    <span className="text-xs sm:text-sm font-bold text-brand-navy">
+                      {products[activeFeaturedIndex].operatingRange?.Head || "Custom"}
+                    </span>
+                  </div>
+                  <div className="bg-slate-50 p-3 border border-slate-200/60 rounded-xs col-span-2 sm:col-span-1">
+                    <span className="text-[10px] font-semibold text-slate-400 uppercase block mb-1">Temperature</span>
+                    <span className="text-xs sm:text-sm font-bold text-brand-navy">
+                      {products[activeFeaturedIndex].operatingRange?.Temperature || "Standard"}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Applications list */}
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-4">
+                  <div className="flex flex-wrap gap-2">
+                    {(products[activeFeaturedIndex].applications || []).slice(0, 3).map((app, i) => (
+                      <span key={i} className="text-[10px] font-medium bg-slate-100 border border-slate-200 text-slate-700 px-2.5 py-1 rounded-sm">
+                        {app}
+                      </span>
+                    ))}
+                  </div>
+                  <Link to={`/product/${products[activeFeaturedIndex].id}`} className="text-xs font-bold text-brand-navy hover:text-brand-orange flex items-center gap-1.5">
+                    View Full Datasheet <FaChevronRight size={10} />
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          )}
 
         </div>
       </section>
