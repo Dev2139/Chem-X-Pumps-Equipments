@@ -128,7 +128,7 @@ export default function Services() {
             </div>
             <div className="border-4 border-white shadow-md p-2 bg-white">
               <img 
-                src="/images/pump_7.png" 
+                src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169035/blogrid1.png" 
                 alt="Pump repair works" 
                 className="w-full aspect-video object-cover" 
               />

@@ -58,7 +58,7 @@ export default function Contact() {
                   <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
                     +91 98798 84153 (Inquiries)
                   </a>
-                  <a href="tel:+919328946682" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
+                  <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
                     +91 93289 46682 (Support Desk)
                   </a>
                 </div>

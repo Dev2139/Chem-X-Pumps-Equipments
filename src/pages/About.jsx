@@ -54,7 +54,7 @@ export default function About() {
 
           <div className="border-4 border-slate-200 p-2 bg-slate-50">
             <img 
-              src="/images/pump_2.png" 
+              src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169027/featured_image_under_100kb-1024x683.webp" 
               alt="Engineering Work" 
               className="w-full aspect-video object-cover"
             />
