@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { QuoteModalProvider } from './context/QuoteModalContext';
+import { ProductsProvider } from './context/ProductsContext';
 
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
@@ -17,11 +18,13 @@ import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import WhyUs from './pages/WhyUs';
+import Admin from './pages/Admin';
 
 export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ProductsProvider>
         <QuoteModalProvider>
           <div className="flex flex-col min-h-screen bg-white">
             
@@ -44,6 +47,9 @@ export default function App() {
                 <Route path="/why-us" element={<RouteTransition><WhyUs /></RouteTransition>} />
                 <Route path="/contact" element={<RouteTransition><Contact /></RouteTransition>} />
                 
+                {/* Admin panel (MongoDB product management) */}
+                <Route path="/admin" element={<Admin />} />
+                
                 {/* Fallback redirect */}
                 <Route path="*" element={<Home />} />
               </Routes>
@@ -54,6 +60,7 @@ export default function App() {
 
           </div>
         </QuoteModalProvider>
+        </ProductsProvider>
       </Router>
     </HelmetProvider>
   );

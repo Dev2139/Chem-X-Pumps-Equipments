@@ -7,7 +7,7 @@ import {
   FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate
 } from 'react-icons/fa';
 import { useQuoteModal } from '../context/QuoteModalContext';
-import productsData from '../data/products.json';
+import { useProducts } from '../context/ProductsContext';
 import SEO from '../components/SEO';
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
   const [activeFaq, setActiveFaq] = useState(null);
 
   // Extract products
-  const products = productsData.products;
+  const { products } = useProducts();
 
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);

@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { FaFilePdf, FaCheck, FaPhoneAlt, FaChevronRight, FaArrowLeft, FaCheckCircle } from 'react-icons/fa';
 import SEO from '../components/SEO';
-import productsData from '../data/products.json';
+import { useProducts } from '../context/ProductsContext';
 import { useQuoteModal } from '../context/QuoteModalContext';
 
 export default function ProductDetails() {
@@ -16,7 +16,7 @@ export default function ProductDetails() {
 
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
 
-  const products = productsData.products;
+  const { products, loading } = useProducts();
 
   useEffect(() => {
     const foundProduct = products.find(p => p.id === productId);
@@ -25,11 +25,11 @@ export default function ProductDetails() {
       setActiveImage(foundProduct.images[0]);
       setFormSubmitted(false);
       reset(); // Reset form when product changes
-    } else {
-      // Redirect to catalog if not found
+    } else if (!loading) {
+      // Redirect to catalog if not found (only after catalog finished loading)
       navigate('/products');
     }
-  }, [productId, products, navigate, reset]);
+  }, [productId, products, loading, navigate, reset]);
 
   if (!product) return null;
 

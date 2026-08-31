@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { FaSearch, FaFilter, FaChevronRight, FaTimes, FaFilePdf } from 'react-icons/fa';
 import SEO from '../components/SEO';
-import productsData from '../data/products.json';
+import { useProducts } from '../context/ProductsContext';
 import { useQuoteModal } from '../context/QuoteModalContext';
 
 export default function Products() {
@@ -11,7 +11,7 @@ export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const { openQuoteModal } = useQuoteModal();
 
-  const products = productsData.products;
+  const { products } = useProducts();
 
   // Sync category filter from URL search parameters (e.g. /products?category=Centrifugal+Process+Pumps)
   useEffect(() => {

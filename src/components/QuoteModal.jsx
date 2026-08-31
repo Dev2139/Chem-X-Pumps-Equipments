@@ -1,9 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { FaTimes, FaEnvelope, FaPhone, FaBuilding, FaUser, FaCheckCircle } from 'react-icons/fa';
-import productsData from '../data/products.json';
+import { useProducts } from '../context/ProductsContext';
 
 export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
+  const { products } = useProducts();
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm({
     defaultValues: {
       product: initialProduct
@@ -184,7 +185,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
                   {...register('product')}
                 >
                   <option value="">-- General Equipment Inquiry --</option>
-                  {productsData.products.map((p) => (
+                  {products.map((p) => (
                     <option key={p.id} value={`${p.name} (${p.model})`}>
                       {p.name} - {p.model}
                     </option>
