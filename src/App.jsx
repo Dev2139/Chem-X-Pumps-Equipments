@@ -15,7 +15,6 @@ import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
 import Industries from './pages/Industries';
 import Services from './pages/Services';
-import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import WhyUs from './pages/WhyUs';
 import Admin from './pages/Admin';
@@ -43,7 +42,6 @@ export default function App() {
                 <Route path="/product/:productId" element={<RouteTransition><ProductDetails /></RouteTransition>} />
                 <Route path="/industries" element={<RouteTransition><Industries /></RouteTransition>} />
                 <Route path="/services" element={<RouteTransition><Services /></RouteTransition>} />
-                <Route path="/gallery" element={<RouteTransition><Gallery /></RouteTransition>} />
                 <Route path="/why-us" element={<RouteTransition><WhyUs /></RouteTransition>} />
                 <Route path="/contact" element={<RouteTransition><Contact /></RouteTransition>} />
                 

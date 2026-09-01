@@ -128,8 +128,8 @@ export default function Services() {
             </div>
             <div className="border-4 border-white shadow-md p-2 bg-white">
               <img 
-                src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" 
-                alt="Pump repair works" 
+                src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265883/ChatGPT_Image_Sep_1_2026_06_00_39_PM.png" 
+                alt="Pump repair and overhaul works" 
                 className="w-full aspect-video object-cover" 
               />
             </div>

@@ -67,8 +67,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
-                  Media & Gallery
+                <Link to="/why-us" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                  Why Choose Us
                 </Link>
               </li>
               <li>

@@ -176,7 +176,7 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="w-full max-w-lg aspect-square bg-slate-800/40 border border-slate-700/50 p-4 rounded-sm flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788260797/ChatGPT_Image_Sep_1_2026_04_36_08_PM.png" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_52_55_PM.png" 
                   alt="Chem-X Heavy Duty Pump" 
                   className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500"
                 />
@@ -217,7 +217,7 @@ export default function Home() {
             <div className="relative group">
               <div className="border-4 border-brand-navy p-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265883/ChatGPT_Image_Sep_1_2026_05_58_34_PM.png" 
                   alt="Chem-X Manufacturing Factory" 
                   className="w-full object-cover aspect-4/3 hover:scale-102 transition-transform duration-300"
                 />

@@ -54,8 +54,8 @@ export default function About() {
 
           <div className="border-4 border-slate-200 p-2 bg-slate-50">
             <img 
-              src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" 
-              alt="Industrial Pump Foundry & Manufacturing" 
+              src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265877/Centrifugal-Process-Pumps-Manufacturers.webp" 
+              alt="Industrial Centrifugal Process Pump Manufacturing" 
               className="w-full aspect-video object-cover"
             />
           </div>

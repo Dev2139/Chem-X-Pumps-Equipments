@@ -40,7 +40,6 @@ export default function Navbar() {
     { name: 'Industries', path: '/industries' },
     { name: 'Services', path: '/services' },
     { name: 'Why Us', path: '/why-us' },
-    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
   ];
 

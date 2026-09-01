@@ -70,6 +70,28 @@ export default function WhyUs() {
         </div>
       </section>
 
+      {/* Featured Industrial Equipment Showcase */}
+      <section className="py-12 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="border-4 border-slate-200 p-2 bg-slate-50 shadow-sm rounded-sm">
+              <img 
+                src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_53_09_PM.png" 
+                alt="Precision Heavy Duty Industrial Pump Unit" 
+                className="w-full aspect-4/3 object-cover rounded-xs"
+              />
+            </div>
+            <div className="border-4 border-slate-200 p-2 bg-slate-50 shadow-sm rounded-sm">
+              <img 
+                src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_53_04_PM.png" 
+                alt="Heavy Duty Process Pump Assembly & Testing" 
+                className="w-full aspect-4/3 object-cover rounded-xs"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-white py-16 md:py-24 text-center border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
