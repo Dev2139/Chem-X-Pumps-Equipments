@@ -8,7 +8,7 @@
       "shortDescription": "Single Stage Horizontal, End-suction, Back-pullout Pump.",
       "description": "We manufacture the Centrifugal Pump that includes the end-suction and back-pull out type centrifugal pump. Our heavy-duty pump is capable to handle a wide spectrum of corrosive chemicals, starting from strongly oxidizing solutions to strongly reducing ones, at different temperatures and concentration, which can be used in different process plants.",
       "images": [
-        "https://res.cloudinary.com/urzka7oz/image/upload/v1788156050/ChatGPT_Image_Aug_31_2026_11_29_34_AM.png"
+        "https://res.cloudinary.com/urzka7oz/image/upload/v1788260797/ChatGPT_Image_Sep_1_2026_04_36_08_PM.png"
       ],
       "specifications": {
         "Design Standard": "ISO 2858 Dimensions",
@@ -24,7 +24,8 @@
         "Discharge Size": "25 mm to 300 mm",
         "Temperature": "350°C",
         "Speed": "Up to 3500 rpm",
-        "Pressure": "Up to 15 kg/cm²"
+        "Pressure": "Up to 15 kg/cm²",
+        "M.O.C.": "C.I., C.S., SS-304 / 304L, SS316 / 316L, Bronze, Alloy-20, CD4MCU, Hast alloy B & C, etc."
       },
       "features": [
         "As per ISO 2858 Dimensions.",
@@ -883,7 +884,7 @@
       "shortDescription": "Heavy Horizontal Slurry Transfer Pump for mining, power plants, and dredging.",
       "description": "Chem-X Pumps & Equipment manufactures CSTP Series Heavy Horizontal Slurry Transfer Pumps. Engineered for moving large volumes of abrasive slurries in mining beneficiation, fossil fuel power plant ash disposal, and long-distance coal and mineral transportation under extreme operating conditions.",
       "images": [
-        "https://res.cloudinary.com/urzka7oz/image/upload/v1788163177/ChatGPT_Image_Aug_31_2026_01_29_22_PM.png"
+        "https://res.cloudinary.com/urzka7oz/image/upload/v1788261180/ChatGPT_Image_Sep_1_2026_04_42_43_PM.png"
       ],
       "specifications": {
         "Casing": "Two-parts casing design for quick field maintenance",
@@ -1552,6 +1553,66 @@
         "POWER PLANTS",
         "PETROLEUM REFINERIES",
         "DESALINATION PLANTS"
+      ],
+      "brochurePdf": "https://drive.google.com/file/d/1Vo1iEka1N6KYaSbq90pHn-8PzE_anrSn/view?usp=sharing"
+    },
+    {
+      "id": "axial-flow-pump",
+      "name": "Axial Flow Pump",
+      "model": "CAFP",
+      "category": "Axial Flow Pumps",
+      "shortDescription": "High capacity, low head axial flow pump for chemical, irrigation, and MEE plant recirculation.",
+      "description": "CHEM-X Pumps & Equipment manufactures heavy-duty Axial Flow Pumps engineered to transfer very large quantities of liquid at low heads. Featuring thick metal sections at elbow, stuffing box, and impeller for extended wear life, and an extra-large lubrication oil sump for superior heat transfer to keep bearings running cooler and lasting longer.",
+      "images": [
+        "https://res.cloudinary.com/urzka7oz/image/upload/v1788259527/ChatGPT_Image_Sep_1_2026_04_14_30_PM.png"
+      ],
+      "specifications": {
+        "Type": "Axial Flow Centrifugal / Elbow Type Pump",
+        "Impeller Type": "High efficiency impeller available in a wide variety of vane angles",
+        "Lubrication": "Extra large lubrication oil sump for reduced oil temperature",
+        "Wear Life": "Heavy duty thick metal section at elbow, stuffing box & impeller"
+      },
+      "operatingRange": {
+        "Capacity": "up to 10000 m³/hr",
+        "Head": "up to 10 m",
+        "Discharge Size": "6\" to 36\"",
+        "Temperature": "up to 300°C",
+        "Speed": "up to 3500 rpm",
+        "Pressure": "up to 10 bar",
+        "M.O.C.": "C.I., C.S, SS304/SS304L, SS316/SS316L, Alloy-20, CD4MCU, Hastelloy B&C etc."
+      },
+      "features": [
+        "Heavy duty thick metal section is provided at elbow, stuffing box & impeller for extended wear life.",
+        "Extra large lubrication oil sump provides better heat transfer for reduced oil Temperature. Hence bearing runs cooler and lasts longer.",
+        "High efficiency impeller available in a wide variety of vane angles."
+      ],
+      "advantages": [
+        "Heavy duty thick metal section provided at elbow, stuffing box & impeller for extended wear life.",
+        "Extra large lubrication oil sump for better heat transfer and cooler bearing operation.",
+        "High efficiency impeller with wide variety of vane angles."
+      ],
+      "materials": [
+        "C.I.",
+        "C.S.",
+        "SS304 / SS304L",
+        "SS316 / SS316L",
+        "Alloy-20",
+        "CD4MCU",
+        "Hastelloy B&C"
+      ],
+      "applications": [
+        "To transfer very large quality of liquid at low head.",
+        "To raise the water level in irrigation canal.",
+        "Dewatering of large pits/lakes etc.",
+        "To recirculation the liquid in MEE plant."
+      ],
+      "targetIndustries": [
+        "CHEMICAL PROCESSING",
+        "IRRIGATION & WATER SUPPLY",
+        "MEE PLANT / EFFLUENT",
+        "DEWATERING & DREDGING",
+        "POWER PLANT",
+        "GENERAL INDUSTRY"
       ],
       "brochurePdf": "https://drive.google.com/file/d/1Vo1iEka1N6KYaSbq90pHn-8PzE_anrSn/view?usp=sharing"
     }
