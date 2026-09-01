@@ -638,7 +638,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-6">
               <div className="border-4 border-white shadow-md p-2 bg-white">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169032/Industrial-Pump13.jpg" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_53_04_PM.png" 
                   alt="On site testing bed" 
                   className="w-full aspect-video object-cover" 
                 />
@@ -649,7 +649,7 @@ export default function Home() {
                   We deploy engineers to assist with pump alignment, foundation check, dynamic vibration testing, and seal calibrations.
                 </p>
                 <div className="flex gap-4">
-                  <a href="tel:+919879884153" className="btn-primary py-2 px-4 text-xs font-bold flex items-center gap-2">
+                  <a href="tel:+919328946682" className="btn-primary py-2 px-4 text-xs font-bold flex items-center gap-2">
                     <FaPhoneAlt size={10} /> Call Service Center
                   </a>
                   <Link to="/services" className="text-xs font-bold text-white hover:text-brand-orange flex items-center gap-1">
@@ -775,7 +775,7 @@ export default function Home() {
             Discuss your flow rates, heads, and fluid compatibility details with our application engineers today.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-2">
-            <a href="tel:+919879884153" className="btn-primary flex items-center justify-center gap-2 font-bold cursor-pointer">
+            <a href="tel:+919328946682" className="btn-primary flex items-center justify-center gap-2 font-bold cursor-pointer">
               <FaPhoneAlt size={12} /> Call Service Desk
             </a>
             <button 
@@ -813,11 +813,11 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div className="space-y-1">
                   <span className="text-xs font-semibold text-slate-400 uppercase block">Phone / Sales Desk</span>
-                  <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
-                    +91 98798 84153
+                  <a href="tel:+919328946682" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
+                    +91 93289 46682
                   </a>
                   <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
-                    +91 93289 46682
+                    +91 98798 84153
                   </a>
                 </div>
 

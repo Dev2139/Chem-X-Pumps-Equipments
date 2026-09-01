@@ -104,7 +104,7 @@ export default function Navbar() {
               </span>
               <div className="flex flex-col text-left">
                 <span>+91 93289 46682</span>
-                <span className="text-[10px] text-slate-500 font-medium">+91 98798 84153 (Secondary)</span>
+                <span className="text-[10px] text-slate-500 font-medium">+91 98798 84153</span>
               </div>
             </a>
             <button 
@@ -179,9 +179,9 @@ export default function Navbar() {
           >
             <div className="flex items-center gap-2">
               <FaPhoneAlt size={12} className="text-brand-blue" />
-              <span>+91 93289 46682 (Primary)</span>
+              <span>+91 93289 46682</span>
             </div>
-            <span className="text-xs font-normal text-slate-500">+91 98798 84153 (Secondary)</span>
+            <span className="text-xs font-normal text-slate-500">+91 98798 84153</span>
           </a>
           <button 
             onClick={() => { setIsOpen(false); openQuoteModal(); }}
