@@ -17,21 +17,15 @@ async function seed() {
   await mongoose.connect(MONGODB_URI);
   console.log(`✔ Connected to ${MONGODB_URI}`);
 
-  let inserted = 0;
-  let skipped = 0;
+  let count = 0;
 
   for (const product of products) {
-    const exists = await Product.exists({ id: product.id });
-    if (exists) {
-      skipped++;
-      continue;
-    }
-    await Product.create(product);
-    inserted++;
-    console.log(`  + ${product.name} (${product.id})`);
+    await Product.findOneAndUpdate({ id: product.id }, product, { upsert: true, new: true });
+    count++;
+    console.log(`  ✔ ${product.name} (${product.id})`);
   }
 
-  console.log(`✔ Seed complete: ${inserted} inserted, ${skipped} already existed.`);
+  console.log(`✔ Seed complete: ${count} products updated/upserted.`);
   await mongoose.disconnect();
 }
 
