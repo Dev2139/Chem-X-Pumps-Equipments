@@ -80,8 +80,8 @@ export default function WhyUs() {
             Let our experienced application engineers help you select the most efficient and reliable pump for your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:+919879884153" className="btn-primary flex items-center justify-center gap-2 font-bold cursor-pointer">
-              <FaPhoneAlt size={12} /> Call Us Now
+            <a href="tel:+919328946682" className="btn-primary flex items-center justify-center gap-2 font-bold cursor-pointer">
+              <FaPhoneAlt size={12} /> Call +91 93289 46682
             </a>
             <button 
               onClick={() => openQuoteModal()}

@@ -54,8 +54,8 @@ export default function About() {
 
           <div className="border-4 border-slate-200 p-2 bg-slate-50">
             <img 
-              src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169027/featured_image_under_100kb-1024x683.webp" 
-              alt="Engineering Work" 
+              src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" 
+              alt="Industrial Pump Foundry & Manufacturing" 
               className="w-full aspect-video object-cover"
             />
           </div>
@@ -158,8 +158,8 @@ export default function About() {
             >
               Consult an Engineer
             </button>
-            <a href="tel:+919879884153" className="btn-outline border-white text-white hover:bg-white hover:text-brand-navy text-xs py-2 px-6">
-              Call Service Desk
+            <a href="tel:+919328946682" className="btn-outline border-white text-white hover:bg-white hover:text-brand-navy text-xs py-2 px-6">
+              Call Service Desk (+91 93289 46682)
             </a>
           </div>
         </div>

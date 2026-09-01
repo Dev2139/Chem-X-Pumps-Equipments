@@ -55,11 +55,11 @@ export default function Contact() {
                 </div>
                 <div className="space-y-1">
                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Phone Numbers</span>
-                  <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
-                    +91 98798 84153 (Inquiries)
+                  <a href="tel:+919328946682" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
+                    +91 93289 46682 <span className="text-xs text-brand-orange font-semibold">(Primary / Support Desk)</span>
                   </a>
-                  <a href="tel:+919879884153" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
-                    +91 93289 46682 (Support Desk)
+                  <a href="tel:+919879884153" className="text-sm font-bold text-slate-600 hover:text-brand-orange block">
+                    +91 98798 84153 <span className="text-xs text-slate-400 font-normal">(Secondary / Sales)</span>
                   </a>
                 </div>
               </div>

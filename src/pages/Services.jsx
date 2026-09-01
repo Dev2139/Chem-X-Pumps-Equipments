@@ -97,7 +97,7 @@ export default function Services() {
                   Request Service
                 </button>
                 <a 
-                  href="tel:+919879884153" 
+                  href="tel:+919328946682" 
                   className="btn-outline py-2 px-4 text-xs font-bold uppercase w-full flex items-center justify-center gap-1"
                 >
                   <FaPhoneAlt size={10} /> Call Support
@@ -128,7 +128,7 @@ export default function Services() {
             </div>
             <div className="border-4 border-white shadow-md p-2 bg-white">
               <img 
-                src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169035/blogrid1.png" 
+                src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" 
                 alt="Pump repair works" 
                 className="w-full aspect-video object-cover" 
               />

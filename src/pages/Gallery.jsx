@@ -8,18 +8,18 @@ export default function Gallery() {
   const categories = ['All', 'Workshop', 'Pump Units', 'Spare Parts', 'Foundry'];
 
   const galleryItems = [
-    { title: "Induction Melting Foundry", category: "Foundry", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169027/featured_image_under_100kb-1024x683.webp" },
-    { title: "Casing Casting Preparation", category: "Foundry", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169024/107995651.avif" },
+    { title: "Induction Melting Foundry", category: "Foundry", image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Casing Casting Preparation", category: "Foundry", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" },
     
-    { title: "CNC Impeller Profile Machining", category: "Workshop", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169025/coimbature-pump-set.jpg" },
-    { title: "Dynamic Rotor Assembly balancing", category: "Workshop", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169026/images_1.jpg" },
+    { title: "CNC Impeller Profile Machining", category: "Workshop", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Dynamic Rotor Assembly Balancing", category: "Workshop", image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80" },
     
-    { title: "Finished CCPP Centrifugal Pump Unit", category: "Pump Units", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169029/blog-jeepump-1.jpg" },
-    { title: "Solid PP Monoblock CMPP Assembly", category: "Pump Units", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169031/Centrifugal-Pumps.png" },
+    { title: "Finished Centrifugal Pump Assembly", category: "Pump Units", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Monoblock Process Pump Unit", category: "Pump Units", image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" },
     
-    { title: "High Consistency SS316 Impellers", category: "Spare Parts", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169032/Industrial-Pump13.jpg" },
-    { title: "Precision Ground Shaft Sleeves", category: "Spare Parts", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169033/694281b896507da2acfb3ca5_8.webp" },
-    { title: "Cartridge Mechanical Seal Stock", category: "Spare Parts", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169035/blogrid1.png" }
+    { title: "High Consistency Stainless Steel Impellers", category: "Spare Parts", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Precision Ground Shaft Sleeves", category: "Spare Parts", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Cartridge Mechanical Seal Stock", category: "Spare Parts", image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80" }
   ];
 
   const filteredItems = activeTab === 'All' 

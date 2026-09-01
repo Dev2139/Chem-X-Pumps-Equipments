@@ -133,12 +133,12 @@ export default function Home() {
   ];
 
   const galleryItems = [
-    { title: "CNC Machining Center", category: "Manufacturing", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169024/107995651.avif" },
-    { title: "Solid PP Pump Casing", category: "Workshop", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169025/coimbature-pump-set.jpg" },
-    { title: "Pump Test Bed Inspection", category: "Testing", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169026/images_1.jpg" },
-    { title: "Impeller Casting Stocks", category: "Spare Parts", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169028/images.jpg" },
-    { title: "Finished Centrifugal CCPP", category: "Pump Units", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169029/blog-jeepump-1.jpg" },
-    { title: "Precision Shaft Grinding", category: "Manufacturing", image: "https://res.cloudinary.com/urzka7oz/image/upload/v1788169033/694281b896507da2acfb3ca5_8.webp" }
+    { title: "CNC Machining Center", category: "Manufacturing", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Precision Metal Foundry", category: "Foundry", image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Pump Test Bed Inspection", category: "Testing", image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Impeller Casting Stocks", category: "Spare Parts", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Finished Centrifugal Pump", category: "Pump Units", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" },
+    { title: "Precision Shaft Grinding", category: "Manufacturing", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80" }
   ];
 
   return (
@@ -185,7 +185,7 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="w-full max-w-lg aspect-square bg-slate-800/40 border border-slate-700/50 p-4 rounded-sm flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169031/Centrifugal-Pumps.png" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788260797/ChatGPT_Image_Sep_1_2026_04_36_08_PM.png" 
                   alt="Chem-X Heavy Duty Pump" 
                   className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500"
                 />
@@ -226,7 +226,7 @@ export default function Home() {
             <div className="relative group">
               <div className="border-4 border-brand-navy p-2">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788169027/featured_image_under_100kb-1024x683.webp" 
+                  src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" 
                   alt="Chem-X Manufacturing Factory" 
                   className="w-full object-cover aspect-4/3 hover:scale-102 transition-transform duration-300"
                 />

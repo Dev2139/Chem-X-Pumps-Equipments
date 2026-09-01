@@ -97,15 +97,15 @@ export default function Navbar() {
           {/* Right Side CTAs */}
           <div className="hidden lg:flex items-center gap-4">
             <a 
-              href="tel:+919879884153" 
+              href="tel:+919328946682" 
               className="flex items-center gap-2 text-brand-navy hover:text-brand-orange font-bold text-sm transition-colors"
             >
               <span className="bg-slate-100 p-2 rounded-full text-brand-blue group-hover:bg-brand-orange/10">
                 <FaPhoneAlt size={12} />
               </span>
               <div className="flex flex-col text-left">
-                <span>+91 98798 84153</span>
-                <span className="text-[10px] text-slate-500 font-medium">+91 93289 46682</span>
+                <span>+91 93289 46682</span>
+                <span className="text-[10px] text-slate-500 font-medium">+91 98798 84153 (Secondary)</span>
               </div>
             </a>
             <button 
@@ -119,7 +119,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-3">
             <a 
-              href="tel:+919879884153"
+              href="tel:+919328946682"
               className="bg-slate-100 p-2.5 rounded-sm text-brand-navy hover:text-brand-orange transition-colors"
               aria-label="Call Chem-X"
             >
@@ -138,78 +138,58 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer */}
-      <div className={`fixed inset-y-0 right-0 w-80 bg-white border-l border-slate-100 shadow-xl z-50 transform transition-transform duration-300 lg:hidden ${
-        isOpen ? 'translate-x-0' : 'translate-x-full'
+      <div className={`lg:hidden fixed inset-x-0 top-[73px] bg-white border-b border-slate-200 shadow-xl transition-all duration-300 transform overflow-hidden ${
+        isOpen ? 'max-h-screen opacity-100 py-6' : 'max-h-0 opacity-0 py-0'
       }`}>
-        <div className="p-6 h-full flex flex-col justify-between">
-          <div>
-            <div className="flex justify-between items-center pb-6 border-b border-slate-100">
-              <div className="flex items-center gap-2">
-                <img 
-                  src={logo} 
-                  alt="Chem-X Pumps & Equipment" 
-                  className="h-8 w-auto object-contain"
-                />
-              </div>
-              <button 
-                onClick={() => setIsOpen(false)}
-                className="p-2 text-brand-navy hover:text-brand-orange"
-                aria-label="Close menu"
-              >
-                <FaTimes size={20} />
-              </button>
-            </div>
-
-            <nav className="mt-6 flex flex-col space-y-4">
-              {navLinks.map((link) => {
-                const isHash = link.path.startsWith('/#');
-                
-                if (isHash) {
-                  return (
-                    <a
-                      key={link.name}
-                      href={link.path}
-                      onClick={() => setIsOpen(false)}
-                      className="text-base font-bold text-brand-navy hover:text-brand-orange py-1"
-                    >
-                      {link.name}
-                    </a>
-                  );
-                }
-
+        <div className="max-w-7xl mx-auto px-4 space-y-6 text-left">
+          <nav className="flex flex-col space-y-3">
+            {navLinks.map((link) => {
+              const isHash = link.path.startsWith('/#');
+              if (isHash) {
                 return (
-                  <Link
+                  <a
                     key={link.name}
-                    to={link.path}
-                    className={`text-base font-bold py-1 border-b border-transparent ${
-                      isActive(link.path) ? 'text-brand-orange border-brand-orange' : 'text-brand-navy hover:text-brand-orange'
-                    }`}
+                    href={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className="text-base font-bold text-brand-navy hover:text-brand-orange py-1"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 );
-              })}
-            </nav>
-          </div>
+              }
 
-          <div className="border-t border-slate-100 pt-6 space-y-4">
-            <a 
-              href="tel:+919879884153" 
-              className="flex flex-col items-center gap-1 text-brand-navy font-bold text-sm justify-center py-2 bg-slate-50 rounded-sm"
-            >
-              <div className="flex items-center gap-2">
-                <FaPhoneAlt size={12} className="text-brand-blue" />
-                <span>+91 98798 84153</span>
-              </div>
-              <span className="text-xs font-normal text-slate-500">+91 93289 46682</span>
-            </a>
-            <button 
-              onClick={() => { setIsOpen(false); openQuoteModal(); }}
-              className="w-full btn-primary py-3 uppercase text-sm font-bold tracking-wider cursor-pointer"
-            >
-              Request Quote
-            </button>
-          </div>
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={`text-base font-bold py-1 border-b border-transparent ${
+                    isActive(link.path) ? 'text-brand-orange border-brand-orange' : 'text-brand-navy hover:text-brand-orange'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 border-t border-slate-100 pt-6 space-y-4 text-left">
+          <a 
+            href="tel:+919328946682" 
+            className="flex flex-col items-center gap-1 text-brand-navy font-bold text-sm justify-center py-2 bg-slate-50 rounded-sm"
+          >
+            <div className="flex items-center gap-2">
+              <FaPhoneAlt size={12} className="text-brand-blue" />
+              <span>+91 93289 46682 (Primary)</span>
+            </div>
+            <span className="text-xs font-normal text-slate-500">+91 98798 84153 (Secondary)</span>
+          </a>
+          <button 
+            onClick={() => { setIsOpen(false); openQuoteModal(); }}
+            className="w-full btn-primary py-3 uppercase text-sm font-bold tracking-wider cursor-pointer"
+          >
+            Request Quote
+          </button>
         </div>
       </div>
     </header>
