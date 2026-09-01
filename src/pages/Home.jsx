@@ -132,15 +132,6 @@ export default function Home() {
     { q: "How do I request a technical quote?", a: "Simply click the 'Request Quote' button on our navbar or product cards, fill in your process specifications (flow, head, temperature, and fluid name), and our engineers will send a technical proposal within 24 hours." }
   ];
 
-  const galleryItems = [
-    { title: "CNC Machining Center", category: "Manufacturing", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" },
-    { title: "Precision Metal Foundry", category: "Foundry", image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" },
-    { title: "Pump Test Bed Inspection", category: "Testing", image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80" },
-    { title: "Impeller Casting Stocks", category: "Spare Parts", image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80" },
-    { title: "Finished Centrifugal Pump", category: "Pump Units", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" },
-    { title: "Precision Shaft Grinding", category: "Manufacturing", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80" }
-  ];
-
   return (
     <div className="pt-20">
       <SEO 
@@ -702,49 +693,6 @@ export default function Home() {
                 <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
               </div>
             ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* 11. PRODUCT GALLERY */}
-      <section className="py-16 md:py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <span className="text-xs font-bold text-brand-orange uppercase tracking-widest">Visual Showcase</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
-              Factory & Component Gallery
-            </h2>
-            <p className="text-slate-600 text-sm md:text-base">
-              A glimpse inside our Ahmedabad foundry, machining shops, testing bays, and finished pump units.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item, idx) => (
-              <div key={idx} className="relative bg-white border border-slate-200 p-2 group overflow-hidden rounded-sm hover:shadow-md transition-shadow">
-                <div className="overflow-hidden aspect-4/3 relative">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                  />
-                  <div className="absolute top-2 left-2 bg-brand-navy/90 text-white text-[9px] font-bold py-0.5 px-2 uppercase tracking-widest">
-                    {item.category}
-                  </div>
-                </div>
-                <div className="p-3 text-left">
-                  <h4 className="text-sm font-bold text-brand-navy">{item.title}</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center pt-8">
-            <Link to="/gallery" className="btn-secondary py-2 px-6 text-sm font-bold inline-flex items-center gap-2">
-              Explore Media Center <FaChevronRight size={10} />
-            </Link>
           </div>
 
         </div>
