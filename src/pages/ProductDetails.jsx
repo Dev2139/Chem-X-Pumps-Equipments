@@ -88,6 +88,10 @@ export default function ProductDetails() {
                 ))}
               </div>
             )}
+
+            <p className="text-xs text-slate-500 font-normal leading-relaxed pt-1">
+              Note: Actual pump may vary from the pump as shown in image as per requirements.
+            </p>
           </div>
 
           {/* Right Column: Title, Short Description, Operating Ranges */}

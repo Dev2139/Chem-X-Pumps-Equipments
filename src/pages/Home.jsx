@@ -399,7 +399,7 @@ export default function Home() {
                           </p>
 
                           {/* Spec pills */}
-                          <div className="grid grid-cols-2 gap-2 mb-4 text-[11px] bg-slate-50 p-2.5 rounded-xs border border-slate-100">
+                          <div className="grid grid-cols-2 gap-2 mb-3 text-[11px] bg-slate-50 p-2.5 rounded-xs border border-slate-100">
                             <div>
                               <span className="text-[9px] font-bold text-slate-400 uppercase block">Capacity</span>
                               <span className="font-bold text-brand-navy truncate block">
@@ -413,6 +413,10 @@ export default function Home() {
                               </span>
                             </div>
                           </div>
+
+                          <p className="text-[10px] text-slate-400 font-normal mb-3 leading-tight">
+                            Note: Actual pump may vary from the pump as shown in image as per requirements.
+                          </p>
                         </div>
 
                         <div className="pt-3 border-t border-slate-100 flex items-center justify-between mt-auto">

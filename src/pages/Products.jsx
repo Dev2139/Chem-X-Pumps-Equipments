@@ -197,6 +197,10 @@ export default function Products() {
                         </div>
                       </div>
 
+                      <p className="text-[10px] text-slate-400 font-normal mt-2.5 leading-tight">
+                        Note: Actual pump may vary from the pump as shown in image as per requirements.
+                      </p>
+
                       {/* Actions */}
                       <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
                         <Link 
