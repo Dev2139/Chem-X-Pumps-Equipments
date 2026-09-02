@@ -87,8 +87,8 @@ export default function About() {
 
           <div className="border-4 border-slate-200 p-2 bg-slate-50">
             <img 
-              src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265877/Centrifugal-Process-Pumps-Manufacturers.webp" 
-              alt="Industrial Centrifugal Process Pump Manufacturing" 
+              src="https://res.cloudinary.com/urzka7oz/image/upload/v1788330330/ChatGPT_Image_Sep_2_2026_11_55_21_AM.png" 
+              alt="Chem-X Industrial Process Pump Manufacturing & Engineering" 
               className="w-full aspect-video object-cover"
             />
           </div>

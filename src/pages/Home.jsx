@@ -268,8 +268,8 @@ export default function Home() {
             <div className="relative group">
               <div className="border-4 border-brand-navy p-2">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265883/ChatGPT_Image_Sep_1_2026_05_58_34_PM.png" 
-                  alt="Chem-X Manufacturing Factory" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788330330/ChatGPT_Image_Sep_2_2026_11_55_21_AM.png" 
+                  alt="Chem-X Manufacturing Plant & Industrial Pump Engineering" 
                   className="w-full object-cover aspect-4/3 hover:scale-102 transition-transform duration-300"
                 />
               </div>
