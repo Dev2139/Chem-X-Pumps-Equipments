@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt, FaChevronRight } from 'react-icons/fa';
 import { useQuoteModal } from '../context/QuoteModalContext';
@@ -20,10 +20,31 @@ export default function WhyUs() {
 
   return (
     <>
-      <Helmet>
-        <title>Why Choose Us | Chem-X Pumps & Equipment</title>
-        <meta name="description" content="Learn why Chem-X is the trusted choice for premium industrial pumps, offering reliable performance, quick delivery, and dedicated engineering support." />
-      </Helmet>
+      <SEO 
+        title="Why Choose Chem-X Pumps | Engineering Excellence & Reliability" 
+        description="Discover why top chemical, pharmaceutical, and textile companies choose Chem-X Pumps for high-efficiency industrial pumps, ISO certified manufacturing, and responsive technical support."
+        keywords="why choose Chem-X, industrial pump quality, reliable chemical pumps, ISO certified pump manufacturer"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Why Choose Us",
+                "item": "https://www.chemxpumps.com/why-us"
+              }
+            ]
+          }
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="bg-brand-navy pt-32 pb-20 md:pt-40 md:pb-28 text-center relative overflow-hidden border-b-4 border-brand-orange">

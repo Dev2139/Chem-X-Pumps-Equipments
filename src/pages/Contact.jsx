@@ -17,8 +17,49 @@ export default function Contact() {
   return (
     <div className="pt-24 bg-white text-left">
       <SEO 
-        title="Contact Chem-X Pumps" 
-        description="Get in touch with Chem-X Pumps & Equipment in Ahmedabad. Request quotes, service callouts, or spare parts catalogues."
+        title="Contact Us & Technical Quote Request | Chem-X Pumps & Equipment" 
+        description="Get in touch with Chem-X Pumps & Equipment engineers in GIDC Vatva, Ahmedabad. Request technical quotes, site callouts, or spare parts catalogs."
+        keywords="contact Chem-X, industrial pump inquiry, quote request chemical pump, Ahmedabad pump manufacturer address, Chem-X phone number"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Chem-X Pumps & Equipment",
+            "description": "Reach out to our sales and technical engineering support team for quotes and service.",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Chem-X Pumps & Equipment",
+              "telephone": "+91-98240-00000",
+              "email": "info@chemxpumps.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "GIDC Vatva Industrial Estate",
+                "addressLocality": "Ahmedabad",
+                "addressRegion": "Gujarat",
+                "postalCode": "382445",
+                "addressCountry": "IN"
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact Us",
+                "item": "https://www.chemxpumps.com/contact"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Header Banner */}

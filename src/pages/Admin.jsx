@@ -109,7 +109,7 @@ export default function Admin() {
   if (!token) {
     return (
       <div className="pt-24 min-h-screen bg-slate-50 flex items-center justify-center px-4">
-        <SEO title="Admin Login" description="Chem-X administration panel." />
+        <SEO title="Admin Login" description="Chem-X administration panel." noindex={true} />
         <div className="w-full max-w-sm bg-white border border-slate-200 rounded-sm shadow-sm p-8 text-left">
           <div className="w-12 h-12 bg-brand-navy rounded-sm flex items-center justify-center mb-5">
             <FaLock className="text-brand-orange" size={18} />
@@ -144,7 +144,7 @@ export default function Admin() {
   // ---------- Dashboard ----------
   return (
     <div className="pt-24 min-h-screen bg-slate-50 text-left">
-      <SEO title="Admin Dashboard" description="Chem-X administration panel." />
+      <SEO title="Admin Dashboard" description="Chem-X administration panel." noindex={true} />
 
       {/* Header */}
       <section className="bg-brand-navy text-white py-10">

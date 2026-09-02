@@ -136,8 +136,58 @@ export default function Home() {
   return (
     <div className="pt-20">
       <SEO 
-        title="Industrial Pump Manufacturers" 
-        description="Chem-X Pumps & Equipment manufactures high-performance industrial pumps: Centrifugal Process, Polypropylene Mono block, Hot Oil, and Slurry Pumps."
+        title="Industrial Chemical Process Pump Manufacturers | Chem-X" 
+        description="Chem-X Pumps & Equipment is an ISO-certified manufacturer of high-performance chemical process pumps, Polypropylene monoblock pumps, Air Cooled Hot Oil pumps, and AODD pumps."
+        keywords="industrial pump manufacturer, chemical process pump manufacturer, polypropylene monoblock pump, hot oil pump, AODD pump, slurry pump, pump spare parts, Gujarat industrial pumps"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": ["Organization", "LocalBusiness"],
+            "name": "Chem-X Pumps & Equipment",
+            "legalName": "Chem-X Pumps & Equipment",
+            "url": "https://www.chemxpumps.com",
+            "logo": "https://www.chemxpumps.com/favicon.png",
+            "image": "https://www.chemxpumps.com/images/chemx-og.jpg",
+            "description": "ISO-certified manufacturer, repairer, and spare parts provider of high-performance industrial chemical process pumps.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "GIDC Vatva Industrial Estate",
+              "addressLocality": "Ahmedabad",
+              "addressRegion": "Gujarat",
+              "postalCode": "382445",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-98240-00000",
+              "contactType": "sales",
+              "email": "info@chemxpumps.com",
+              "availableLanguage": ["English", "Hindi", "Gujarati"]
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/chem-x-pumps",
+              "https://www.facebook.com/chemxpumps"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Chem-X Pumps & Equipment",
+            "url": "https://www.chemxpumps.com"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          }
+        ]}
       />
       
       {/* 2. HERO SECTION */}
@@ -177,8 +227,8 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="w-full max-w-lg aspect-square bg-slate-800/40 border border-slate-700/50 p-4 rounded-sm flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788321554/WhatsApp_Image_2026-09-01_at_9.38.14_PM.jpg" 
-                  alt="Chem-X Industrial Pump Equipment" 
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_52_55_PM.png" 
+                  alt="Chem-X Industrial Process Pump & Chemical Equipment" 
                   className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500 rounded-sm"
                 />
               </div>

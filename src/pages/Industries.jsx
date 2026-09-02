@@ -85,8 +85,29 @@ export default function Industries() {
   return (
     <div className="pt-24 bg-white text-left">
       <SEO 
-        title="Industries We Serve" 
-        description="Explore the applications of Chem-X industrial pumps in Chemical processing, Oil & Gas, Water treatment, Pharmaceutical, and Mining industries."
+        title="Industries Served | Chemical, Petrochemical & Process Pumps | Chem-X" 
+        description="Explore specialized fluid handling pump applications across Chemical processing, Pharmaceuticals, ETP & Effluent plants, Textiles, Oil & Gas, and Mining."
+        keywords="chemical industry pumps, pharmaceutical process pump, ETP plant pumps, textile dye pumps, paper mill pumps, oil hot pumps"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Industries",
+                "item": "https://www.chemxpumps.com/industries"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Header Banner */}

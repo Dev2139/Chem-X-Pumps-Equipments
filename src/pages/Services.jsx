@@ -42,8 +42,52 @@ export default function Services() {
   return (
     <div className="pt-24 bg-white text-left">
       <SEO 
-        title="Industrial Pump Services" 
-        description="Learn about Chem-X engineering support, pump overhaul & repairs, laser alignment, annual maintenance contracts (AMC), and spare parts distribution."
+        title="Industrial Pump Repair, Maintenance & Custom Overhaul Services | Chem-X" 
+        description="Chem-X offers complete industrial pump repair, field commissioning, preventative maintenance contracts (AMC), mechanical seal retrofitting, and spare fabrication."
+        keywords="pump repair service, industrial pump overhaul, pump spare parts fabrication, laser alignment, annual maintenance contract pump, pump reconditioning"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Industrial Pump Repair & Reconditioning Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "Chem-X Pumps & Equipment",
+              "url": "https://www.chemxpumps.com"
+            },
+            "areaServed": "India",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Industrial Engineering Services",
+              "itemListElement": services.map((s, idx) => ({
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": s.title,
+                  "description": s.description
+                }
+              }))
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.chemxpumps.com/services"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Header Banner */}

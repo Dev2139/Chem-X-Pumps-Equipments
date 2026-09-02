@@ -52,8 +52,41 @@ export default function Products() {
   return (
     <div className="pt-24 bg-white min-h-screen flex flex-col">
       <SEO 
-        title="Industrial Pump Catalog" 
-        description="Browse our range of heavy-duty industrial process pumps, monoblock chemical pumps, hot oil thermic fluid pumps, and dynamic spare parts."
+        title="Industrial Pump Catalog & Product Range | Chem-X" 
+        description="Browse the complete catalog of Chem-X industrial process pumps, PP monoblock pumps, air cooled hot oil thermic fluid pumps, AODD pumps, and spare parts."
+        keywords="industrial pump catalog, chemical pump specs, centrifugal process pump list, polypropylene monoblock catalog, hot oil pumps"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Chem-X Industrial Pumps Catalog",
+            "numberOfItems": products.length,
+            "itemListElement": products.map((prod, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "name": prod.name,
+              "url": `https://www.chemxpumps.com/product/${prod.id}`
+            }))
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products Catalog",
+                "item": "https://www.chemxpumps.com/products"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Header Banner */}

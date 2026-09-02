@@ -46,8 +46,62 @@ export default function ProductDetails() {
   return (
     <div className="pt-24 bg-white text-left">
       <SEO 
-        title={`${product.name} (${product.model})`} 
-        description={product.shortDescription}
+        title={`${product.name} (${product.model}) | Chem-X Industrial Pump`} 
+        description={product.shortDescription || product.description}
+        keywords={`${product.name}, ${product.model}, ${product.category}, industrial pump, chemical pump specs, Chem-X pumps`}
+        ogImage={activeImage || (product.images && product.images[0])}
+        ogType="product"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.name,
+            "image": (product.images || []).map(img => img.startsWith('http') ? img : `https://www.chemxpumps.com${img.startsWith('/') ? '' : '/'}${img}`),
+            "description": product.description || product.shortDescription,
+            "mpn": product.model,
+            "sku": product.id,
+            "brand": {
+              "@type": "Brand",
+              "name": "Chem-X"
+            },
+            "category": product.category,
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "priceCurrency": "INR",
+              "price": "0.00",
+              "description": "Contact Chem-X for custom industrial pricing and technical quote",
+              "seller": {
+                "@type": "Organization",
+                "name": "Chem-X Pumps & Equipment"
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://www.chemxpumps.com/products"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": product.name,
+                "item": `https://www.chemxpumps.com/product/${product.id}`
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Back to Products link */}

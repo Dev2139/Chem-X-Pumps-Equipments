@@ -11,7 +11,7 @@ export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   // Extract unique categories
-  const categories = ['All', 'Dispatching', 'Owner', 'Mounting', 'Testing & Confirmation', 'Manufacturing', 'Products', 'Servicing'];
+  const categories = ['All', 'Dispatching', 'Assembly', 'Mounting', 'Testing & Confirmation', 'Products'];
 
   // Filter gallery items
   const filteredItems = selectedCategory === 'All'
@@ -43,8 +43,29 @@ export default function Gallery() {
   return (
     <div className="pt-20">
       <SEO 
-        title="Factory & Operations Gallery | Chem-X Pumps" 
-        description="Explore Chem-X Pumps factory manufacturing, baseplate mounting, dispatching, leadership, and operational gallery."
+        title="Factory Infrastructure & Manufacturing Gallery | Chem-X Pumps" 
+        description="Explore Chem-X Pumps GIDC manufacturing facility, dynamic balancing equipment, pump testing rigs, assembly lines, and finished project dispatches."
+        keywords="Chem-X factory photos, pump manufacturing plant, pump assembly line gallery, industrial pump test rig"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Gallery",
+                "item": "https://www.chemxpumps.com/gallery"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Hero Header */}

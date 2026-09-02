@@ -16,8 +16,41 @@ export default function About() {
   return (
     <div className="pt-24 bg-white">
       <SEO 
-        title="About Our Company" 
-        description="Learn about Chem-X Pumps & Equipment - our manufacturing plant, engineering standards, and ISO 9001:2015 quality policies."
+        title="About Us | Industrial Pump Manufacturer & ISO 9001 Company | Chem-X" 
+        description="Learn about Chem-X Pumps & Equipment - precision pump engineering, modern GIDC Vatva manufacturing plant, and ISO 9001:2015 quality standards."
+        keywords="about Chem-X, pump manufacturer history, ISO pump company, Gujarat pump factory, chemical pump manufacturing company"
+        schemaOrgJSONLD={[
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Chem-X Pumps & Equipment",
+            "description": "ISO 9001:2015 certified manufacturer of high-grade chemical process pumps and industrial equipment.",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Chem-X Pumps & Equipment",
+              "foundingDate": "2010",
+              "url": "https://www.chemxpumps.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.chemxpumps.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://www.chemxpumps.com/about"
+              }
+            ]
+          }
+        ]}
       />
 
       {/* Header Banner */}

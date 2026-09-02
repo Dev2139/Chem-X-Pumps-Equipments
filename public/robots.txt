@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 # Sitemap Location
 Sitemap: https://www.chemxpumps.com/sitemap.xml
