@@ -36,13 +36,13 @@ export const galleryItems = [
     title: 'Acid Transfer Pump',
     label: 'Acid Transfer Pump',
     category: 'Products',
-    image: 'https://res.cloudinary.com/dsddldquo/image/upload/v1788358057/skqfalh3r98ujb9k5mf9.png',
+    image: 'https://res.cloudinary.com/dsddldquo/image/upload/v1788361221/ykxtqtuap4yhtylgc6wn.png',
     description: 'Rugged heavy-duty chemical process pump designed for aggressive acid transfer, corrosive chemical handling, and industrial chemical processing.'
   },
   {
     id: 'mud-sewage-pump',
     title: 'CMP Series Self Priming Mud & Sewage Pump',
-    label: 'Mud & Sewage',
+    label: 'Mud & Sewage Pump',
     category: 'Products',
     image: 'https://res.cloudinary.com/urzka7oz/image/upload/v1788265883/ChatGPT_Image_Sep_1_2026_06_00_39_PM.png',
     description: 'Self-priming non-clogging mud and sewage pump engineered for effluent water treatment, industrial waste, and solid-laden liquid transfer.'

@@ -130,7 +130,10 @@ export default function Home() {
             "url": "https://www.chemxpumps.com",
             "logo": "https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png",
             "image": "https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png",
-            "description": "ISO-certified manufacturer, repairer, and spare parts provider of high-performance industrial chemical process pumps.",
+            "description": "ISO 9001:2015 certified manufacturer, repairer, and spare parts provider of high-performance industrial chemical process pumps in India.",
+            "priceRange": "$$",
+            "telephone": "+91-93289-46682",
+            "email": "info@chemxpumps.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "GIDC Vatva Industrial Estate",
@@ -139,13 +142,33 @@ export default function Home() {
               "postalCode": "382445",
               "addressCountry": "IN"
             },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 22.9554,
+              "longitude": 72.6300
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+91-98240-00000",
-              "contactType": "sales",
+              "telephone": "+91-93289-46682",
+              "contactType": "sales & support",
               "email": "info@chemxpumps.com",
               "availableLanguage": ["English", "Hindi", "Gujarati"]
             },
+            "areaServed": ["India", "Middle East", "Southeast Asia", "Africa", "Global"],
+            "knowsAbout": [
+              "Chemical Process Pumps",
+              "Polypropylene Monoblock Pumps",
+              "Air Cooled Hot Oil Pumps",
+              "AODD Diaphragm Pumps",
+              "Slurry Pumps",
+              "Pump Repair and Overhauling"
+            ],
             "sameAs": [
               "https://www.linkedin.com/company/chem-x-pumps",
               "https://www.facebook.com/chemxpumps"
@@ -153,9 +176,41 @@ export default function Home() {
           },
           {
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Chem-X Pumps & Equipment",
-            "url": "https://www.chemxpumps.com"
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What industries use Chem-X chemical process pumps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Chem-X chemical process pumps are engineered for chemical manufacturing, pharmaceuticals, water & wastewater treatment, oil & gas, paper & pulp, power plants, and mining industries handling corrosive liquids, thermic fluids, and aggressive acids."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Chem-X provide custom pump metallurgy and flow rate specifications?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Chem-X provides custom impeller trimming, specialized metallurgy (CF8, CF8M, Hastelloy, Polypropylene), and motor setups tailored to exact head and flow rate requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are Chem-X industrial pumps ISO certified?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, all Chem-X industrial pumps adhere strictly to ISO 9001:2015 quality standards, ISO 2858 process dimensions, and rigorous hydrostatic pressure test bed validations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Chem-X offer pump repair and spare parts distribution?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Chem-X manufactures original replacement spare parts (impellers, casings, shafts, mechanical seals) and delivers complete pump overhauling and dynamic balancing repair services."
+                }
+              }
+            ]
           }
         ]}
       />

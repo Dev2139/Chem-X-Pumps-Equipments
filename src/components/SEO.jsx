@@ -30,10 +30,24 @@ export default function SEO({
     formattedOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_DOMAIN}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
   }
 
+  // Global WebSite Schema for Sitelinks Searchbox
+  const defaultWebsiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Chem-X Pumps & Equipment",
+    "alternateName": "Chem-X Pumps",
+    "url": SITE_DOMAIN,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${SITE_DOMAIN}/products?search={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   // Handle single or array of JSON-LD schemas
   const schemas = Array.isArray(schemaOrgJSONLD) 
-    ? schemaOrgJSONLD 
-    : (schemaOrgJSONLD ? [schemaOrgJSONLD] : []);
+    ? [defaultWebsiteSchema, ...schemaOrgJSONLD] 
+    : (schemaOrgJSONLD ? [defaultWebsiteSchema, schemaOrgJSONLD] : [defaultWebsiteSchema]);
 
   return (
     <Helmet>
@@ -48,6 +62,12 @@ export default function SEO({
         name="robots" 
         content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} 
       />
+
+      {/* Geo Location Tags for B2B Search Engines */}
+      <meta name="geo.region" content="IN-GJ" />
+      <meta name="geo.placename" content="Ahmedabad" />
+      <meta name="geo.position" content="22.9554;72.6300" />
+      <meta name="ICBM" content="22.9554, 72.6300" />
 
       {/* Open Graph / Facebook / LinkedIn / WhatsApp */}
       <meta property="og:site_name" content="Chem-X Pumps & Equipment" />

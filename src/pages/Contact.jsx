@@ -29,7 +29,7 @@ export default function Contact() {
             "mainEntity": {
               "@type": "LocalBusiness",
               "name": "Chem-X Pumps & Equipment",
-              "telephone": "+91-98240-00000",
+              "telephone": "+91-93289-46682",
               "email": "info@chemxpumps.com",
               "address": {
                 "@type": "PostalAddress",
@@ -38,6 +38,11 @@ export default function Contact() {
                 "addressRegion": "Gujarat",
                 "postalCode": "382445",
                 "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 22.9554,
+                "longitude": 72.6300
               }
             }
           },
