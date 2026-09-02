@@ -7,6 +7,7 @@ import { ProductsProvider } from './context/ProductsContext';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Pages
 import Home from './pages/Home';
@@ -57,6 +58,9 @@ export default function App() {
             
             {/* Footer */}
             <Footer />
+
+            {/* Floating WhatsApp Button */}
+            <WhatsAppButton />
 
           </div>
         </QuoteModalProvider>

@@ -5,7 +5,7 @@ import {
   FaCheckCircle, FaChevronDown, FaPhoneAlt, FaEnvelope, FaChevronRight, FaChevronLeft,
   FaArrowRight, FaIndustry, FaWater, FaFlask, FaPills, FaUtensils, 
   FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate,
-  FaPause, FaPlay, FaLayerGroup, FaStar, FaQuoteLeft
+  FaPause, FaPlay, FaLayerGroup, FaStar, FaQuoteLeft, FaEye, FaBullseye
 } from 'react-icons/fa';
 import { useQuoteModal } from '../context/QuoteModalContext';
 import { useProducts } from '../context/ProductsContext';
@@ -317,6 +317,89 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* 3.5 VISION & MISSION SECTION */}
+      <section className="py-16 bg-slate-900 text-white relative overflow-hidden border-t-4 border-brand-orange">
+        <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:30px_30px]" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
+            <span className="inline-flex items-center gap-2 px-3 py-1 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-xs font-bold uppercase tracking-widest rounded-sm">
+              Purpose & Purpose-Driven Engineering
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+              Our Vision & Mission
+            </h2>
+            <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+              Steered by technical excellence, metallurgical innovation, and lifelong customer partnerships.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            
+            {/* Vision Card */}
+            <div className="bg-slate-800/80 border border-slate-700 p-8 rounded-sm text-left hover:border-brand-orange transition-all duration-300 group flex flex-col justify-between space-y-6">
+              <div className="space-y-4">
+                <div className="w-14 h-14 bg-brand-orange/15 border border-brand-orange/40 text-brand-orange rounded-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <FaEye size={26} />
+                </div>
+                <span className="text-xs font-extrabold text-brand-orange uppercase tracking-widest block">
+                  Future Roadmap
+                </span>
+                <h3 className="text-2xl font-black text-white tracking-tight">
+                  Our Vision
+                </h3>
+                <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+                  "To be the globally preferred manufacturer of high-performance chemical process and industrial pumps, recognized for metallurgical innovation, zero-leak reliability, and sustainable fluid handling solutions."
+                </p>
+              </div>
+
+              <ul className="pt-4 border-t border-slate-700/60 space-y-2.5 text-xs text-slate-300 font-medium">
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-brand-orange shrink-0" size={14} />
+                  <span>Global engineering footprint across processing industries</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-brand-orange shrink-0" size={14} />
+                  <span>Pioneering energy-efficient & eco-friendly hydraulic pump designs</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Mission Card */}
+            <div className="bg-slate-800/80 border border-slate-700 p-8 rounded-sm text-left hover:border-brand-blue transition-all duration-300 group flex flex-col justify-between space-y-6">
+              <div className="space-y-4">
+                <div className="w-14 h-14 bg-brand-blue/15 border border-brand-blue/40 text-brand-blue rounded-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <FaBullseye size={26} />
+                </div>
+                <span className="text-xs font-extrabold text-brand-blue uppercase tracking-widest block">
+                  Core Mandate
+                </span>
+                <h3 className="text-2xl font-black text-white tracking-tight">
+                  Our Mission
+                </h3>
+                <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+                  "To engineer heavy-duty, ISO-compliant pump systems that solve complex industrial fluid challenges, deliver maximum hydraulic efficiency, and provide dependable lifelong service to global processing industries."
+                </p>
+              </div>
+
+              <ul className="pt-4 border-t border-slate-700/60 space-y-2.5 text-xs text-slate-300 font-medium">
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-brand-blue shrink-0" size={14} />
+                  <span>Precision metallurgy tailored to aggressive chemical fluids</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-brand-blue shrink-0" size={14} />
+                  <span>24/7 technical callouts & rapid spare parts distribution</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
