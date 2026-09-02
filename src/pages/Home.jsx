@@ -5,11 +5,12 @@ import {
   FaCheckCircle, FaChevronDown, FaPhoneAlt, FaEnvelope, FaChevronRight, FaChevronLeft,
   FaArrowRight, FaIndustry, FaWater, FaFlask, FaPills, FaUtensils, 
   FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate,
-  FaPause, FaPlay, FaLayerGroup
+  FaPause, FaPlay, FaLayerGroup, FaStar, FaQuoteLeft
 } from 'react-icons/fa';
 import { useQuoteModal } from '../context/QuoteModalContext';
 import { useProducts } from '../context/ProductsContext';
 import SEO from '../components/SEO';
+import GallerySection from '../components/GallerySection';
 
 export default function Home() {
   const { openQuoteModal } = useQuoteModal();
@@ -176,9 +177,9 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="w-full max-w-lg aspect-square bg-slate-800/40 border border-slate-700/50 p-4 rounded-sm flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788265884/ChatGPT_Image_Sep_1_2026_05_52_55_PM.png" 
-                  alt="Chem-X Heavy Duty Pump" 
-                  className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500"
+                  src="https://res.cloudinary.com/urzka7oz/image/upload/v1788321554/WhatsApp_Image_2026-09-01_at_9.38.14_PM.jpg" 
+                  alt="Chem-X Industrial Pump Equipment" 
+                  className="object-contain max-h-full max-w-full hover:scale-105 transition-transform duration-500 rounded-sm"
                 />
               </div>
               
@@ -660,11 +661,11 @@ export default function Home() {
             </div>
 
           </div>
-
         </div>
       </section>
 
-
+      {/* 9. GALLERY SECTION */}
+      <GallerySection />
 
       {/* 10. PROCESS SECTION (4 steps horizontal) */}
       <section className="py-16 md:py-24 bg-white border-b border-slate-200">
@@ -698,7 +699,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 12. TESTIMONIALS (Industrial slider, no fancy cards) */}
+      {/* 12. TESTIMONIALS */}
       <section className="py-16 md:py-24 bg-white border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -707,16 +708,70 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy tracking-tight">
               What Our Engineering Partners Say
             </h2>
+            <p className="text-slate-600 text-sm md:text-base">
+              Trusted by chemical plants, refineries, and manufacturing facilities across India.
+            </p>
           </div>
 
-          <div className="max-w-4xl mx-auto border-l-4 border-brand-orange pl-6 md:pl-10 py-4 text-left">
-            <p className="text-lg md:text-xl font-medium text-brand-navy italic leading-relaxed">
-              "We replaced three corrosive-transfer acid pumps in our chemical washing section with Chem-X PP Mono Block pumps. Over 14 months of continuous duty, we've had zero mechanical seal leakage and a 12% drop in power consumption compared to our previous equipment."
-            </p>
-            <div className="mt-6">
-              <span className="font-bold text-brand-navy block text-base">Mr. R. K. Patel</span>
-              <span className="text-xs text-slate-500 uppercase font-semibold">Chief Maintenance Engineer - Gujarat Chemical Synthetics Ltd.</span>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Mr. Rajesh V. Patel",
+                role: "Head of Plant Maintenance",
+                company: "Gujarat Chemical Synthetics Ltd., Dahej",
+                location: "Gujarat, India",
+                rating: 5,
+                comment: "We replaced three corrosive-transfer acid pumps in our chemical washing section with Chem-X CCPP Centrifugal Process Pumps. Over 18 months of continuous duty handling aggressive liquids, we have recorded zero mechanical seal leakage and achieved a 14% drop in power consumption."
+              },
+              {
+                name: "Mr. Suresh K. Sharma",
+                role: "Senior Vice President (Engineering)",
+                company: "Bharat Petrochem & Refineries Corp., Vadodara",
+                location: "Gujarat, India",
+                rating: 5,
+                comment: "The Air Cooled Hot Oil Pumps from Chem-X operating at 300°C have exceeded our expectations. Eliminating the requirement for external water cooling lines saved us significant utility costs while maintaining flawless dynamic balance and minimum vibration."
+              },
+              {
+                name: "Mr. Anish P. Deshmukh",
+                role: "Chief Project Director",
+                company: "Deccan Pharma & Fine Chemicals Ltd.",
+                location: "Maharashtra, India",
+                rating: 5,
+                comment: "Chem-X delivered custom polypropylene process pumps strictly adhering to ISO 2858 dimensions within 10 days of purchase order. Their technical team assisted on-site with laser shaft alignment and hydrostatic pressure testing."
+              }
+            ].map((t, idx) => (
+              <div 
+                key={idx}
+                className="bg-slate-50 border border-slate-200 p-8 rounded-sm text-left flex flex-col justify-between hover:shadow-lg transition-all duration-300 relative group"
+              >
+                <div className="space-y-4">
+                  {/* Rating Stars & Quote Icon */}
+                  <div className="flex justify-between items-center">
+                    <div className="flex text-amber-500 gap-1">
+                      {[...Array(t.rating)].map((_, i) => (
+                        <FaStar key={i} size={14} />
+                      ))}
+                    </div>
+                    <FaQuoteLeft className="text-brand-orange/30 group-hover:text-brand-orange/60 transition-colors" size={24} />
+                  </div>
+
+                  <p className="text-sm text-slate-700 leading-relaxed italic">
+                    "{t.comment}"
+                  </p>
+                </div>
+
+                <div className="pt-6 border-t border-slate-200/80 mt-6 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-brand-navy text-brand-orange font-black flex items-center justify-center text-sm shrink-0 border border-brand-orange/30">
+                    {t.name.split(' ')[1]?.[0] || 'C'}{t.name.split(' ')[2]?.[0] || 'X'}
+                  </div>
+                  <div>
+                    <span className="font-extrabold text-brand-navy block text-sm">{t.name}</span>
+                    <span className="text-xs text-brand-blue font-semibold block">{t.role}</span>
+                    <span className="text-[11px] text-slate-500 font-medium block">{t.company}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
         </div>

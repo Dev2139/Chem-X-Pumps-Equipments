@@ -72,6 +72,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/gallery" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
+                  Factory Gallery
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-200">
                   Contact Office
                 </Link>
@@ -86,8 +91,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/product/centrifugal-process-pump" className="hover:text-white transition-colors">
-                  Centrifugal Process Pump (CCPP)
+                <Link to="/product/centrifugal-process-pump-ccpp" className="hover:text-white transition-colors">
+                  Centrifugal Process Pump CCPP
                 </Link>
               </li>
               <li>
@@ -96,8 +101,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/product/centrifugal-mono-block-pump" className="hover:text-white transition-colors">
-                  Centrifugal Mono Block Pump (CCMBP)
+                <Link to="/product/rotary-gear-pump" className="hover:text-white transition-colors">
+                  Rotary Gear Pump (CGP)
                 </Link>
               </li>
               <li>

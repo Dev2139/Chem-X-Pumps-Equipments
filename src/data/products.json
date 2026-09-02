@@ -1,6 +1,95 @@
 {
   "products": [
     {
+      "id": "centrifugal-process-pump-ccpp",
+      "name": "Centrifugal Process Pump CCPP",
+      "model": "CCPP",
+      "category": "Centrifugal Process Pumps",
+      "shortDescription": "Single Stage Horizontal, End-suction, Back-pullout Pump.",
+      "description": "We manufacture the Centrifugal Pump that includes the end-suction and back-pull out type centrifugal pump. Our heavy-duty pump is capable to handle a wide spectrum of corrosive chemicals, starting from strongly oxidizing solutions to strongly reducing ones, at different temperatures and concentration, which can be used in different process plants.",
+      "images": [
+        "https://res.cloudinary.com/urzka7oz/image/upload/v1788156050/ChatGPT_Image_Aug_31_2026_11_29_34_AM.png"
+      ],
+      "specifications": {
+        "Design Standard": "ISO 2858 Dimensions",
+        "Type": "Single Stage Horizontal, End-suction, Back-pullout",
+        "Impeller Type": "Single Stage Closed & Semi Open Impeller",
+        "Sealing Options": "Single & Double Mechanical Seal",
+        "Bearings": "One Cylindrical Roller Bearing on Pump end, Two Angular Contact Ball Bearing with Oil Lubricated",
+        "Drive Options": "Suitable with V-belt Drive or Direct Coupled with a Motor"
+      },
+      "operatingRange": {
+        "Capacity": "up to 2200 m³/hr",
+        "Head": "up to 150 mtr",
+        "Pressure": "up to 15 kg/cm²",
+        "Size": "25 mm to 300 mm",
+        "Speed": "up to 3500 rpm",
+        "Temperature": "up to 350° C",
+        "M.O.C.": "Graded Grey Cast Iron, Alloy Steel, SS 316 (CF8M), SS 316L, CD4MCu (Duplex Steel), Ni-Resist, CF3 (SS 304L), CD3MM (SS 2205), CE3MN (SS 2507), Carbon Steel (WCB), SS 304 (CF8), Bronze, CN7M (Alloy 20), SS 904L, Nickel & Ni-Alloys, Hastelloy B & C"
+      },
+      "features": [
+        "As per ISO 2858 Dimensions.",
+        "Back Pull-Out Design.",
+        "Highly Efficient Performance.",
+        "Durable Shaft, Sleeve & Bearings.",
+        "Designed for Low NPSH.",
+        "Noise & Maintenance Free.",
+        "Single & Double Mechanical Seal.",
+        "Single Stage Closed & Semi Open Impeller.",
+        "Steady Head & Capacity.",
+        "One Cylindrical Roller Bearing on Pump end, Two Angular Contact Ball Bearing with Oil Lubricated.",
+        "Suitable with V-belt Drive or Direct Coupled with a Motor."
+      ],
+      "materials": [
+        "Graded Grey Cast Iron",
+        "Alloy Steel",
+        "SS 316 (CF8M)",
+        "SS 316L",
+        "CD4MCu (Duplex Steel)",
+        "Ni-Resist",
+        "CF3 (SS 304L)",
+        "CD3MM (SS 2205)",
+        "CE3MN (SS 2507)",
+        "Carbon Steel (WCB)",
+        "SS 304 (CF8)",
+        "Bronze",
+        "CN7M (Alloy 20)",
+        "SS 904L",
+        "Nickel & Ni-Alloys",
+        "Hastelloy B & C"
+      ],
+      "applications": [
+        "Hot and Cold-Water Circulation",
+        "Effluent Treatment Plants",
+        "Cooling Tower Installations",
+        "Paper and Pulp Industries",
+        "Thermic Fluid Boiler",
+        "Heat Exchanger",
+        "Chemical & Petrochemical Industries",
+        "Sugar Plants",
+        "Textile & Ceramic Industries",
+        "Solvent Transfer",
+        "Food Industries",
+        "Laminate Industries",
+        "Marine / Ports",
+        "Seawater & in many more Industrial & Applications."
+      ],
+      "targetIndustries": [
+        "CHEMICAL PROCESSING",
+        "PETROCHEMICAL",
+        "POWER PLANT",
+        "WATER TREATMENT",
+        "PULP & PAPER",
+        "MARINE",
+        "OIL & GAS",
+        "FOOD & BEVERAGE",
+        "PHARMACEUTICAL",
+        "MINING",
+        "TEXTILE"
+      ],
+      "brochurePdf": "https://drive.google.com/file/d/1Vo1iEka1N6KYaSbq90pHn-8PzE_anrSn/view?usp=sharing"
+    },
+    {
       "id": "centrifugal-process-pump",
       "name": "Centrifugal Process Pump",
       "model": "CCPP",
@@ -1001,7 +1090,7 @@
       "shortDescription": "Single & Double Helical (Multi Purpose) Rotary Gear Pump.",
       "description": "Chem-X Pumps & Equipment manufactures CGP Series Single & Double Helical Multi Purpose Rotary Gear Pumps. Engineered for transferring light, viscous, and semi-viscous fluids with high efficiency, low noise, and continuous duty reliability.",
       "images": [
-        "https://res.cloudinary.com/urzka7oz/image/upload/v1788163686/ChatGPT_Image_Aug_31_2026_01_36_59_PM.png"
+        "https://res.cloudinary.com/urzka7oz/image/upload/v1788323220/ChatGPT_Image_Sep_2_2026_09_56_44_AM.png"
       ],
       "specifications": {
         "Type": "Single & Double Helical Rotary Gear Pump",
@@ -1011,108 +1100,37 @@
         "Bearings": "Bush bearing with heavy shaft"
       },
       "operatingRange": {
-        "Capacity": "up to 195 m³/hr",
-        "Head": "up to 100 mtr",
-        "Pressure": "up to 10 kg/cm²",
-        "Size Range": "12 to 200 mm",
-        "Speed": "up to 1500 rpm",
-        "Temperature": "up to 200° C",
-        "M.O.C.": "SS 316, SS 316L, SS 304, SS 304L, Duplex SS, Super Duplex SS, Cast Bronze, Cast Steel, Cast Iron, Hastelloy B & C, Alloy 20 etc."
+        "Capacity": "Up to 195 m³/hr",
+        "Head": "Up to 100 mtr",
+        "Discharge Size": "Dn 12 to 200 mm",
+        "Temperature": "Up to 200°C",
+        "Speed": "Up to 1500 rpm",
+        "Pressure": "Up to 10 kg/cm²",
+        "M.O.C.": "Cast Iron, Alloy Steel, CE8M, Carbon Steel (WCB), CF8M, Bronze"
       },
       "features": [
-        "Self Priming Pumps with Five Mtr. Suction Lifts.",
-        "Compact in Size, Low Noise, High Efficiency.",
-        "Easy Maintenance, Longer Life, Economical.",
-        "An Inbuilt Pressure Relief Valve.",
-        "Bush Bearing with a Heavy Shaft.",
-        "Double Helical Gears to Reduce Axial Thrust.",
-        "Continuous Duty.",
-        "Handle Multiple Liquids.",
-        "Unique Design."
+        "Self priming pumps with five mtr. suction lifts.",
+        "Compact in size, low noise, high efficiency.",
+        "Easy maintenance, longer life, economical.",
+        "An inbuilt pressure relief valve.",
+        "Bush bearing with a heavy shaft.",
+        "Double helical gears to reduce axial thrust.",
+        "Continuous duty.",
+        "Handle multiple liquids.",
+        "Unique design."
       ],
       "materials": [
-        "SS 316 / SS 316L",
-        "SS 304 / SS 304L",
-        "Duplex Stainless Steel",
-        "Super Duplex Stainless Steel",
-        "Cast Bronze",
-        "Cast Steel",
         "Cast Iron",
-        "Hastelloy B & C",
-        "Alloy 20"
+        "Alloy Steel",
+        "CE8M",
+        "Carbon Steel (WCB)",
+        "CF8M",
+        "Bronze"
       ],
       "applications": [
-        "Delivering Light & Viscous Liquids (Oil, Fats, Coal, Tar, Paint, Molasses)",
-        "Highly Viscous Liquids (Ammonia, Bleaches, Dyes, Fruit Juice, Gasoline, Glycerin, Glue, Grease)",
-        "Paints, Soap Solutions & Chemical Resins"
-      ],
-      "targetIndustries": [
-        "OIL & GAS INDUSTRY",
-        "PAPER & PULP INDUSTRY",
-        "CHEMICAL INDUSTRY",
-        "WATER TREATMENT",
-        "FOOD & BEVERAGE INDUSTRY",
-        "MINING INDUSTRY",
-        "MARINE INDUSTRY",
-        "PETROCHEMICAL INDUSTRY"
-      ],
-      "brochurePdf": "https://drive.google.com/file/d/1Vo1iEka1N6KYaSbq90pHn-8PzE_anrSn/view?usp=sharing"
-    },
-    {
-      "id": "progressive-cavity-sump-pump",
-      "name": "Progressive Cavity Vertical Long Shaft Sump Pump",
-      "model": "CCSP",
-      "category": "Vertical Sump Pumps",
-      "shortDescription": "Progressive Cavity Vertical Long Shaft Sump Pump for high pressure & viscous fluids.",
-      "description": "Chem-X Pumps & Equipment manufactures CCSP Series Progressive Cavity Vertical Long Shaft Sump Pumps. Featuring a single rotating element that generates progressing cavities to deliver uniform, metered, and non-pulsating flow for shear-sensitive and highly viscous media.",
-      "images": [
-        "https://res.cloudinary.com/urzka7oz/image/upload/v1788164445/ChatGPT_Image_Aug_31_2026_01_50_32_PM.png"
-      ],
-      "specifications": {
-        "Type": "Progressive Cavity Vertical Long Shaft Sump Pump",
-        "Flow": "Uniform, metered & non-pulsating flow",
-        "Suction Lift": "Capabilities up to 9.5 mtr under high vacuum conditions",
-        "Pressure Rating": "High pressure capability up to 25 kg/cm²",
-        "Rotation": "Reversible rotation capability performing equally in either direction"
-      },
-      "operatingRange": {
-        "Capacity": "up to 145 m³/hr",
-        "Head": "up to 250 mtr",
-        "Pressure": "up to 25 kg/cm²",
-        "Size Range": "25 to 150 mm",
-        "Speed": "up to 600 rpm",
-        "Temperature": "up to 120° C",
-        "M.O.C.": "SS 316, SS 316L, SS 304, SS 304L, Duplex SS, Super Duplex SS, Cast Bronze, Cast Steel, Cast Iron, Hastelloy B & C, Alloy 20 etc."
-      },
-      "features": [
-        "Single rotating element delivering uniform, metered & non-pulsating flow.",
-        "Head developed is independent of rotational speed; capacity proportionate to speed.",
-        "Inherently self-priming, can work on snore without a foot valve.",
-        "Can handle solids in suspension or media with high percentage of solids.",
-        "Suction lift up to 9.5 mtr, effective even in high vacuum conditions.",
-        "Minimum degradation of shear-sensitive media & handles highly viscous materials.",
-        "Reversible rotation capabilities performing with equal efficiency in both directions.",
-        "Rotor turns inside a resilient stator generating minimal noise."
-      ],
-      "materials": [
-        "SS 316 / SS 316L",
-        "SS 304 / SS 304L",
-        "Duplex Stainless Steel",
-        "Super Duplex Stainless Steel",
-        "Cast Bronze",
-        "Cast Steel",
-        "Cast Iron",
-        "Hastelloy B & C",
-        "Alloy 20"
-      ],
-      "applications": [
-        "Sewage Effluent & Water Treatment Plant",
-        "Sugar, Starch, Cement, Pulp & Paper Industries",
-        "Ceramics, Chemicals, Fertilizers, Soap & Detergents, Cosmetics",
-        "Paint, Varnish, Petrochemicals, Vegetable Oils, Mining, Steel, Rubber",
-        "Construction, Manmade fibers, Fisheries, Oil exploration",
-        "Pharmaceuticals, Cattle feed, Brewery & Distillery, Dairies, Food & Beverages",
-        "Plantations, Fruit processing, Dye stuff, Textiles"
+        "To Deliver a Variety of Light & Viscous Liquids such as Oil, Fats, Coal, Tar, Paint and Molasses.",
+        "Highly Viscous or Semi Viscous Liquids like Ammonia, Bleaches, Coal, Tar, Dyes, Fruits Juice, Gasoline, Glycerin, Glue and Grease.",
+        "Paints, Soap Solution etc..."
       ],
       "targetIndustries": [
         "OIL & GAS INDUSTRY",
@@ -1170,61 +1188,6 @@
       ],
       "applications": [
         "Solvents, Slurry transfer, Barrels, Acidic Materials, High, Viscous Liquids, Abrasive Media."
-      ],
-      "targetIndustries": [
-        "CHEMICAL PROCESSING",
-        "WATER TREATMENT",
-        "PAPER & PULP INDUSTRY",
-        "CHEMICAL INDUSTRY",
-        "METAL FINISHING INDUSTRY",
-        "EFFLUENT TREATMENT",
-        "PETROCHEMICAL INDUSTRY",
-        "FILTER PRESS & TRANSFER"
-      ],
-      "brochurePdf": "https://drive.google.com/file/d/1Vo1iEka1N6KYaSbq90pHn-8PzE_anrSn/view?usp=sharing"
-    },
-    {
-      "id": "centrifugal-monoblock-pump-ccmp",
-      "name": "Centrifugal Monoblock Pump (CCMP)",
-      "model": "CCMP",
-      "category": "Monoblock Pumps",
-      "shortDescription": "Horizontal Centrifugal Monoblock Pump with axial end suction & vertical centerline delivery.",
-      "description": "Chem-X Pumps & Equipment is a leading manufacturer of CCMP Series, known as Centrifugal Monoblock Pump. Features compact motor-pump integrated design, non-overloading power characteristics, and wide operating voltage range.",
-      "images": [
-        "https://res.cloudinary.com/urzka7oz/image/upload/v1788164776/ChatGPT_Image_Aug_31_2026_01_56_02_PM.png"
-      ],
-      "specifications": {
-        "Design": "Horizontal Centrifugal Monoblock single unit construction",
-        "Impeller": "Single stage closed impeller in Volute Casing",
-        "Suction/Delivery": "Axial end suction and vertical centerline delivery",
-        "Motor Protection": "Wide operating voltage range & non-overloading power characteristics"
-      },
-      "operatingRange": {
-        "Capacity": "up to 4000 m³/hr",
-        "Head": "up to 88 mtr",
-        "Pressure": "up to 6 kg/cm²",
-        "Size Range": "25 mm to 150 mm",
-        "Speed": "up to 2900 rpm",
-        "Temperature": "up to 70° C",
-        "Length": "up to 4 mtr",
-        "M.O.C.": "Grey Cast Iron, Bronze, Stainless Steel 316/304"
-      },
-      "features": [
-        "Horizontal, Centrifugal, Monoblock (pump & motor combined to form a single unit) type pump.",
-        "Single stage closed impeller in Volute Casing having axial end suction and vertical centerline delivery.",
-        "No fear of motor burning due to wide operating voltage range & Non-overloading power characteristics at any operating point.",
-        "Advantage of mounting space saving due to elimination of base plate, coupling and coupling guard."
-      ],
-      "materials": [
-        "Grey Cast Iron",
-        "Bronze",
-        "Stainless Steel 316 / 304"
-      ],
-      "applications": [
-        "Industrial Usage: Cooling, Heating, Circulating, Boosting, Air Conditioning, Refrigeration & Cold Storage",
-        "Agriculture Usage: General Irrigation, Sprinkler Irrigation & De-watering systems",
-        "Civil Usage: Water supply schemes for Buildings, Hotels & Commercial Complexes",
-        "Handling clean as well as moderately aggressive liquids"
       ],
       "targetIndustries": [
         "CHEMICAL PROCESSING",

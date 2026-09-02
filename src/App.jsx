@@ -17,6 +17,7 @@ import Industries from './pages/Industries';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import WhyUs from './pages/WhyUs';
+import Gallery from './pages/Gallery';
 import Admin from './pages/Admin';
 
 export default function App() {
@@ -43,6 +44,7 @@ export default function App() {
                 <Route path="/industries" element={<RouteTransition><Industries /></RouteTransition>} />
                 <Route path="/services" element={<RouteTransition><Services /></RouteTransition>} />
                 <Route path="/why-us" element={<RouteTransition><WhyUs /></RouteTransition>} />
+                <Route path="/gallery" element={<RouteTransition><Gallery /></RouteTransition>} />
                 <Route path="/contact" element={<RouteTransition><Contact /></RouteTransition>} />
                 
                 {/* Admin panel (MongoDB product management) */}
