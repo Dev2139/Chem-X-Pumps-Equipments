@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
 const SITE_DOMAIN = 'https://www.chemxpumps.com';
-const DEFAULT_OG_IMAGE = 'https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png';
+const DEFAULT_OG_IMAGE = 'https://res.cloudinary.com/dsddldquo/image/upload/w_1200,h_630,c_pad,b_white,f_jpg,q_auto/v1788357362/imxgedkr5q3camyukp6v.png';
 
 export default function SEO({ 
   title, 
@@ -49,13 +49,17 @@ export default function SEO({
         content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} 
       />
 
-      {/* Open Graph / Facebook / LinkedIn */}
+      {/* Open Graph / Facebook / LinkedIn / WhatsApp */}
       <meta property="og:site_name" content="Chem-X Pumps & Equipment" />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:title" content={ogTitle || siteTitle} />
       <meta property="og:description" content={ogDescription || siteDescription} />
       <meta property="og:image" content={formattedOgImage} />
+      <meta property="og:image:secure_url" content={formattedOgImage} />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_US" />
       
       {/* Twitter Metadata */}
