@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   FaCog, FaTools, FaWrench, FaDraftingCompass, FaShieldAlt, FaAward, FaCogs,
-  FaCheckCircle, FaChevronDown, FaPhoneAlt, FaEnvelope, FaChevronRight, FaChevronLeft,
+  FaCheckCircle, FaPhoneAlt, FaEnvelope, FaChevronRight, FaChevronLeft,
   FaArrowRight, FaIndustry, FaWater, FaFlask, FaPills, FaUtensils, 
   FaBolt, FaHardHat, FaCopy, FaUserTie, FaCheck, FaTimes, FaGlobe, FaCertificate,
   FaPause, FaPlay, FaLayerGroup, FaStar, FaQuoteLeft, FaEye, FaBullseye
@@ -14,7 +14,6 @@ import GallerySection from '../components/GallerySection';
 
 export default function Home() {
   const { openQuoteModal } = useQuoteModal();
-  const [activeFaq, setActiveFaq] = useState(null);
 
   // Extract products
   const { products } = useProducts();
@@ -61,10 +60,6 @@ export default function Home() {
 
   const handleNextSlide = () => {
     setSlideIndex((prev) => (prev + 1) % maxSlides);
-  };
-
-  const toggleFaq = (index) => {
-    setActiveFaq(activeFaq === index ? null : index);
   };
 
   const trustBadges = [
@@ -120,19 +115,6 @@ export default function Home() {
     { step: "04", name: "Delivery", desc: "The equipment is packed in heavy-duty wooden crates and shipped with full calibration, test logs, and operating manuals." }
   ];
 
-  const faqs = [
-    { q: "What standards are Chem-X pumps manufactured to?", a: "Chem-X pumps are manufactured strictly to global standards including ISO 2858 and DIN 24256 dimensions. This guarantees 100% interchangeability with major international brands, allowing you to slide our pumps right into your existing lines." },
-    { q: "What materials of construction (MOC) do you offer?", a: "We cast and manufacture pumps in a wide range of materials: Graded Cast Iron, Cast Steel (WCB), Stainless Steel (SS304, SS304L, SS316, SS316L), Duplex Steel (CD4MCu, SS2205, SS2507), Alloy 20, Hastelloy B & C, and solid Polypropylene (PP) for chemical transfer." },
-    { q: "Do you provide customized pumps for specific operating duty points?", a: "Yes. Our engineering division specializes in custom impeller sizing and motor selection to hit your exact design capacity (m³/hr) and pressure head (meters), ensuring the pump runs at its Best Efficiency Point (BEP) to save power." },
-    { q: "What is the typical lead time for standard chemical pumps?", a: "Standard PP and Centrifugal pumps are shipped within 2 to 3 weeks. Specialized alloy casings or custom turbine pump configurations take approximately 4 to 6 weeks, depending on dynamic casting schedules." },
-    { q: "Can Chem-X pumps run dry without fluid?", a: "Standard centrifugal pumps should not run dry due to shaft seal heat buildup. However, our Air Operated Double Diaphragm (AODD) pumps are designed to run dry indefinitely without damaging the internal chambers." },
-    { q: "Do you supply replacement spares for other major pump brands?", a: "Yes. We manufacture replacement impellers, shafts, sleeves, wear rings, and seal kits according to international standard dimensions that fit perfectly into other brand pumps." },
-    { q: "Do you provide on-site installation and commissioning services?", a: "Yes. Chem-X has a field services division. We send application engineers to verify piping alignment, test motor rotation, assist with startup commissioning, and train your maintenance staff." },
-    { q: "How does the Air Cooled Hot Oil Pump operate without external cooling water?", a: "Our hot oil pump features integrated natural convection cooling fins along the bearing housing and a heat-isolating shaft design. The casing heat dissipation is fast enough that standard seals remain at safe operating temperatures." },
-    { q: "What is your warranty policy on industrial pumps?", a: "All Chem-X pumps carry a comprehensive 12-month warranty from the date of commissioning or 18 months from the date of invoice (whichever is earlier) against any manufacturing defects." },
-    { q: "How do I request a technical quote?", a: "Simply click the 'Request Quote' button on our navbar or product cards, fill in your process specifications (flow, head, temperature, and fluid name), and our engineers will send a technical proposal within 24 hours." }
-  ];
-
   return (
     <div className="pt-20">
       <SEO 
@@ -146,8 +128,8 @@ export default function Home() {
             "name": "Chem-X Pumps & Equipment",
             "legalName": "Chem-X Pumps & Equipment",
             "url": "https://www.chemxpumps.com",
-            "logo": "https://www.chemxpumps.com/favicon.png",
-            "image": "https://www.chemxpumps.com/images/chemx-og.jpg",
+            "logo": "https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png",
+            "image": "https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png",
             "description": "ISO-certified manufacturer, repairer, and spare parts provider of high-performance industrial chemical process pumps.",
             "address": {
               "@type": "PostalAddress",
@@ -174,18 +156,6 @@ export default function Home() {
             "@type": "WebSite",
             "name": "Chem-X Pumps & Equipment",
             "url": "https://www.chemxpumps.com"
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.q,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.a
-              }
-            }))
           }
         ]}
       />
@@ -910,46 +880,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 13. FAQ (Accordion) */}
-      <section className="py-16 md:py-24 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center space-y-4 mb-12">
-            <span className="text-xs font-bold text-brand-orange uppercase tracking-widest">FAQ</span>
-            <h2 className="text-3xl font-extrabold text-brand-navy tracking-tight">
-              Frequently Asked Questions
-            </h2>
-          </div>
 
-          <div className="space-y-3">
-            {faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className="bg-white border border-slate-200 rounded-sm overflow-hidden transition-all duration-200"
-              >
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="w-full px-6 py-4 flex justify-between items-center text-left text-brand-navy font-bold text-sm md:text-base hover:text-brand-orange focus:outline-none"
-                >
-                  <span>{faq.q}</span>
-                  <FaChevronDown 
-                    className={`transition-transform duration-200 text-slate-400 ${
-                      activeFaq === index ? 'transform rotate-180 text-brand-orange' : ''
-                    }`} 
-                    size={14} 
-                  />
-                </button>
-                {activeFaq === index && (
-                  <div className="px-6 pb-5 pt-1 text-xs md:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       {/* 14. CTA BANNER */}
       <section className="bg-brand-navy text-white py-16 text-center border-t-4 border-brand-orange relative overflow-hidden">

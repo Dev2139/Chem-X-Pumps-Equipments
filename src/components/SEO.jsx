@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
 const SITE_DOMAIN = 'https://www.chemxpumps.com';
-const DEFAULT_OG_IMAGE = `${SITE_DOMAIN}/images/chemx-og.jpg`;
+const DEFAULT_OG_IMAGE = 'https://res.cloudinary.com/dsddldquo/image/upload/v1788357362/imxgedkr5q3camyukp6v.png';
 
 export default function SEO({ 
   title, 

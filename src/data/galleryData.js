@@ -32,12 +32,12 @@ export const galleryItems = [
     description: 'ISO 2858 compliant heavy-duty process pump engineered for handling corrosive acids, thermic fluids, and high-temperature chemicals.'
   },
   {
-    id: 'slurry-pump',
-    title: 'Heavy Horizontal Slurry Transfer Pump',
-    label: 'Slurry Pump',
+    id: 'acid-transfer-pump',
+    title: 'Acid Transfer Pump',
+    label: 'Acid Transfer Pump',
     category: 'Products',
-    image: 'https://res.cloudinary.com/urzka7oz/image/upload/v1788265883/ChatGPT_Image_Sep_1_2026_05_58_34_PM.png',
-    description: 'Rugged heavy-duty horizontal slurry transfer pump designed for abrasive mining slurries, mill discharge, and dense mineral processing.'
+    image: 'https://res.cloudinary.com/dsddldquo/image/upload/v1788358057/skqfalh3r98ujb9k5mf9.png',
+    description: 'Rugged heavy-duty chemical process pump designed for aggressive acid transfer, corrosive chemical handling, and industrial chemical processing.'
   },
   {
     id: 'mud-sewage-pump',

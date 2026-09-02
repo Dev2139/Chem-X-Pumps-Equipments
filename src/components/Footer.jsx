@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedinIn, FaTwitter, FaFacebookF, FaYoutube, FaGlobe } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 export default function Footer() {
@@ -24,20 +24,6 @@ export default function Footer() {
             <p className="text-sm text-slate-400 leading-relaxed">
               Established industrial manufacturer of premium centrifugal process, chemical, and monoblock pumps. Engineered for high performance in corrosive and high-temperature environments.
             </p>
-            <div className="flex space-x-3 pt-2">
-              <a href="#" className="p-2 bg-slate-800 hover:bg-brand-orange text-white hover:text-white transition-colors duration-200 rounded-sm" aria-label="LinkedIn">
-                <FaLinkedinIn size={14} />
-              </a>
-              <a href="#" className="p-2 bg-slate-800 hover:bg-brand-orange text-white hover:text-white transition-colors duration-200 rounded-sm" aria-label="Twitter">
-                <FaTwitter size={14} />
-              </a>
-              <a href="#" className="p-2 bg-slate-800 hover:bg-brand-orange text-white hover:text-white transition-colors duration-200 rounded-sm" aria-label="Facebook">
-                <FaFacebookF size={14} />
-              </a>
-              <a href="#" className="p-2 bg-slate-800 hover:bg-brand-orange text-white hover:text-white transition-colors duration-200 rounded-sm" aria-label="YouTube">
-                <FaYoutube size={14} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
