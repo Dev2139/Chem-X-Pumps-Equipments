@@ -11,7 +11,7 @@ export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   // Extract unique categories
-  const categories = ['All', 'Dispatching', 'Owner', 'Mounting', 'Manufacturing', 'Products', 'Servicing'];
+  const categories = ['All', 'Dispatching', 'Owner', 'Mounting', 'Testing & Confirmation', 'Manufacturing', 'Products', 'Servicing'];
 
   // Filter gallery items
   const filteredItems = selectedCategory === 'All'

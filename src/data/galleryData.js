@@ -70,5 +70,13 @@ export const galleryItems = [
     category: 'Products',
     image: 'https://res.cloudinary.com/urzka7oz/image/upload/v1788323220/ChatGPT_Image_Sep_2_2026_09_56_44_AM.png',
     description: 'CGP Series single & double helical multi-purpose rotary gear pump designed for light & viscous fluids, self-priming up to 5m lift.'
+  },
+  {
+    id: 'testing-confirmation',
+    title: 'Quality Testing & Performance Confirmation',
+    label: 'Testing & Confirmation',
+    category: 'Servicing',
+    image: 'https://res.cloudinary.com/urzka7oz/image/upload/v1788324339/ChatGPT_Image_Sep_2_2026_10_15_17_AM.png',
+    description: 'Full hydrostatic pressure head testing, vibration diagnostics, and final quality confirmation prior to client dispatch.'
   }
 ];
