@@ -91,19 +91,15 @@ router.post('/', async (req, res) => {
     const senderUser = process.env.SMTP_USER || 'chemxpumps@gmail.com';
     const recipientEmail = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
 
-    // Set From header with customer name & email so Gmail treats it as an incoming lead in Primary Inbox
-    const fromHeader = name ? `"${name} (Website Inquiry)" <${email || senderUser}>` : `"Chem-X Web Inquiry" <${email || senderUser}>`;
+    // From header using authenticated sender address to comply with Gmail SMTP security policy
+    const fromName = name ? `${name} via Chem-X Web` : 'Chem-X Web Inquiry';
+    const fromHeader = `"${fromName}" <${senderUser}>`;
 
     const mailOptions = {
       from: fromHeader,
       to: recipientEmail,
       replyTo: email || senderUser,
       subject: `🔔 NEW INQUIRY: ${name || company || 'Customer'} - ${submissionType}`,
-      headers: {
-        'X-Priority': '1 (Highest)',
-        'X-MSMail-Priority': 'High',
-        'Importance': 'High'
-      },
       html: htmlContent,
       text: `New Website Inquiry\n\nName: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nProduct: ${product}\nMessage: ${message}`,
     };
