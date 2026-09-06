@@ -14,9 +14,9 @@ export async function connectDB() {
   if (isDbConnected || mongoose.connection.readyState >= 1) {
     return;
   }
-  const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/chemx';
+  const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://DevPatel:Coding2139@traveldiaries.5hmsb.mongodb.net/chemx';
   try {
-    await mongoose.connect(MONGODB_URI);
+    await mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 5000 });
     isDbConnected = true;
     console.log('✔ MongoDB connected');
   } catch (err) {
