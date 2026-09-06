@@ -89,7 +89,6 @@ router.post('/', async (req, res) => {
     `;
 
     const senderUser = process.env.SMTP_USER || 'chemxpumps@gmail.com';
-    const recipientEmail = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
 
     // From header using authenticated sender address to comply with Gmail SMTP security policy
     const fromName = name ? `${name} via Chem-X Web` : 'Chem-X Web Inquiry';
