@@ -33,13 +33,13 @@ app.use(async (_req, _res, next) => {
   next();
 });
 
-// API routes
-app.use('/api/products', productsRouter);
-app.use('/api/admin', adminRouter);
-app.use('/api/contact', contactRouter);
+// API routes (handles both local /api/* and Vercel serverless rewrites)
+app.use(['/api/products', '/products'], productsRouter);
+app.use(['/api/admin', '/admin'], adminRouter);
+app.use(['/api/contact', '/contact'], contactRouter);
 
 // Health check
-app.get('/api/health', (_req, res) => {
+app.use(['/api/health', '/health', '/'], (_req, res) => {
   res.json({
     status: 'ok',
     db: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
