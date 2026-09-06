@@ -4,6 +4,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import productsRouter from './routes/products.js';
 import adminRouter from './routes/admin.js';
+import contactRouter from './routes/contact.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,6 +16,7 @@ app.use(express.json({ limit: '2mb' }));
 // API routes
 app.use('/api/products', productsRouter);
 app.use('/api/admin', adminRouter);
+app.use('/api/contact', contactRouter);
 
 // Health check
 app.get('/api/health', (_req, res) => {

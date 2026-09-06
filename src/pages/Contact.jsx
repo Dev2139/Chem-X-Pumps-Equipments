@@ -6,12 +6,36 @@ import SEO from '../components/SEO';
 export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const [previewUrl, setPreviewUrl] = useState(null);
 
   const onSubmit = async (data) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log('Contact Inquiry Submitted:', data);
-    setSubmitted(true);
+    setSubmitError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: data.fullName || data.name,
+          company: data.company,
+          email: data.email,
+          phone: data.phone,
+          subject: data.subject || 'Contact Page Inquiry',
+          message: data.message || data.requirements,
+          type: 'Contact Page Inquiry',
+        }),
+      });
+      const result = await res.json();
+      if (!res.ok || !result.success) {
+        throw new Error(result.message || 'Failed to submit inquiry');
+      }
+      if (result.previewUrl) {
+        setPreviewUrl(result.previewUrl);
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err.message);
+    }
   };
 
   return (

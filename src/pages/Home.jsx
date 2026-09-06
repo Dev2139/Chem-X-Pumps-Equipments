@@ -18,6 +18,57 @@ export default function Home() {
   // Extract products
   const { products } = useProducts();
 
+  // Contact Form State
+  const [contactFormData, setContactFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [contactStatus, setContactStatus] = useState({
+    loading: false,
+    success: false,
+    error: null,
+    message: '',
+    previewUrl: null
+  });
+
+  const handleHomeFormSubmit = async (e) => {
+    e.preventDefault();
+    setContactStatus({ loading: true, success: false, error: null, message: '', previewUrl: null });
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...contactFormData,
+          type: 'Homepage Quick Inquiry'
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || 'Failed to submit inquiry');
+      }
+      setContactStatus({
+        loading: false,
+        success: true,
+        error: null,
+        message: data.message || 'Inquiry submitted successfully!',
+        previewUrl: data.previewUrl || null
+      });
+      setContactFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (err) {
+      setContactStatus({
+        loading: false,
+        success: false,
+        error: err.message,
+        message: '',
+        previewUrl: null
+      });
+    }
+  };
+
   // Carousel States
   const [slideIndex, setSlideIndex] = useState(0);
   const [activeFeaturedIndex, setActiveFeaturedIndex] = useState(0);
@@ -1046,37 +1097,110 @@ export default function Home() {
               <h3 className="text-xl font-bold text-brand-navy mb-2">Send an Instant Inquiry</h3>
               <p className="text-xs text-slate-500 mb-6">Have questions regarding specifications? Write to our team.</p>
               
-              <form onSubmit={(e) => { e.preventDefault(); alert("Message sent successfully. Chem-X team will contact you shortly."); }} className="space-y-4">
-                <div>
-                  <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Your Name</label>
-                  <input type="text" required className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" />
+              {contactStatus.success ? (
+                <div className="bg-emerald-50 border border-emerald-200 rounded-sm p-6 text-center space-y-3">
+                  <FaCheckCircle className="text-emerald-500 mx-auto" size={48} />
+                  <h4 className="font-bold text-emerald-900 text-lg">Inquiry Sent Successfully</h4>
+                  <p className="text-xs text-emerald-700 leading-relaxed">
+                    {contactStatus.message}
+                  </p>
+                  {contactStatus.previewUrl && (
+                    <div className="pt-2">
+                      <a 
+                        href={contactStatus.previewUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-block bg-emerald-600 text-white text-xs font-semibold px-3 py-1.5 rounded hover:bg-emerald-700 transition-colors"
+                      >
+                        View Nodemailer Ethereal Email Preview
+                      </a>
+                    </div>
+                  )}
+                  <button 
+                    onClick={() => setContactStatus({ loading: false, success: false, error: null, message: '', previewUrl: null })}
+                    className="mt-2 text-xs font-bold text-emerald-800 underline hover:text-emerald-950 cursor-pointer"
+                  >
+                    Send another inquiry
+                  </button>
                 </div>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              ) : (
+                <form onSubmit={handleHomeFormSubmit} className="space-y-4">
+                  {contactStatus.error && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 text-xs p-3 rounded-sm">
+                      {contactStatus.error}
+                    </div>
+                  )}
+
                   <div>
-                    <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Email Address</label>
-                    <input type="email" required className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" />
+                    <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Your Name</label>
+                    <input 
+                      type="text" 
+                      required 
+                      value={contactFormData.name}
+                      onChange={(e) => setContactFormData(prev => ({ ...prev, name: e.target.value }))}
+                      className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" 
+                      placeholder="e.g. Rahul Sharma"
+                    />
                   </div>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Email Address</label>
+                      <input 
+                        type="email" 
+                        required 
+                        value={contactFormData.email}
+                        onChange={(e) => setContactFormData(prev => ({ ...prev, email: e.target.value }))}
+                        className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" 
+                        placeholder="rahul@company.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Phone Number</label>
+                      <input 
+                        type="tel" 
+                        required 
+                        value={contactFormData.phone}
+                        onChange={(e) => setContactFormData(prev => ({ ...prev, phone: e.target.value }))}
+                        className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" 
+                        placeholder="+91 98765 43210"
+                      />
+                    </div>
+                  </div>
+
                   <div>
-                    <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Phone Number</label>
-                    <input type="tel" required className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" />
+                    <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Subject</label>
+                    <input 
+                      type="text" 
+                      required 
+                      value={contactFormData.subject}
+                      onChange={(e) => setContactFormData(prev => ({ ...prev, subject: e.target.value }))}
+                      className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" 
+                      placeholder="Pump Specification / Pricing Query"
+                    />
                   </div>
-                </div>
 
-                <div>
-                  <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Subject</label>
-                  <input type="text" required className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" />
-                </div>
+                  <div>
+                    <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Message Description</label>
+                    <textarea 
+                      rows={4} 
+                      required 
+                      value={contactFormData.message}
+                      onChange={(e) => setContactFormData(prev => ({ ...prev, message: e.target.value }))}
+                      className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" 
+                      placeholder="Please share details about your required pump model, capacity, head, or media..."
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-[10px] font-bold text-brand-navy uppercase tracking-wider mb-1">Message Description</label>
-                  <textarea rows={4} required className="w-full px-3 py-2 border border-slate-300 bg-white rounded-sm outline-none text-sm focus:border-brand-blue" />
-                </div>
-
-                <button type="submit" className="w-full btn-primary uppercase font-bold py-3 text-sm cursor-pointer">
-                  Send Message
-                </button>
-              </form>
+                  <button 
+                    type="submit" 
+                    disabled={contactStatus.loading}
+                    className="w-full btn-primary uppercase font-bold py-3 text-sm cursor-pointer disabled:opacity-50"
+                  >
+                    {contactStatus.loading ? 'Sending Message via Nodemailer...' : 'Send Message'}
+                  </button>
+                </form>
+              )}
             </div>
 
           </div>

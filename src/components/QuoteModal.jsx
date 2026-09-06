@@ -27,11 +27,36 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
 
   if (!isOpen) return null;
 
+  const [submitError, setSubmitError] = React.useState('');
+  const [previewUrl, setPreviewUrl] = React.useState(null);
+
   const onSubmit = async (data) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log('Quote Request Submitted:', data);
-    setSubmitted(true);
+    setSubmitError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: data.fullName,
+          company: data.company,
+          email: data.email,
+          phone: data.phone,
+          product: data.product,
+          message: data.requirements,
+          type: 'Technical Quote Request',
+        }),
+      });
+      const result = await res.json();
+      if (!res.ok || !result.success) {
+        throw new Error(result.message || 'Failed to submit quote request');
+      }
+      if (result.previewUrl) {
+        setPreviewUrl(result.previewUrl);
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err.message);
+    }
   };
 
   return (
