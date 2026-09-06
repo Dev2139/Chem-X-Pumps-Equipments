@@ -1,2 +1,2 @@
-# Redirect all frontend routes to index.html for React Router SPA navigation
-/*  /index.html  200
+/api/*  https://chem-x-pumps-equipments.vercel.app/api/:splat  200
+/*      /index.html                                           200
