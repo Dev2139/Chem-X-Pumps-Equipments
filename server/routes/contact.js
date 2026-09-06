@@ -90,9 +90,9 @@ router.post('/', async (req, res) => {
 
     const senderUser = process.env.SMTP_USER || 'chemxpumps@gmail.com';
 
-    // From header using authenticated sender address to comply with Gmail SMTP security policy
+    // From header using inquiries@chemxpumps.com so Gmail delivers directly to Primary Inbox
     const fromName = name ? `${name} via Chem-X Web` : 'Chem-X Web Inquiry';
-    const fromHeader = `"${fromName}" <${senderUser}>`;
+    const fromHeader = `"${fromName}" <inquiries@chemxpumps.com>`;
 
     const mailOptions = {
       from: fromHeader,
