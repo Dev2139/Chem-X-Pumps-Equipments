@@ -13,43 +13,16 @@ async function getTransporter() {
   // Refresh environment variables in case .env was updated
   dotenv.config();
 
-  const host = process.env.SMTP_HOST;
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
+  const user = process.env.SMTP_USER || 'chemxpumps@gmail.com';
+  const pass = process.env.SMTP_PASS || 'bueeowenobrtvayx';
 
-  if (user && pass) {
-    const isGmail = (host && host.includes('gmail')) || process.env.SMTP_SERVICE === 'gmail';
-    const transportOptions = isGmail
-      ? {
-          service: 'gmail',
-          auth: { user, pass },
-        }
-      : {
-          host: host || 'smtp.gmail.com',
-          port: parseInt(process.env.SMTP_PORT || '587', 10),
-          secure: process.env.SMTP_SECURE === 'true' || process.env.SMTP_PORT === '465',
-          auth: { user, pass },
-        };
-
-    return {
-      transporter: nodemailer.createTransport(transportOptions),
-      isTest: false,
-    };
-  }
-
-  // Fallback: Create Ethereal test account for local testing
-  const testAccount = await nodemailer.createTestAccount();
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
-    secure: false,
-    auth: {
-      user: testAccount.user,
-      pass: testAccount.pass,
-    },
-  });
-
-  return { transporter, isTest: true };
+  return {
+    transporter: nodemailer.createTransport({
+      service: 'gmail',
+      auth: { user, pass },
+    }),
+    isTest: false,
+  };
 }
 
 // POST /api/contact - Handle form submissions (Homepage, Contact Page, Quote Modal)
@@ -115,11 +88,22 @@ router.post('/', async (req, res) => {
       </div>
     `;
 
+    const senderUser = process.env.SMTP_USER || 'chemxpumps@gmail.com';
+    const recipientEmail = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
+
+    // Set From header with customer name & email so Gmail treats it as an incoming lead in Primary Inbox
+    const fromHeader = name ? `"${name} (Website Inquiry)" <${email || senderUser}>` : `"Chem-X Web Inquiry" <${email || senderUser}>`;
+
     const mailOptions = {
-      from: `"Chem-X Web Form" <${senderEmail}>`,
+      from: fromHeader,
       to: recipientEmail,
-      replyTo: email,
-      subject: `📥 New Website Inquiry: ${name || company || 'Visitor'} (${submissionType})`,
+      replyTo: email || senderUser,
+      subject: `🔔 NEW INQUIRY: ${name || company || 'Customer'} - ${submissionType}`,
+      headers: {
+        'X-Priority': '1 (Highest)',
+        'X-MSMail-Priority': 'High',
+        'Importance': 'High'
+      },
       html: htmlContent,
       text: `New Website Inquiry\n\nName: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nProduct: ${product}\nMessage: ${message}`,
     };
