@@ -11,6 +11,7 @@ import { useQuoteModal } from '../context/QuoteModalContext';
 import { useProducts } from '../context/ProductsContext';
 import SEO from '../components/SEO';
 import GallerySection from '../components/GallerySection';
+import { CONTACT_API_URL } from '../config/api';
 
 export default function Home() {
   const { openQuoteModal } = useQuoteModal();
@@ -38,7 +39,7 @@ export default function Home() {
     e.preventDefault();
     setContactStatus({ loading: true, success: false, error: null, message: '', previewUrl: null });
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(CONTACT_API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

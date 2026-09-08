@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { FaTimes, FaEnvelope, FaPhone, FaBuilding, FaUser, FaCheckCircle } from 'react-icons/fa';
 import { useProducts } from '../context/ProductsContext';
+import { CONTACT_API_URL } from '../config/api';
 
 export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
   const { products } = useProducts();
@@ -33,7 +34,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
   const onSubmit = async (data) => {
     setSubmitError('');
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(CONTACT_API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

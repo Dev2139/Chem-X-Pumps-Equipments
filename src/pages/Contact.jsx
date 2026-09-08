@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle, FaBuilding } from 'react-icons/fa';
 import SEO from '../components/SEO';
+import { CONTACT_API_URL } from '../config/api';
 
 export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
@@ -12,7 +13,7 @@ export default function Contact() {
   const onSubmit = async (data) => {
     setSubmitError('');
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(CONTACT_API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
