@@ -74,12 +74,12 @@ router.post('/', async (req, res) => {
     `;
 
     const mailOptions = {
-      from: `"${name || 'Customer'} via Chemx Web" <inquiry@chemxpumps.com>`,
+      from: `"Chemx Website Lead" <${process.env.SMTP_USER || 'dev.patel.codinggita@gmail.com'}>`,
       to: recipient,
       replyTo: email,
-      subject: mailSubject,
+      subject: `📥 NEW CHEMX LEAD: ${name || company || email} (${phone || 'No Phone'})`,
       html: htmlBody,
-      text: `Inquiry from ${name || email}\nPhone: ${phone}\nMessage: ${message}`,
+      text: `New Website Inquiry\n\nName: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nProduct: ${product}\nMessage: ${message}`,
     };
 
     const info = await transporter.sendMail(mailOptions);
