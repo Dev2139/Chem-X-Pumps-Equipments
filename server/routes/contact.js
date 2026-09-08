@@ -28,7 +28,8 @@ router.post('/', async (req, res) => {
 
     const recipient = 'dev.patel.codinggita@gmail.com';
     const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
-    const mailSubject = subject || `🔔 New Inquiry from ${name || company || email}`;
+    const userSubjectText = subject || (product ? `Quote Request: ${product}` : formType);
+    const emailSubject = `📥 NEW CHEMX LEAD: ${userSubjectText}`;
 
     const htmlBody = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background-color: #ffffff;">
@@ -77,7 +78,7 @@ router.post('/', async (req, res) => {
       from: `"Chemx Website Lead" <${process.env.SMTP_USER || 'dev.patel.codinggita@gmail.com'}>`,
       to: recipient,
       replyTo: email,
-      subject: `📥 NEW CHEMX LEAD: ${name || company || email} (${phone || 'No Phone'})`,
+      subject: emailSubject,
       html: htmlBody,
       text: `New Website Inquiry\n\nName: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nProduct: ${product}\nMessage: ${message}`,
     };
