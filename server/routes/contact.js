@@ -26,7 +26,7 @@ router.post('/', async (req, res) => {
       });
     }
 
-    const recipient = process.env.CONTACT_RECEIVER_EMAIL || 'dev.patel.codinggita@gmail.com';
+    const recipient = 'dev.patel.codinggita@gmail.com';
     const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
     const mailSubject = subject || `🔔 New Inquiry from ${name || company || email}`;
 
