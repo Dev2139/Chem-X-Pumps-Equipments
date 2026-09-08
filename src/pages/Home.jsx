@@ -1048,8 +1048,8 @@ export default function Home() {
 
                 <div className="space-y-1">
                   <span className="text-xs font-semibold text-slate-400 uppercase block">Corporate Online Contact</span>
-                  <a href="mailto:chemxpumps@gmail.com" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
-                    chemxpumps@gmail.com
+                  <a href="mailto:dev.patel.codinggita@gmail.com" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
+                    dev.patel.codinggita@gmail.com
                   </a>
                   <a href="https://www.chemxpumps.com" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-brand-navy hover:text-brand-orange block">
                     www.chemxpumps.com

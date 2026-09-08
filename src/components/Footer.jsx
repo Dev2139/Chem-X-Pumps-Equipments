@@ -127,8 +127,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-brand-orange shrink-0" size={14} />
-                <a href="mailto:chemxpumps@gmail.com" className="hover:text-white transition-colors">
-                  chemxpumps@gmail.com
+                <a href="mailto:dev.patel.codinggita@gmail.com" className="hover:text-white transition-colors">
+                  dev.patel.codinggita@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
