@@ -7,8 +7,8 @@ const router = express.Router();
 // Initialize Nodemailer transporter using Gmail credentials
 function createTransporter() {
   dotenv.config();
-  const user = process.env.SMTP_USER || 'chemxpumps@gmail.com';
-  const pass = process.env.SMTP_PASS || 'bueeowenobrtvayx';
+  const user = process.env.SMTP_USER || 'dev.patel.codinggita@gmail.com';
+  const pass = process.env.SMTP_PASS || 'hbrydhsryigwfuzo';
 
   return nodemailer.createTransport({
     service: 'gmail',
@@ -29,14 +29,14 @@ router.post('/', async (req, res) => {
     }
 
     const transporter = createTransporter();
-    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
+    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || 'dev.patel.codinggita@gmail.com';
     const submissionType = type || (product ? 'Technical Quote Request' : 'Website Form Submission');
     const emailSubject = subject || `🔔 New Website Inquiry from ${name || company || email}`;
 
     const htmlContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background-color: #ffffff;">
         <div style="background-color: #0b1e36; color: #ffffff; padding: 20px; text-align: center;">
-          <h2 style="margin: 0; font-size: 20px; color: #ffffff;">Chem-X Web Form Submission</h2>
+          <h2 style="margin: 0; font-size: 20px; color: #ffffff;">Chemx Web Form Submission</h2>
           <p style="margin: 5px 0 0 0; font-size: 13px; color: #ff6b00; font-weight: bold; text-transform: uppercase;">${submissionType}</p>
         </div>
         <div style="padding: 24px; color: #334155; line-height: 1.6;">
@@ -71,13 +71,13 @@ router.post('/', async (req, res) => {
           </div>
         </div>
         <div style="background-color: #f1f5f9; padding: 12px 20px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0;">
-          Received from Chem-X Pumps & Equipment Website Inquiry System
+          Received from Chemx Pumps & Equipment Website Inquiry System
         </div>
       </div>
     `;
 
     const mailOptions = {
-      from: `"Chem-X Web Form" <chemxpumps@gmail.com>`,
+      from: `"Chemx Web Form" <dev.patel.codinggita@gmail.com>`,
       to: receiverEmail,
       replyTo: email,
       subject: emailSubject,
