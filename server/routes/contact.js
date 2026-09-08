@@ -1,6 +1,7 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import Inquiry from '../models/Inquiry.js';
 
 dotenv.config();
 const router = express.Router();
@@ -38,6 +39,26 @@ router.post('/', async (req, res) => {
       } else {
         userSubjectText = formType;
       }
+    }
+
+    // Save inquiry to MongoDB database
+    let savedInquiryId = null;
+    try {
+      const savedDoc = await Inquiry.create({
+        name: name || 'Anonymous',
+        email,
+        phone: phone || '',
+        company: company || '',
+        subject: userSubjectText,
+        message: message || '',
+        product: product || '',
+        type: formType,
+        status: 'New',
+      });
+      savedInquiryId = savedDoc._id;
+      console.log(`✔ [MongoDB] Inquiry saved to database (ID: ${savedInquiryId})`);
+    } catch (dbErr) {
+      console.error('⚠ [MongoDB] Failed to save inquiry document:', dbErr.message);
     }
 
     const emailSubject = `📥 NEW CHEMX LEAD: ${userSubjectText}`;
