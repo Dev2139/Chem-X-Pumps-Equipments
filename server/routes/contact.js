@@ -28,8 +28,19 @@ router.post('/', async (req, res) => {
 
     const recipient = 'dev.patel.codinggita@gmail.com';
     const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
-    const userSubjectText = subject || (product ? `Quote Request: ${product}` : (name ? `${name}${phone ? ` (${phone})` : ''}` : formType));
-    const emailSubject = `📥 CHEMX LEAD: ${userSubjectText}`;
+    
+    let userSubjectText = subject && subject.trim() ? subject.trim() : '';
+    if (!userSubjectText) {
+      if (product) {
+        userSubjectText = `Quote Request - ${product}`;
+      } else if (name) {
+        userSubjectText = `Inquiry from ${name}`;
+      } else {
+        userSubjectText = formType;
+      }
+    }
+
+    const emailSubject = `📥 NEW CHEMX LEAD: ${userSubjectText}`;
 
     const htmlBody = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background-color: #ffffff;">
