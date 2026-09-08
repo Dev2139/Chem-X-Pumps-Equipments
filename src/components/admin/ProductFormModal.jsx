@@ -37,7 +37,7 @@ const buildFormValues = (product) => ({
   shortDescription: product?.shortDescription || '',
   description: product?.description || '',
   images: fromLines(product?.images),
-  brochurePdf: product?.brochurePdf || '',
+  brochurePdf: product?.brochurePdf || 'https://drive.google.com/file/d/1RdyrDP0f-LuynVgop4_q5jJ4tW1joHlg/view?usp=sharing',
   specifications: fromKeyValue(product?.specifications),
   operatingRange: fromKeyValue(product?.operatingRange),
   features: fromLines(product?.features),

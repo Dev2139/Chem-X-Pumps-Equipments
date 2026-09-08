@@ -242,12 +242,23 @@ export default function Products() {
                         >
                           View Details <FaChevronRight size={9} className="transition-transform group-hover/btn:translate-x-0.5" />
                         </Link>
-                        <button 
-                          onClick={() => openQuoteModal(`${product.name} (${product.model})`)}
-                          className="text-xs font-bold text-brand-orange hover:text-brand-orange/80 cursor-pointer"
-                        >
-                          Get Quote
-                        </button>
+                        <div className="flex items-center gap-3">
+                          <a
+                            href={product.brochurePdf || 'https://drive.google.com/file/d/1RdyrDP0f-LuynVgop4_q5jJ4tW1joHlg/view?usp=sharing'}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-xs font-bold text-red-600 hover:text-red-700 flex items-center gap-1 cursor-pointer"
+                            title="Download Product Brochure PDF"
+                          >
+                            <FaFilePdf size={11} /> Brochure
+                          </a>
+                          <button 
+                            onClick={() => openQuoteModal(`${product.name} (${product.model})`)}
+                            className="text-xs font-bold text-brand-orange hover:text-brand-orange/80 cursor-pointer"
+                          >
+                            Get Quote
+                          </button>
+                        </div>
                       </div>
                     </div>
 

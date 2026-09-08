@@ -17,7 +17,7 @@ const productSchema = new mongoose.Schema(
     applications: { type: [String], default: [] },
     targetIndustries: { type: [String], default: [] },
     advantages: { type: [String], default: [] },
-    brochurePdf: { type: String, default: '' },
+    brochurePdf: { type: String, default: 'https://drive.google.com/file/d/1RdyrDP0f-LuynVgop4_q5jJ4tW1joHlg/view?usp=sharing' },
   },
   {
     timestamps: true,

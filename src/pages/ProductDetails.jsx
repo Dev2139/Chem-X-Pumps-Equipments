@@ -194,10 +194,10 @@ export default function ProductDetails() {
                 Inquire Specifications
               </button>
               <a 
-                href={product.brochurePdf}
+                href={product.brochurePdf || 'https://drive.google.com/file/d/1RdyrDP0f-LuynVgop4_q5jJ4tW1joHlg/view?usp=sharing'}
                 target="_blank"
                 rel="noreferrer"
-                className="border-2 border-red-600 hover:bg-red-50 text-red-600 hover:text-red-700 font-bold py-2 px-5 text-xs rounded-sm inline-flex items-center gap-2 transition-all duration-200"
+                className="border-2 border-red-600 hover:bg-red-50 text-red-600 hover:text-red-700 font-bold py-2 px-5 text-xs rounded-sm inline-flex items-center gap-2 transition-all duration-200 cursor-pointer"
               >
                 <FaFilePdf size={14} /> Download Catalogue PDF
               </a>
