@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaExternalLinkAlt } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 export default function Footer() {
@@ -151,6 +151,21 @@ export default function Footer() {
       <div className="bg-slate-950 text-slate-500 py-6 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p>© {currentYear} Chem-X Pumps & Equipment. All Rights Reserved. Manufactured in India.</p>
+
+          <div className="flex items-center gap-1.5 text-slate-400">
+            <span>Made with precision by</span>
+            <a
+              href="https://devdhar.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="devdhara-badge font-bold px-2.5 py-1 rounded-md tracking-wide transition-all duration-300 inline-flex items-center gap-1 text-xs"
+              title="Devdhara Technologies - devdhar.in"
+            >
+              Devdhara Technologies
+              <FaExternalLinkAlt className="text-[10px]" />
+            </a>
+          </div>
+
           <div className="flex space-x-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

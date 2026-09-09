@@ -86,3 +86,26 @@
   animation: pulseGlow 3s infinite;
 }
 
+/* Devdhara Technologies subtle blinking highlight badge animation */
+@keyframes devdharaSubtleBlink {
+  0%, 100% {
+    color: #F58220;
+    border-color: rgba(245, 130, 32, 0.4);
+    background-color: rgba(245, 130, 32, 0.08);
+    box-shadow: 0 0 4px rgba(245, 130, 32, 0.15);
+  }
+  50% {
+    color: #ff9d47;
+    border-color: rgba(245, 130, 32, 0.75);
+    background-color: rgba(245, 130, 32, 0.18);
+    box-shadow: 0 0 10px rgba(245, 130, 32, 0.35);
+  }
+}
+
+.devdhara-badge {
+  animation: devdharaSubtleBlink 2.2s infinite ease-in-out;
+  border: 1px solid rgba(245, 130, 32, 0.4);
+}
+
+
+
