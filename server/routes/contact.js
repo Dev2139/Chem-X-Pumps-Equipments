@@ -10,7 +10,7 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.SMTP_USER || 'dev.patel.codinggita@gmail.com',
+    user: process.env.SMTP_USER || 'chemxpumps@gmail.com',
     pass: process.env.SMTP_PASS || 'hbrydhsryigwfuzo',
   },
 });
@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
       });
     }
 
-    const recipient = 'dev.patel.codinggita@gmail.com';
+    const recipient = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
     const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
     
     let userSubjectText = subject && subject.trim() ? subject.trim() : '';
@@ -107,7 +107,7 @@ router.post('/', async (req, res) => {
     `;
 
     const mailOptions = {
-      from: `"Chemx Website Lead" <${process.env.SMTP_USER || 'dev.patel.codinggita@gmail.com'}>`,
+      from: `"Chemx Website Lead" <${process.env.SMTP_USER || 'chemxpumps@gmail.com'}>`,
       to: recipient,
       replyTo: email,
       subject: emailSubject,
