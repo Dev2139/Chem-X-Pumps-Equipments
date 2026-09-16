@@ -12,6 +12,8 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
     }
   });
   const [submitted, setSubmitted] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState('');
+  const [previewUrl, setPreviewUrl] = React.useState(null);
 
   React.useEffect(() => {
     if (isOpen) {
@@ -27,9 +29,6 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
   }, [isOpen, initialProduct, reset]);
 
   if (!isOpen) return null;
-
-  const [submitError, setSubmitError] = React.useState('');
-  const [previewUrl, setPreviewUrl] = React.useState(null);
 
   const onSubmit = async (data) => {
     setSubmitError('');
@@ -100,7 +99,13 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <>
+              {submitError && (
+                <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs rounded-sm">
+                  {submitError}
+                </div>
+              )}
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Full Name */}
                 <div>
@@ -249,6 +254,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct = '' }) {
                 </button>
               </div>
             </form>
+            </>
           )}
         </div>
       </div>

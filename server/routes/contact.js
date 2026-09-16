@@ -6,61 +6,82 @@ import Inquiry from '../models/Inquiry.js';
 dotenv.config();
 const router = express.Router();
 
-// Create Nodemailer transporter with Gmail credentials
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.SMTP_USER || 'chemxpumps@gmail.com',
-    pass: process.env.SMTP_PASS || 'hbrydhsryigwfuzo',
-  },
-});
+// Create Nodemailer transporter with dynamic configuration
+function createTransporter() {
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER || 'chemxpumps@gmail.com';
+  const pass = process.env.SMTP_PASS || 'hbrydhsryigwfuzo';
+
+  if (host) {
+    return nodemailer.createTransport({
+      host,
+      port: parseInt(process.env.SMTP_PORT || '587', 10),
+      secure: process.env.SMTP_SECURE === 'true',
+      auth: { user, pass },
+      tls: { rejectUnauthorized: false }
+    });
+  }
+
+  return nodemailer.createTransport({
+    service: 'gmail',
+    auth: { user, pass },
+  });
+}
 
 // POST /api/contact - Submit customer website inquiry form
 router.post('/', async (req, res) => {
+  const { name, email, phone, subject, message, company, product, type } = req.body || {};
+
+  if (!email) {
+    return res.status(400).json({
+      success: false,
+      message: 'Email address is required.',
+    });
+  }
+
+  const recipient = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
+  const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
+  
+  let userSubjectText = subject && subject.trim() ? subject.trim() : '';
+  if (!userSubjectText) {
+    if (product) {
+      userSubjectText = `Quote Request - ${product}`;
+    } else if (name) {
+      userSubjectText = `Inquiry from ${name}`;
+    } else {
+      userSubjectText = formType;
+    }
+  }
+
+  // 1. Save inquiry to MongoDB database
+  let savedInquiryId = null;
+  let isSavedToDb = false;
+  let dbErrorMsg = null;
   try {
-    const { name, email, phone, subject, message, company, product, type } = req.body;
+    const savedDoc = await Inquiry.create({
+      name: name || 'Anonymous',
+      email,
+      phone: phone || '',
+      company: company || '',
+      subject: userSubjectText,
+      message: message || '',
+      product: product || '',
+      type: formType,
+      status: 'New',
+    });
+    savedInquiryId = savedDoc._id;
+    isSavedToDb = true;
+    console.log(`✔ [MongoDB] Inquiry saved to database (ID: ${savedInquiryId})`);
+  } catch (dbErr) {
+    dbErrorMsg = dbErr.message;
+    console.error('⚠ [MongoDB] Failed to save inquiry document:', dbErr.message);
+  }
 
-    if (!email) {
-      return res.status(400).json({
-        success: false,
-        message: 'Email address is required.',
-      });
-    }
-
-    const recipient = process.env.CONTACT_RECEIVER_EMAIL || 'chemxpumps@gmail.com';
-    const formType = type || (product ? 'Technical Quote Request' : 'Website Inquiry');
-    
-    let userSubjectText = subject && subject.trim() ? subject.trim() : '';
-    if (!userSubjectText) {
-      if (product) {
-        userSubjectText = `Quote Request - ${product}`;
-      } else if (name) {
-        userSubjectText = `Inquiry from ${name}`;
-      } else {
-        userSubjectText = formType;
-      }
-    }
-
-    // Save inquiry to MongoDB database
-    let savedInquiryId = null;
-    try {
-      const savedDoc = await Inquiry.create({
-        name: name || 'Anonymous',
-        email,
-        phone: phone || '',
-        company: company || '',
-        subject: userSubjectText,
-        message: message || '',
-        product: product || '',
-        type: formType,
-        status: 'New',
-      });
-      savedInquiryId = savedDoc._id;
-      console.log(`✔ [MongoDB] Inquiry saved to database (ID: ${savedInquiryId})`);
-    } catch (dbErr) {
-      console.error('⚠ [MongoDB] Failed to save inquiry document:', dbErr.message);
-    }
-
+  // 2. Attempt sending email notification via Nodemailer
+  let emailSent = false;
+  let emailErrorMsg = null;
+  try {
+    const transporter = createTransporter();
     const emailSubject = `📥 NEW CHEMX LEAD: ${userSubjectText}`;
 
     const htmlBody = `
@@ -116,20 +137,30 @@ router.post('/', async (req, res) => {
     };
 
     const info = await transporter.sendMail(mailOptions);
+    emailSent = true;
     console.log(`✔ [Nodemailer] Form submission sent to ${recipient} (MsgID: ${info.messageId})`);
+  } catch (mailErr) {
+    emailErrorMsg = mailErr.message;
+    console.error('✖ [Nodemailer Error]:', mailErr.message);
+  }
 
+  // Return success if recorded in DB or sent via email
+  if (isSavedToDb || emailSent) {
     return res.status(200).json({
       success: true,
       message: 'Your inquiry has been submitted successfully!',
-    });
-  } catch (error) {
-    console.error('✖ [Nodemailer Error]:', error);
-    return res.status(500).json({
-      success: false,
-      message: 'Failed to send inquiry email. Please try again later.',
-      error: error.message,
+      dbSaved: isSavedToDb,
+      emailSent: emailSent,
+      ...(emailErrorMsg && { emailNotice: 'Inquiry saved to database. Email notification pending SMTP update.' })
     });
   }
+
+  // Only return 500 if both DB and email failed
+  return res.status(500).json({
+    success: false,
+    message: 'Failed to process inquiry. Please try again later or email info@chemxpumps.com directly.',
+    error: emailErrorMsg || dbErrorMsg || 'Unknown server error',
+  });
 });
 
 export default router;

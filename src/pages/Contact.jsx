@@ -221,7 +221,13 @@ export default function Contact() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <>
+                {submitError && (
+                  <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs rounded-sm">
+                    {submitError}
+                  </div>
+                )}
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Name */}
@@ -337,6 +343,7 @@ export default function Contact() {
                   {isSubmitting ? 'Logging Inquiry...' : 'Submit Inquiry'}
                 </button>
               </form>
+              </>
             )}
 
           </div>
