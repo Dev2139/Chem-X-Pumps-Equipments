@@ -21,6 +21,11 @@ import WhyUs from './pages/WhyUs';
 import Gallery from './pages/Gallery';
 import Admin from './pages/Admin';
 
+// Dedicated AdSense Resource Pages (Accessible via direct URL routes)
+import ResourcesHub from './pages/ResourcesHub';
+import PumpSelectionGuide from './pages/PumpSelectionGuide';
+import ChemicalCompatibilityGuide from './pages/ChemicalCompatibilityGuide';
+
 export default function App() {
   return (
     <HelmetProvider>
@@ -47,6 +52,11 @@ export default function App() {
                 <Route path="/why-us" element={<RouteTransition><WhyUs /></RouteTransition>} />
                 <Route path="/gallery" element={<RouteTransition><Gallery /></RouteTransition>} />
                 <Route path="/contact" element={<RouteTransition><Contact /></RouteTransition>} />
+                
+                {/* Dedicated Ad-Supported Pages (URL Routes Only) */}
+                <Route path="/resources" element={<RouteTransition><ResourcesHub /></RouteTransition>} />
+                <Route path="/resources/pump-selection-guide" element={<RouteTransition><PumpSelectionGuide /></RouteTransition>} />
+                <Route path="/resources/chemical-compatibility-guide" element={<RouteTransition><ChemicalCompatibilityGuide /></RouteTransition>} />
                 
                 {/* Admin panel (MongoDB product management) */}
                 <Route path="/admin" element={<Admin />} />
